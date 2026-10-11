@@ -1,0 +1,11 @@
+distance_km,availability_age_min,hour_of_day,available_ambulance_count,distance_per_ambulance,is_peak_hour,locality,partner_type,partner_status,day_of_week,traffic_level,weather_condition,hospital_capacity_status,dispatch_mode,actual_delay,predicted_delay,absolute_error
+1.1,4.0,10.0,7.0,0.15714285714285717,0,Sunrise Colony,ambulance,limited,tuesday,high,clear,not_applicable,automated,36.2,8.409881547619046,27.79011845238096
+5.0,8.0,10.0,2.0,2.5,0,Hillcrest,hospital,available,thursday,high,foggy,unavailable,automated,26.6,10.808231547619046,15.791768452380955
+1.2,9.0,15.0,2.0,0.6,0,Green Park,ambulance,available,monday,medium,rainy,not_applicable,automated,15.3,5.68772261904762,9.612277380952381
+44.7,13.0,10.0,5.0,8.940000000000001,0,Sunrise Colony,ambulance,available,friday,medium,rainy,not_applicable,automated,0.7,9.897408333333335,9.197408333333335
+7.0,20.0,9.0,5.0,1.4,1,Central Market,hospital,available,monday,high,clear,available,manual,6.8,15.415308928571434,8.615308928571434
+12.6,32.0,7.0,4.0,3.15,1,Old Town,hospital,limited,friday,medium,clear,limited,manual,25.3,16.87266785714285,8.42733214285715
+7.2,10.0,9.0,4.0,1.8,1,Old Town,hospital,available,tuesday,high,cloudy,unavailable,manual,6.9,15.23518095238095,8.33518095238095
+2.7,1.0,14.0,4.0,0.675,0,Old Town,hospital,available,tuesday,medium,rainy,limited,manual,18.3,10.082788492063488,8.217211507936513
+20.8,8.0,13.0,6.0,3.466666666666667,0,Lakeview,hospital,available,monday,low,clear,available,automated,16.3,8.103361111111116,8.196638888888884
+3.8,3.0,13.0,7.0,0.5428571428571428,0,Industrial Zone,hospital,available,wednesday,low,foggy,available,manual,13.0,5.251991071428572,7.748008928571428

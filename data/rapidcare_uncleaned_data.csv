@@ -1,0 +1,1501 @@
+request_id,request_datetime,locality,distance_km,partner_type,partner_status,availability_age_min,hour_of_day,day_of_week,traffic_level,weather_condition,hospital_capacity_status,available_ambulance_count,dispatch_mode,response_delay_min
+RC-REQ-000001,2025-01-01 13:16:12,Industrial Zone,7.3,ambulance,limited,11,13,Wednesday,LOW,cloudy,not_applicable,6,automated,5.7
+RC-REQ-000002,01-Jan-2025 13:53,  University Area  ,2.4,hospital,available,0,13,Wednesday,high,clear,available,6,manual,4.2
+RC-REQ-000003,01-01-2025 02:03 PM,Sunrise Colony,"1,7",,limited,4,14,Wednesday,low,cloudy,available,9,automated,4.5
+RC-REQ-000004,01-01-2025 07:07 PM,Industrial Zone,8.7,ambulance,available,9,19,Wednesday,medium,foggy,not_applicable,7,manual,11.1
+RC-REQ-000005,2025-01-02 09:06:19,Industrial Zone,42.8,ambulance,limited,23,9,Thursday,medium,cloudy,not_applicable,7,automated,0.7
+RC-REQ-000006,2025-01-02 09:14:10,Airport Road,12.0,hospital,available,30,9,Thursday,high,clear,available,7,automated,9.3
+RC-REQ-000007,02/01/2025 09:19,Northgate,2.0,ambulance,available,44,9,Thu,high, rainy,not_applicable,3,manual,8.6
+RC-REQ-000008,2025-01-02 12:08:15,Harbor View,7.4,ambulance,available,19,12,Thursday,low,clear,not_applicable,10,automated,2.1
+RC-REQ-000009,2025-01-02 17:45:25,Maple Heights,3.3,hospital,available,14,17,Thursday,medium,clear,available,4,manual ,6.0
+RC-REQ-000010,2025-01-02 18:00:32,Southfield,"2,6",ambulance,limited,1092,18,Thursday,medium,rainy,not_applicable,6,automated,3.2
+RC-REQ-000011,01-02-2025 06:05 PM,central market,11.3,hospital,null,10,18,Thursday,high,clear,limited ,3,automated,16.3
+RC-REQ-000012,02/01/2025 21:25,Northgate,4.3,ambulance,available,1,21,Thursday,medium,clear,not_applicable,4,manual,1393.6
+RC-REQ-000013,2025-01-02 23:42:32,Airport Road,4.5,hospital,available,12,23,Thursday,low,cloudy,available,8,automated,3.6
+RC-REQ-000014,2025-01-03 07:09:10,Sunrise Colony,6.1,hospital,limited,4,7, Friday,high,cloudy,limited,3,automated,6.2
+RC-REQ-000015,2025-01-03 11:15:45,University Area,2.6,ambulance,available,4,11,Friday,high,rainy,not_applicable,11,manual,12.1
+RC-REQ-000016,2025-01-03 13:39:38,Airport Road,5.3,hospital, limited,4,13,,low,foggy,available,3,manual,10.2
+RC-REQ-000017,03/01/2025 14:57,Hillcrest,3.1,ambulance,available,3,14,Friday,medium,cloudy,not_applicable,3,automated,1.3
+RC-REQ-000018,03/01/2025 17:47,Riverside,12.0,hospital,available,,17,Friday,high, cloudy,available,3,automated,6.8
+RC-REQ-000019,2025-01-03 18:56:21,Central Market,1.3,ambulance,available,20,18,Friday,medium,clear,not_applicable,4,automated,1.9
+RC-REQ-000020,2025-01-03 22:49:31,Central Market,4.5,hospital, busy,9,22,Friday,medium,clr,limited,8,automated,9.5
+RC-REQ-000021,2025-01-04 03:33:48,Central Market ,2.3 km,ambulance,busy,5,3,Saturday,low,clear,not_applicable,2,automated,15.9
+RC-REQ-000022,2025-01-04 14:18:55,Airport Road,8.2,ambulance, busy,7,14,Saturday,medium,clear,not applicable,3,automated,
+RC-REQ-000023,2025-01-04 16:12:43,Industrial Zone,11.0,hospital,limited,15 min,16,Saturday, high,unknown,available,6,automated,7.5
+RC-REQ-000024,2025/01/04 17:18,Central Market,4.0,ambulance,available,,17,Saturday,high,clear,not_applicable,3,automated,11.6
+RC-REQ-000025,01-04-2025 06:45 PM,University Area,2.3, hospital,limited,4,18,SATURDAY,high,clear,  Limited  ,7,manual,10.3
+RC-REQ-000026,2025-01-04 20:25:02, Riverside,15.1,hospital,available,0,20,Saturday,Med.,cloudy,limited,12,automated,6.2 min
+RC-REQ-000027,05/01/2025 07:30,Industrial Zone,null,ambulance,available,5,7,Sunday,medium,foggy,not_applicable,8,manual,3.4
+RC-REQ-000028,2025-01-05 11:26:16,Lakeview,2.3,hospital,available,31,11,Sunday,high,rainy,limited,8,manual,7.0
+RC-REQ-000029,2025-01-05 11:38:59,Green Park,3.4,ambulance,limited,1,11,Sunday,high,?,not_applicable,3,automated,7.2
+RC-REQ-000030,2025-01-05 12:14:38,?,4.9,hospital,busy,11,12,Saturday,medium,rainy,unavailable,1,AUTOMATED,9.8
+RC-REQ-000031,,Maple Heights,null,,available,22,null,,low,clear,not_applicable,4,,8.5
+RC-REQ-000032,05-Jan-2025 16:37,Sunrise Colony,4.0,Hospital,available,1,16,Sunday,high,rainy,available,12,automated,4.3
+RC-REQ-000033,2025-01-05 17:06:26,Green Park,4.2,hospital,limited,42,17,Sunday,high,rainy,limited,2,man.,17.1
+RC-REQ-000034,2025-01-05 17:55:19,Industrial Zone,2.8,ambulance,available,15,17,Sunday,,rainy,not_applicable,5,manual,5.5
+RC-REQ-000035,2025-01-05 18:25:17,Green Park,6.0,hospital,available,34,18,Sunday,high,clear,available,3,automated,5.8
+RC-REQ-000036,2025-01-05 19:57:37,Hillcrest,9.0,hospital,Available,11,19,Sunday,medium,clear,available,five,manual,6.1
+RC-REQ-000037,2025-01-06 00:34:46,Harbor View,2.5,ambulance,avail,4,0,MON,,cloudy,not_applicable,3,automated,5.5
+RC-REQ-000038,06-Jan-2025 07:48,Airport Road ,6.8,Ambulance,busy,3,7,Monday,medium,cloudy,not_applicable,6, automated,7.5
+RC-REQ-000039,06-Jan-2025 08:05,Green Park,2.9,ambulance,  Limited  ,4,8,Monday,high,clear,not_applicable,5,automated,5.8
+RC-REQ-000040,01-06-2025 09:22 AM,Harbor View,10.8,hospital,limited,23,9,Monday,high,clear,unavailable,10,automated,11.1
+RC-REQ-000041,06/01/2025 10:29,Hillcrest,1.4,ambulance,available,7,10,Monday,high,clear,not_applicable,6,automated,4.2
+RC-REQ-000042,2025-01-06 12:03:06,Airport Road,"11,3",hospital,available,1,12,Monday,high,clear,available,6,automated,7.3
+RC-REQ-000043,06/01/2025 17:01,Hillcrest,10.5,ambulance,limited,2,17,Monday,medium,clear,not_applicable,3,manual,15.8
+RC-REQ-000044,2025-01-06 18:27:37,Hillcrest,8.5,hospital,available,3,18,Monday,high,clear,available,10,automated,5.4
+RC-REQ-000045,2025-01-06 18:42:27,Maple Heights,4.0,hospital,limited,1,18,Monday,high,clr,available,5,automated,8.4
+RC-REQ-000046,2025-01-06 18:43:27,Hillcrest,,ambulance,busy ,2,18,Monday,high,rainy,not_applicable,5,automated,9.4
+RC-REQ-000047,2025-01-06 19:44:50,Airport Road,6.4,ambulance,limited,23,19,Monday,high,foggy,not_applicable,5,automated,11.6
+RC-REQ-000048,2025-01-06 21:55:59,Hillcrest,5.6,ambulance,limted,22,21,Monday,medium,rainy,not_applicable,5,manual,6.3
+RC-REQ-000049,01-07-2025 04:08 AM,Airport Road,8.8 km,hospital,available,13,4,Tuesday,low,clear,,5,manual,8.2
+RC-REQ-000050,2025/01/07 09:36,Green Park,5.4,amb,limited,21,9,Tuesday,medium,rainy,not_applicable,4,automated,10.1
+RC-REQ-000051,2025-01-07 11:15:05,Airport Road,3.1 km,ambulance,available,16,11,Tuesday,high,foggy,not_applicable,9,manual,3.8
+RC-REQ-000052,2025-01-07 13:04:12,University Area,1.7,hospital,AVAILABLE,0,13,Tuesday,medium,clear,limited,5,automated,2.2
+RC-REQ-000053,07-Jan-2025 13:15,Central Market,3.8,hospital,available,2,13,Tuesday,medium,clear,available,5,manual,11.2
+RC-REQ-000054,2025-01-07 15:16:49,University Area,2.5,ambulance,busy,70,15,Tuesday,medium,foggy,not_applicable,3,automated,10.7
+RC-REQ-000055,2025-01-07 16:56:21,Hillcrest,11.7,hospital,limited,null,16,Tuesday,high,clear,limited,10,automated,10.0
+RC-REQ-000056,2025-01-07 18:10:43,Riverside,7.4,hospital,available,0,18,Tuesday,high,clear,limited,5,manual,16.2
+RC-REQ-000057,2025-01-07 22:57:13,University Area,2.1,ambulance,available,83,22,  Tuesday  ,medium,foggy,not_applicable,3,manual,419.4
+RC-REQ-000058,2025-01-07 22:58:56,Northgate,5.4,hospital,limited,23,22,Tuesday,high,clear,limited,6,manual,17.6
+RC-REQ-000059,2025-01-08 07:10:28,Maple Heights ,2.3,hospital,limited,11,7,Wednesday,medium,foggy,limited,3,automated,10.3
+RC-REQ-000060,2025-01-08 12:55:37,Riverside,18.7,hospital,busy,0,12,Wednesday,low,clear,limited,2,manual,21.6
+RC-REQ-000061,2025-01-08 13:03:20,University Area,14.1,hospital, available,24,13,Wednesday,medium,clear,limited,8,automated,10.7
+RC-REQ-000062,2025-01-08 13:19:41,Industrial Zone,8.1,hospital,available,5,13,Wednesday,medium,clear,available,4,automated,5.3
+RC-REQ-000063,2025-01-08 19:07:05,Central Market,5.4,hospital,Limited,18,19,WED,high,clear,NA,6,manual,13.2
+RC-REQ-000064,2025-01-08 19:43:29,Harbor View,7.6,hospital,Limited,2,19,NA,high,cloudy,limited,6,automated,13.6
+RC-REQ-000065,2025-01-08 21:17:01,Central Market,9.2 km,hospital,limited,0,21,Wednesday,high,clear,limited,4,automated,7.5
+RC-REQ-000066,2025-01-09 04:25:54,Industrial Zone,2.3,ambulance,limited,0,4,Thursday,medium,rainy,not_applicable,2,automated,8.0 min
+RC-REQ-000067,2025-01-09 16:49:54,GREEN PARK,6.5,ambulance,available,12,16,Thursday,high,clear,not_applicable,5,automated,6.6
+RC-REQ-000068,2025-01-09 17:00:56,Industrial Zone,6.1,hospital,bsy,5,17,Thursday, high,cloudy,unavailable,5,manual,23.7
+RC-REQ-000069,2025-01-09 19:39:29,  Industrial Zone  ,5.5,hospital,available,6,19,Thursday,high,foggy,not_applicable,7,automated,9.3
+RC-REQ-000070,10-Jan-2025 07:02, Airport Road,5.0,hospital,limited,9,7,Friday,high,cloudy,limited,NA,automated,9.4
+RC-REQ-000071,2025-01-10 09:40:35,Central Market,7.0,hospital,available,20,9,-,high,,available,,manual,6.8
+RC-REQ-000072,2025-01-10 14:46:55,Riverside,6.5,ambulance,available,15,14,Friday,high,clear,not_applicable,null,automated,5.5
+RC-REQ-000073,10/01/2025 16:52,Southfield,3.0, ambulance,available,4,16,Friday,high,clear,not_applicable,10,automated,1.2
+RC-REQ-000074,2025-01-10 17:16:59,Northgate,4.7,hospital,limited,4,17,Friday,medium,clear,limited,5,manual,9.8
+RC-REQ-000075,2025-01-10 18:30:37,OLD TOWN,4.8,ambulance,bsy,0,18,Friday,high,clear,limited,5,manual,17.5
+RC-REQ-000076,2025/01/10 19:05,Harbor View,4.1,hospital,available,33,19,Friday,medium,rainy,AVAILABLE,N/A,manual,11.4
+RC-REQ-000077,11/01/2025 03:27,Airport Road,5.6,ambulance,available,15,3,Saturday,medium,rainy,not_applicable,3,automated,8.1
+RC-REQ-000078,2025-01-11 06:01:18,Sunrise Colony,8.0,hospital,limited,22,6,Saturday,medium,foggy,available,5,automated,9.6
+RC-REQ-000079,2025-01-11 07:36:08,Southfield,3.1, ambulance,busy,20,7,Saturday,high,cloudy,not_applicable,7,automated,3.8
+RC-REQ-000080,2025-01-11 07:36:29,  Old Town  ,4.2,ambulance,available,4,7,Saturday,high,rainy,not_applicable,5,manual,8.3
+RC-REQ-000033,2025-01-05 17:06:26,Green Park,4.2,hospital,limited,42,17,Sunday,high,rainy,limited,2,man.,17.1
+RC-REQ-000081,2025-01-11 08:07:54,Sunrise Colony,4.1,ambulance,available,0,8,Saturday,high,cloudy,  Not_Applicable  ,,N/A,6.1
+RC-REQ-000082,2025-01-11 15:12:07,Old Town,3.7,ambulance,available,27,15,Saturday,lo,clear,not_applicable,9,automated ,2.1
+RC-REQ-000083,2025-01-11 17:36:07,Maple  Heights,7.6,hospital,limited,4,17,Saturday,medium ,clear,available,2,manual,9.6
+RC-REQ-000084,2025-01-11 19:20:41,Airport Road,9.9,ambulance,Avail.,4,19,Saturday,medium,cloudy,not_applicable,4,manual,11.3
+RC-REQ-000085,2025-01-11 21:38:27,Harbor View,2.6,ambulance,available,12,21,Saturday ,low,cloudy,not_applicable,7,manual,3.5
+RC-REQ-000086,12-Jan-2025 08:14,Harbor View,15.6,hospital,busy,31,8,SUNDAY,high,rainy,  Limited  ,5, automated,12.2
+RC-REQ-000087,2025-01-12 09:45:50,Green Park,2.8,ambulance,available,6,9,Sunday,high,clear,not_applicable,6,manual,8.8
+RC-REQ-000088,2025-01-12 10:14:45,Northgate,2.6,ambulance,limited,4,10,Sunday,high,rainy,not_applicable,4,manual,8.8
+RC-REQ-000089,2025-01-12 11:36:01,Northgate,8.8,hospital,busy ,17,11,Sunday,medium,cloudy,available,,manual,8.9
+RC-REQ-000090,2025-01-12 12:20:55,Industrial Zone,4.0,hospital,unknown,10,12,Sunday,high,clear,unavailable,6,automated,10.3
+RC-REQ-000091,2025-01-12 18:22:44,Sunrise Colony,3.5,hospital, busy,3,18,Sunday,medium,cloudy, limited,7,automated,6.9
+RC-REQ-000092,2025-01-12 18:27:00,Hillcrest,3.2,ambulance,available,7 min,18,Sunday,high,unknown,not_applicable,4,manual,7.9
+RC-REQ-000093,01-12-2025 08:07 PM,Northgate,8.5,hospital,available,22,20,Sunday,high,cloudy,available,11,automated,6.1
+RC-REQ-000094,2025-01-13 13:33:01,Northgate,2.2,ambulance,available,7,13,Monday,,rainy,not_applicable,5,manual,5.9
+RC-REQ-000095,2025-01-13 14:24:21,Southfield,4.8,hospital,busy,7,14,Monday,medium,foggy,limited,3,automated,5.9
+RC-REQ-000096,2025-01-13 15:11:20,Airport Road,7.6,ambulance,busy,2,15,Monday,medium,cloudy,not_applicable,6,-,10.9
+RC-REQ-000097,13-Jan-2025 16:12,Sunrise Colony,9.3,ambulance,available,5,16,Monday,high,rainy,unavailable,9,automated,11.6
+RC-REQ-000098,14/01/2025 04:45,Lakeview,37.6,ambulance,busy,0,4,Tuesday,low,clear,not_applicable,5,manual,0.5
+RC-REQ-000099,2025-01-14 06:25:56,,3.3,hospital,busy,25,6,Tuesday,low,clear,unavailable,3,manual,18.0
+RC-REQ-000100,14-Jan-2025 08:24,Lakeview,3.4,  Ambulance  ,available,15,8,Tuesday,high,foggy,limited,6,manual,6.5
+RC-REQ-000101,2025-01-14T08:35:37,Airport Road,4.9,hospital,LIMITED,25,8,Tuesday,high,clear,limited,8,automated,9.0 min
+RC-REQ-000102,2025-01-14 10:04:43,Sunrise Colony,3.6,ambulance,limited,1,10,Tuesday,high,Cloudy,not_applicable,5,manual,11.8
+RC-REQ-000103,2025-01-14 10:19:29,Sunrise Colony,1.1,ambulance,limited,4,10,Tuesday,high,clear,not_applicable,7,null,36.2
+RC-REQ-000104,2025-01-14 11:32:21,Hillcrest,11.5km,hospital,available,30,11,Tuesday,Medium,foggy,limited,7,automated,7.2
+RC-REQ-000105,2025-01-14 14:52:22,Northgate,3.6,hospital,available,3,14,Tuesday,low,clear,unavailable,6,automated,6.7
+RC-REQ-000106,2025-01-14 19:04:18,Southfield,5.2,hospital,  Available  ,6,19,Tuesday,high,clear,unavailable,2,automated,7.6
+RC-REQ-000107,2025-01-14 19:12:29,Southfield,2.4,hospital,limited,1,19,Tuesday,high,clear,limited,8,manual,10.9
+RC-REQ-000108,2025-01-14 22:59:36,Lakeview,NA,ambulance,available,1,22,Tuesday,low,clear,not_applicable,2,automated,2.0
+RC-REQ-000109,2025-01-15 08:40:01,Airport Road,4.1,ambulance,busy ,52,8,Wednesday,medium,foggy,not_applicable,5,manual,21.4
+RC-REQ-000110,2025-01-15 09:55:05,Riverside,9.5,hospital,available,11,09,Wednesday,high,foggy,available,5,automated,7.0
+RC-REQ-000111,01-15-2025 10:26 AM,University Area,2.6,hospital,limited,8,10,Wednesday,high,clear,unavailable,4,automated,11.9
+RC-REQ-000112,15/01/2025 11:36,Sunrise Colony,10.2,hospital,limited,1,11,Wednesday,low,clear,limited,5,manual,12.9
+RC-REQ-000113,15/01/2025 12:17,Hillcrest,5.5,ambulance,,16,12,Wednesday,high,rainy,not_applicable,6,automated ,6.4
+RC-REQ-000114,15/01/2025 14:38,Maple Heights,2.1,ambulance,available,6,14,Wednesday,  Low  ,  Cloudy  ,not applicable,,manual,1.6
+RC-REQ-000115,2025-01-15 14:53:51,Airport Road,-8.6,hospital,busy,19,14,Wednesday,high,clear,limited,4,automated,10.7
+RC-REQ-000116,2025-01-15 15:05:42,Harbor View,17.7km,hospital,available,7,15,Wednesday,high,rainy,limited,10,automated,12.2
+rc-req-000117,2025-01-15 15:24:42,Lakeview,3.3,HOSPITAL,available,25,15,Wednesday,medium,cloudy,available,7,automated,3.6
+RC-REQ-000118,2025-01-15 17:08:24,Industrial Zone,4.2,amb,limited,10,17,Wednesday,high,cloudy,not_applicable,5,automated,8.3
+RC-REQ-000119,2025-01-15 17:45:49,Riverside,6.6,ambulance,busy,33,17,Wednesday,high,foggy,not_applicable,7,manual,7.9
+RC-REQ-000120,2025-01-15 18:01:18,N/A,12.8,ambulance,available,1 min,18,WEDNESDAY,high,clear,not_applicable,4,automated,7.6
+RC-REQ-000121,2025-01-15 18:14:57,Riverside,1.6, ambulance,limited,3,18,Wednesday,high,clear,not_applicable,1,automated,10.9
+RC-REQ-000122,2025-01-15 18:17:37,Lakeview,4.9,hospital,available,5,18,Wednesday,high,cloudy,available,8,  Automated  ,8.6
+RC-REQ-000123,2025-01-15 20:45:22,University Area,4.4,ambulance,limited,39,20,Wednesday,medium,clear,  Not_Applicable  ,8,automated,5.6
+RC-REQ-000124,2025-01-16 05:23:50,Old Town,13.9,hospital,available,22,5,Thursday,medium,clear,available,4,automated,7.4
+RC-REQ-000125,2025-01-16 06:42:15,Sunrise Colony,6.4,hospital,limited,17,6,THURSDAY,low,foggy,limited,3,manual,9.9
+RC-REQ-000126,2025-01-16 07:11:43,Industrial Zone,4.1,hospital,available,3,7,Thursday,high,cloudy,available,7,automated,5.5
+RC-REQ-000127,2025-01-16T08:14:08,Green Park,NA,ambulance,available,19,8,Thursday,high,  Foggy  ,not_applicable,3,automated,4.3
+RC-REQ-000128,2025-01-16 19:37:18,Old Town,3.8,hospital,available,1,19,Thursday,high,clear,limited,6,Manual,6.1
+RC-REQ-000129,2025-01-16 20:27:31,Green Park,19.5 km,hospital,available,unknown,20,Thursday,medium,clear,available,10,auto,8.8
+RC-REQ-000130,2025-01-16 20:30:32,Old Town,11.9,hospital,available,6,20,Thursday,low,clear,available,7,automated,5.2
+RC-REQ-000131,2025-01-16 20:46:10,Green Park,NA,hospital,,3,20,Thursday,high,clear,available,3,,9.8
+RC-REQ-000132,17-Jan-2025 08:17,Southfield,11.7,hospital,available,8,8,Friday,medium,cloudy,limited,4,automated,unknown
+RC-REQ-000133,2025-01-17T09:22:37,Lakeview,12.4,hospital,available,0,9,Friday,low,cloudy,available ,5,manual,9.8
+RC-REQ-000134,2025-01-17 09:25:19,Harbor View,1.3,Ambulance Svc,available,,09,FRIDAY,high,clr,not_applicable,6,manual,7.6
+RC-REQ-000135,2025-01-17 09:48:03,GREEN PARK,2.8,ambulance,available,42,9,Friday,high,rainy,not_applicable,7,automated,3.0
+RC-REQ-000136,2025-01-17 10:51:18,Central Market,19.2,hospital,available,4,10,Friday,medium,foggy,available,7,automated,11.7
+RC-REQ-000137,2025-01-17 17:10:29,  Old Town  ,2.0,hospital,limited,1,17,Friday,null,rainy,available,5,manual,8.7
+RC-REQ-000138,2025-01-17 18:16:04,Southfield,15.4,hospital,available,9,18,Friday,low,clear,available,9,automated,7.4
+RC-REQ-000139,2025-01-17 18:34:14,Southfield,4.6,ambulance,available,14 min,18,Friday,,clear,not_applicable,5,automated,13.0
+RC-REQ-000116,2025-01-15 15:05:42,Harbor View,17.7km,hospital,available,7,15,Wednesday,high,rainy,limited,10,automated,12.2
+RC-REQ-000140,17/01/2025 19:28,Green Park,5.3,hospital,,13,19,Friday,high,cloudy,available ,10,automated,5.8
+RC-REQ-000141,2025-01-17 19:35:11,Central Market,1.9,ambulance,available,7,19,Friday,medium,clear,not_applicable,4,Manual,7.8
+RC-REQ-000142,2025-01-17 20:33:07,Riverside,7.4,hospital,available,75,20,FRI,high,cloudy ,available,5,automated,11.0
+RC-REQ-000143,2025-01-17 23:53:49,,12.3,hospital,available,9,23,Friday,low,clear,available,3,automated,9.4
+RC-REQ-000144,2025-01-18 07:24:27,Industrial Zone,3.7,ambulance,limited,5,7,Saturday,high,foggy,not_applicable,4,automated,13.6
+RC-REQ-000145,2025-01-18 08:51:55,Riverside,6.4,ambulance,available,2,8,Saturday,medium,cloudy,not_applicable,7,manual,6.5
+RC-REQ-000146,2025-01-18 09:24:52,Old Town,2.9,ambulance,available,15,9,Saturday,high,cloudy,not_applicable,8,automated,3.1
+RC-REQ-000147,18-Jan-2025 13:33,Airport Road,N/A,ambulance,available,8,13,Monday,medium,clear,not_applicable,7,automated,5.0
+RC-REQ-000148,2025-01-18 13:43:08,University Area,4.0,ambulance,available,49,13,Saturday,medium,cloudy,not_applicable,6,manual,8.6
+RC-REQ-000149,2025-01-18 19:02:29,Airport Road,1.3,ambulance,Avail.,20,19,Saturday,low,clear,not_applicable,5,manual,5.8
+RC-REQ-000150,19/01/2025 06:33,Riverside,1.3,ambulance, busy,14,6,Sunday,medium,foggy,not_applicable,9,manual,11.8
+RC-REQ-000151,2025-01-19 10:41:15,Northgate,23.6,hospital,available,1,10,Sunday,High,rainy,available,6,automated,20.9
+RC-REQ-000152,2025-01-19 12:34:12,Riverside,30.0,hospital,available,923,12,Sunday,low,cloudy,available,7,manual,8.9
+RC-REQ-000153,2025-01-19 14:57:13,University Area,2.4,hospital,available,1,14,Sunday,medium,cloudy,unavailable,3,manual,10.0
+RC-REQ-000154,2025-01-19 16:10:43,Airport Road,5.3,hospital,limited,3,16,Sunday,,clear,limited,4,automated ,7.8
+RC-REQ-000155,2025-01-19 16:53:53,Northgate,1.9,hospital,AVAILABLE,27,16,Sunday,medium,cloudy,LIMITED,8,Automated,5.0
+RC-REQ-000156,2025-01-19 18:05:11,Maple Heights,3.7,ambulance,limited,1,18,Sunday,high,cloudy,not_applicable,3,automated,8.3
+RC-REQ-000157,2025-01-19 19:59:51, Riverside,8.9,hospital,limited,,19,Sunday,medium,clear,  Unavailable  ,6,automated,11.8 min
+RC-REQ-000158,01-19-2025 08:26 PM,Maple Heights,8.0,hospital,available,2,20,Sunday,medium,clear,available,6,manual,9.1
+RC-REQ-000159,20-Jan-2025 02:06,GREEN PARK,7.0,ambulance,available,8,2,Monday,medium,clear,not_applicable,2,automated,6.8
+RC-REQ-000160,20/01/2025 08:19,Maple Heights,4.4,ambulance,available,17,8,  Monday  ,high,clear,not_applicable,8,manual,7.8
+RC-REQ-000161,01-20-2025 10:10 AM,Old Town,2.3,ambulance,available,22,10,Monday ,high,rainy,not_applicable,6,manual,8.7
+RC-REQ-000162,2025-01-20 12:36:34,Central Market,6.1,hospital,limited,2,12,Monday,Medium,clear,ltd,9,manual,8.3
+RC-REQ-000163,2025-01-20 14:16:05,Hillcrest,17.2,hospital,available,0,14,Monday,high,clear,unavailable,8,manual,25.2
+RC-REQ-000164,2025-01-20 14:31:31,Sunrise Colony,7.6,hospital,available,1,14,Monday,medium,NA,available,8,automated,4.6
+RC-REQ-000165,2025-01-20 18:27:15,Old Town,2.5,hospital,available,27,18,Monday,high,cloudy,available,4,manual,18.4
+RC-REQ-000166,01-20-2025 06:44 PM,Airport Road,5.9,hospital,?,4,18,Monday,low,cloudy,null,3,manual,8.1
+RC-REQ-000167,2025-01-20 19:35:48,Maple Heights,null,hospital,busy,13,19,Monday,medium,rainy,unavailable,3,automated,7.3
+RC-REQ-000168,21-Jan-2025 06:50,Northgate,3.5,hospital,busy,14,6,Tuesday,medium,rainy,limited,9,NA,8.2
+RC-REQ-000169,21/01/2025 08:00,Riverside,12.2,hospital,available,14,8,Tuesday,High,foggy,available,4,automated,10.8
+RC-REQ-000170,21-Jan-2025 08:26,Lakeview,13.1,ambulance,available,2,8,Tuesday,,rainy,not_applicable,4,manual,7.5
+RC-REQ-000171,2025/01/21 08:56,Southfield,6.6,hospital,Avail.,46,8h,Tuesday,high,cloudy,limited,4, automated,15.7
+RC-REQ-000172,2025-01-21 09:41:50,Southfield,2.6,ambulance,available,20,9,Tuesday,  High  ,cloudy,not_applicable,7,automated,1.9
+RC-REQ-000173,2025-01-21 11:48:47,Harbor View,2.6, ambulance,available,12,11,TUE,low,Clear,not_applicable,5, automated,0.4
+RC-REQ-000174,21-Jan-2025 17:20,Central Market,0,ambulance,available,2,17,Tuesday, high,clear,not_applicable,6,automated,2.2
+RC-REQ-000175,2025-01-22 11:18:54,Riverside,NA,ambulance,busy,3,11,Wednesday,medium,,not_applicable,5,manual,11.4
+RC-REQ-000176,22/01/2025 12:51,Harbor View,6.4,hospital,available,10,12,Wednesday,medium,cloudy,limited,4,automated,11.3
+RC-REQ-000177,2025-01-22 16:49:38,Harbor View,4.2,ambulance,available,7,16,Wednesday,high,cloudy,not_applicable,5,automated,3.0
+RC-REQ-000178,2025-01-22 18:13:29,Lakeview,6.8,hospital,available,0,18, Wednesday,medium,cloudy,available,4,automated,3.8
+RC-REQ-000179,22/01/2025 19:10,Northgate,1.8,hospital,limited,6,19,Wednesday,medium,Rainy,limited,8,automated,9.9
+RC-REQ-000180,2025-01-22 19:19:39,Hillcrest,6.5,hospital,available,86,19,Wednesday,low,clear,available,1,automated,4.5
+RC-REQ-000181,2025-01-22T19:53:11,Northgate,8.5,?,limited,20,19,Wednesday,high,clear,not_applicable,5,automated,7.9
+RC-REQ-000182,2025-01-22 20:34:46,University Area,6.6,hospital,available,7,20,Wednesday,high,cloudy,available,2,automated,6.4
+RC-REQ-000183,2025-01-23T10:08:54,Sunrise Colony,3.5,hospital,available,13,10,Thursday,high, rainy,available,9,manual,3.9
+RC-REQ-000184,2025-01-23 17:31:47,  Riverside  ,4.6,ambulance,available,4,17,Thursday,high,foggy ,not_applicable,8,automated,6.0
+RC-REQ-000185,2025-01-23 21:48:59,Airport Road,9.1,hospital,busy,3,21,Thursday,medium,cloudy,unavailable,12,manual,19.9
+RC-REQ-000186,2025-01-24 07:32:11,University Area,3.0,hospital,avaliable,18,7,Friday,,clr,unavailable,,automated,14.2
+RC-REQ-000187,2025-01-24 08:15:08,University Area,1.7,ambulance,available,1,8,Friday,high,foggy,not_applicable,null,manual,9.5
+RC-REQ-000188,24/01/2025 12:12,Hillcrest,18.1,hospital,available,,12,Friday,medium,rainy,available,6,automated,9.0
+RC-REQ-000189,24/01/2025 13:37,Harbor View,5.3,hospital,available,1,13,Friday,medium,clear,available,6,automated,8.6
+RC-REQ-000190,24-Jan-2025 14:43,Riverside,6.2,hospital,limited,0,14,Friday,med,cloudy,unavailable,3,manual,10.4
+RC-REQ-000191,2025-01-24T15:56:15,Airport Road,3.4,hospital,available,25,15,Friday,med,rainy,limited,10,automated,3.9
+RC-REQ-000192,2025-01-24 18:09:34,Old Town,5.1,ambulance,limited,2mins,18,Friday,medium,cloudy,not_applicable,1,automated,2.9
+RC-REQ-000193,2025-01-24 18:20:51,Old Town,2.8,ambulance,,13,18,Friday,low,clear,not_applicable,3,manual,9.3
+RC-REQ-000194,2025-01-24 21:29:16,Industrial Zone,17.0,hospital,NA,12,21,Friday,medium,clear,available,8,automatic,9.5
+RC-REQ-000195,2025-01-24 21:37:25,Riverside,4.8,ambulance,available,3 min,21,Friday,medium,clear,not_applicable,6,automated,3.0
+RC-REQ-000196,2025-01-24 21:58:26,Hillcrest,2.6,ambulance,available,NA,21,Friday,high,  Rainy  ,not_applicable,0,automated,21.4
+RC-REQ-000197,2025-01-25 09:33:16,Riverside,4.6,Ambulance Svc,busy,2 min,9,Saturday,high,rainy,not_applicable,6,automated,
+RC-REQ-000198,25/01/2025 10:37,Northgate,8.3,hospital ,busy,0,10,Saturday,medium,cloudy,available,4,automated,18.1
+RC-REQ-000199,25/01/2025 15:42,Lake View,8.9,hospital,limited,6,15,Saturday,  Medium  , clear,unavailable,3,automated,13.5
+RC-REQ-000200,25-Jan-2025 17:43,Riverside,3.3,ambulance,limited,26,17,Saturday,high,rainy,not_applicable,7,manual,12.8
+RC-REQ-000201,2025-01-25 20:57:10,Industrial Zone,10.1,hospital,busy,4,20,Saturday,high,cloudy,limited,6,manual,12.3
+RC-REQ-000202,2025-01-26 06:02:03,Riverside,9.1,hospital,-,31,6,Sunday,low,foggy,available,4,automated,7.4
+RC-REQ-000203,2025-01-26 16:01:48,Central Market,1.2,ambulance,available,16,16,Sunday,medium,,null,4,Manual,5.5
+RC-REQ-000204,2025-01-26 18:20:43,Hillcrest,6.9,hospital,available,3,18,Sunday,high,-,Available,4,manual,3.9
+RC-REQ-000205,2025-01-26 18:38:38,Hillcrest,6.6,hospital,available,16,18,Sunday,medium,rainy,available,5,manual,5.5
+RC-REQ-000206,2025-01-26 20:27:20,Maple Heights,-,ambulance,available,54,20,Sunday,high,cloudy,not applicable,3,automated,12.2
+RC-REQ-000207,2025-01-27 08:51:31,Sunrise Colony,6.2,hospital,available,66,8,Monday,medium,rainy,available,4,automated,9.7
+RC-REQ-000208,2025-01-27 10:03:45,Lakeview,2.6,hospital,limited,4,10,Monday,high,rainy,limited,2, manual,11.4 min
+RC-REQ-000209,2025-01-27 13:18:07,Lakeview,20.8,hospital,available,8,13,Monday,low,clear,available,6,automated,16.3
+RC-REQ-000210,2025-01-27 16:08:53,Maple Heights,6.9,ambulance,available,11,16,Monday,high,cloudy,not_applicable,2,manual,9.0
+RC-REQ-000211,01-27-2025 04:13 PM,Central Market,6.5,hospital,available,7,16,Monday,high,clear,limited,6,manual,9.2
+RC-REQ-000212,27/01/2025 16:39,Airport Road,2.3,ambulance,busy,0,16,Monday,high,rainy,not_applicable,10,automated,8.8
+RC-REQ-000052,2025-01-07 13:04:12,University Area,1.7,hospital,AVAILABLE,0,13,Tuesday,medium,clear,limited,5,automated,2.2
+RC-REQ-000179,22/01/2025 19:10,NORTHGATE,1.8, hospital ,limited,6,19,Wednesday,medium,Rainy,limited,8,automated,9.9
+RC-REQ-000213,01-27-2025 06:40 PM,Green Park,2.6,AMBULANCE, limited,0,18,Monday,high,clear,not_applicable,?,automated,10.9
+RC-REQ-000214,2025-01-27 18:56:52,Airport Road,2.5,amb,busy,38,18,Monday,high,clear,not_applicable,5,manual,16.9
+RC-REQ-000215,2025-01-27 19:34:26,Northgate,,hospital, available,8,19,Monday,high ,foggy,limited,4,automated,12.5
+RC-REQ-000216,2025-01-27 20:21:23,Industrial Zone,2.7,hospital,available,,20,Monday,medium,clear,available,9,manually,8.5
+RC-REQ-000217,2025-01-27 21:47:51,Old Town,8.5,ambulance,available,10,21,Monday,-,clear,not_applicable,5,manual,6.0
+RC-REQ-000218,28/01/2025 04:07,Riverside,"4,2",hospital,limited,5,04,Tuesday,  Medium  ,rainy,available,3,automated,8.4
+RC-REQ-000219,2025-01-28 11:12:37,Riverside,4.6,hospital,,21,11,Tuesday,medium,clear,limited,4,automated,13.8
+RC-REQ-000102,2025-01-14 10:04:43,Sunrise Colony,3.6,ambulance,limited,1,10,Tuesday,high,Cloudy,not_applicable,5,automated,18.4
+RC-REQ-000220,2025-01-28 12:09:39,Maple Heights,3.4,ambulance,busy,,12,Tuesday,medium,clear,not_applicable,6,automated,18.4
+RC-REQ-000221,2025-01-28 13:16:19,Lakeview ,8.8,ambulance,available,1,13,Tuesday,medium,cloudy,not_applicable,,automated,5.1
+RC-REQ-000222,2025-01-28 17:22:08,Harbor View ,5.6,hospital,busy,5,17,Tuesday,medium,rain,limited,3,auto,17.5
+RC-REQ-000223,2025-01-28 20:21:16,Central Market,3.0,hospital,available ,13 min,20,Tuesday,high,clear,available,5,automated,5.9
+RC-REQ-000224,2025-01-29 09:24:22,Green Park,6.3,ambulance,limited,8,9,Wednesday,high,clear,not_applicable,5,automated,14.4
+RC-REQ-000225,2025-01-29 10:09:00,Industrial Zone,7.8,ambulance,limited,26,10,Wednesday,medium,clear,n.a.,4,automated,14.5
+RC-REQ-000226,29/01/2025 14:04,Maple Heights,7.8,ambulance,limited,20,14,Wednesday,high,clear,not_applicable,5,unknown,8.9
+RC-REQ-000227,29/01/2025 15:00,Green Park,0.9,Ambulance Svc,available,1,15,Wednesday,low,clear,not_applicable,5,manual,5.4
+RC-REQ-000228,2025-01-29 15:42:08,Northgate,18.3,hospital,available,41,15,Wednesday,medium,cloudy,available,3,automated,4.3
+RC-REQ-000229,01-29-2025 04:55 PM,Riverside,7.9,hospital,  Available  ,9,16,Wednesday,medium,clear,available,6,manual,5.6
+RC-REQ-000230,2025-01-30 08:31:16,Airport Road,3.3,hospital,available,18,8,Thursday,high,clear,available,7,automated,5.9
+RC-REQ-000231,2025-01-30 10:44:08,Sunrise Colony,3.1,ambulance,available,83,10,Thursday,medium,foggy,not_applicable,3,automated,5.5
+RC-REQ-000232,2025-01-30 12:16:50,Maple Heights,2.7,hospital,available,7,12,Thursday,high ,clear,not_applicable,7,manual,12.1
+RC-REQ-000233,2025-01-30 17:08:34,University Area,-,hospital,available,17,17,Thursday,medium,FOGGY,available,6,automated,6.8
+RC-REQ-000234,30/01/2025 17:43,Hillcrest,15.1,hospital,LIMITED,20,17,Thursday,medium,clear,unavailable,8,automated,17.4
+RC-REQ-000235,2025-01-30 18:51:56,Green Park,6.1,hospital,available,32,18,Thursday,high, clear,limited,5,automated,9.5
+RC-REQ-000236,2025-01-30 20:08:51,Airport Road,3.3,ambulance,busy,10,20,Thursday,medium,rainy,not_applicable,7,manual,8.9
+RC-REQ-000237,30/01/2025 20:10,Southfield,1.0,ambulance,Avail.,29,20,Thursday,high,rainy,not_applicable,5, automated,9.2
+RC-REQ-000238,2025-01-30 20:50:14,Industrial Zone,5.3,hospital,limited,6,NA,Thursday,medium,clear,limited,2,manual,9.2
+RC-REQ-000239,2025-01-31 06:37:35,University Area,3.8,hospital,limited,39,6,Friday,low,clear,available,,manual,7.9
+RC-REQ-000240,2025-01-31 11:57:34,Green Park,2.8,hospital,limited,31,11,Friday,medium,clear,limited,6,automated,10.8
+RC-REQ-000241,2025-01-31 12:16:37,Lakeview,"8,8",hospital,available,15,12,Friday,high,clear,available,6,manual ,6.3
+RC-REQ-000242,2025-01-31 13:18:19,Southfield,2.0,ambulance,available,24,13,Friday,medium,clear,not_applicable,8,automated,0.4
+RC-REQ-000243,2025-01-31 16:13:40,null,8.2,hospital,available,14 min,16,Friday,HIGH,clear,available,2,manual,10.7 min
+RC-REQ-000244,2025-01-31 18:38:50,Maple Heights,4.1,hospital,available,NA,18,Friday,medium,rainy,unavailable,4,automated,3.1
+RC-REQ-000245,2025-01-31 20:34:48,Green Park,19.3,hospital,Busy.,3,20,Friday,high,cloudy,limited,4,automated,16.3
+RC-REQ-000246,2025-01-31 22:34:00,Southfield,12.8,hospital,limited,1,22,Friday,medium,clear,limited,2,manual,25.8
+RC-REQ-000247,01-Feb-2025 09:22,Airport Road,4.5,hospital,available,10,9,Saturday ,high,clear,available,7,manual,3.3
+RC-REQ-000248,2025-02-01T11:03:33,Lakeview,4.0,ambulance,avail,-11,11,Saturday,medium,clear,not_applicable,7,automated,3.8
+RC-REQ-000249,2025-02-01 14:29:52,Maple Heights,3.2,hospital,limited,0,14,  Saturday  ,medium ,rainy,Available,5,automated,6.4
+RC-REQ-000250,01/02/2025 17:19,Riverside,1.8,hospital,available,6,17,Saturday,medium,rainy,available,4, manual,10.5
+RC-REQ-000251,2025-02-01 18:46:24,Maple Heights,6.1,hospital,available,16,18,SAT,high,foggy,available,4,man.,18.0
+RC-REQ-000252,2025-02-01 19:54:10,Hillcrest,1.9,hospital,available,13,19,Saturday,high,cloudy,available,4,automated,5.3
+RC-REQ-000253,2025-02-02 01:12:44,  Sunrise Colony  ,16.5,hospital,available,8,1,Sunday ,low,rainy, available,4,  Automated  ,4.3
+RC-REQ-000254,2025-02-02 07:32:22,Sunrise Colony,1.1,hospital,limited,9,7, Sunday,medium,clear,limited,5,automated,6.5
+RC-REQ-000255,2025-02-02 07:42:28,Lakeview,2.3,hospital,available,14,7,SUN,high,rainy,available,6,man.,9.8
+RC-REQ-000256,2025-02-02 09:13:34,Green Park,2.1,hospital,limited,17,9,Sunday,medium ,rainy,available,5,manual,9.7
+RC-REQ-000257,2025-02-02 09:51:43,Hillcrest,9.7,ambulance,available,16,9,Sunday,medium,rainy,not_applicable,10,automated,11.3
+RC-REQ-000258,2025-02-02 11:09:23,Hillcrest,"8,0",Ambulance,available,1,11,Sunday,medium,cloudy,not_applicable,8,automated,3.3
+RC-REQ-000259,02/02/2025 12:56,Lakeview,5.8,hospital,limited,0,12,Sunday,medium, clear,available,3,automated,5.3
+RC-REQ-000260,2025-02-02 14:01:34,Industrial Zone,7.8,ambulance,available,2,14,Sunday,  High  ,clear,not_applicable,4,automated,4.8
+RC-REQ-000261,2025-02-02 16:01:25,  Green Park  ,7.2,hospital,available,16,-,Sunday,NA,clear,available,,automated,
+RC-REQ-000262,2025-02-02 16:57:12,Green Park,2.2,ambulance,limited,17,16,Sunday,low,clear,not_applicable,two,automated,4.1
+RC-REQ-000263,02/02/2025 18:24,Sunrise Colony,,hospital,available,10,18,Sunday,medium,foggy,available,9,automated,5.6
+RC-REQ-000264,2025-02-03 08:03:41,Northgate,3.7,hospital,available,5,8,Monday,hi,clear,available,6,automated,5.6
+RC-REQ-000265,2025-02-03 12:54:45,Harbor View,7.5,HOSPITAL,busy,79,12,Monday,low,cloudy,unavailable,7,automated,9.6
+RC-REQ-000266,2025-02-03 13:17:44,Green Park,1.8,ambulance, available,0,13,Monday,medium,foggy,not_applicable,8,automated,3.6
+RC-REQ-000267,2025-02-03 15:58:13,University Area,4.7,ambulance,available,0,15,Monday,medium,clear,not_applicable,4,manual,12.4
+RC-REQ-000268,,Central Market,,,,6,01,Tuesday,low,clear,,NA,manual,9.6
+RC-REQ-000269,2025/02/04 05:36,Airport Road,2.7 km,ambulance,available,0,5,Tuesday,low,cloudy,not_applicable,2,automated,6.1
+RC-REQ-000270,04-Feb-2025 07:24,Airport Road,1.5,ambulance,available,2,07,Tuesday,low,cloudy,not_applicable,6,automated,1.7
+RC-REQ-000271,2025-02-04 13:21:01,Central Market,6.1,hospital,busy,11,13, Tuesday,MEDIUM,rainy,unavailable,5,manual,13.0
+RC-REQ-000272,2025-02-04 13:26:26,Northgate,5.0,ambulance,limted,4,13,Tuesday,high,clear,not_applicable,8,automated,6.4
+RC-REQ-000273,2025-02-04 16:59:27,Harbor View,unknown,,limited,8,16,Tuesday,HIGH,cloudy,not_applicable,2,manual,18.2
+RC-REQ-000274,02-04-2025 05:06 PM,Old Town,4.2,ambulance,available,,17,Tuesday,high,clear,not_applicable,7,manual,13.8
+RC-REQ-000275,04/02/2025 18:27,Airport Road,11.4,ambulance,busy,16,18,Tuesday,  Medium  ,cloudy,not_applicable,8,automated,16.8
+RC-REQ-000276,2025-02-05 12:32:34, Lakeview,6.1 km,hospital,available,0,12,Wednesday ,medium,clear,available,6,manual,5.6
+RC-REQ-000277,2025-02-05 18:19:31,Northgate,2.1,ambulance,available,14,18,Wednesday,medium,clear,not_applicable,5,automated,2.7
+RC-REQ-000278,2025-02-05 18:19:53,Riverside,4.2,ambulance,busy,2,18,Wednesday,medium,clear,not_applicable,7,automated,NA
+RC-REQ-000279,2025-02-05 19:10:36,Industrial Zone,4.5, hospital,available,1,19,Wednesday,high,cloudy,limited,2,automated,10.8
+RC-REQ-000280,2025-02-06 07:04:04,Sunrise Colony,1.8,Ambulance Svc,busy,1,7,Thursday,medium,NA,not_applicable,6,automated,6.2
+RC-REQ-000281,2025-02-06 12:29:44,Hillcrest,3.2,ambulance,limited,21,12,Thursday,medium,rainy,not_applicable,10,automated,
+RC-REQ-000282,2025-02-06 12:42:42,Industrial Zone,4.4,hospital,limited,26,12,Thursday,high,clear,limited,2,automated,11.1
+RC-REQ-000283,06/02/2025 13:01,Central Market,2.6,ambulance,available,1,13,Thursday,high,clear,not_applicable,7,automated,3.7
+RC-REQ-000284,2025-02-06 14:25:36,Airport Road,2.9,ambulance,available,,14,Thursday,medium,cloudy,not_applicable,8,automated,4.8
+RC-REQ-000285,2025-02-06 17:31:35,Riverside,5.3,ambulance,available,7,17,Thursday,high ,cloudy,not_applicable,5, automated,9.6
+RC-REQ-000286,02-06-2025 10:34 PM,Southfield,6.5,hospital,available,17,22,Thursday,low,clear,available,9,auto,1.7
+RC-REQ-000287,2025-02-07 01:42:31,Green Park,10.4,ambulance,available,25,1,Friday,low,clear,not_applicable,3,manual,7.4
+RC-REQ-000288,2025-02-07 06:40:25,Maple Heights,3.9,ambulance,limited,N/A,6,Friday,high,foggy,not_applicable,?,automated,5.8
+RC-REQ-000289,07/02/2025 08:14,Maple Heights,9.2,ambulance,busy,6,8,Friday,medium,-,not_applicable,5,automated,5.9
+RC-REQ-000290,2025-02-07 09:12:12,Green Park,3.6,hospital,available,52,9, Friday,medium,clear,available,7,automated,9999
+RC-REQ-000291,2025-02-07 11:43:55,Lakeview,3.7,hospital,busy,,11,  Friday  ,hi,foggy,  Unavailable  ,5,automated,14.9
+RC-REQ-000292,2025-02-07 12:13:24,Green Park,2.9,ambulance,available,4,12,Friday,N/A,clear,not applicable,1,automated,4.2
+RC-REQ-000293,07/02/2025 13:27,Lakeview,,hospital,avail,12,13,Friday,medium,rainy,,5,automated,2.9
+RC-REQ-000294,2025-02-07 16:12:44,Harbor View,8.7,hospital,available,36,16,Friday,high,cloudy,available,,manual,11.9
+RC-REQ-000186,2025-01-24 07:32:11,University Area,3.0,hospital,avaliable,18,7,Friday,,clr,unavailable,,automated,14.2
+RC-REQ-000295,2025-02-07 18:10:43,Central Market,3.8,ambulance,,11,18,Friday,medium,clear,not_applicable,8,automated,5.0
+RC-REQ-000296,2035-11-02 18:05:00,Central Market,2.1,ambulance,available,14,22,Friday,medium,rainy,not_applicable,8,automated,0.4
+RC-REQ-000297,2025-02-08 10:54:20,Central Market,5.3,ambulance,available,40,10,Saturday,high,cloudy,not_applicable,7,manual,10.9
+RC-REQ-000298,2025-02-08 16:13:33,Old Town,6.9,hospital,  Available  ,11,16,Saturday,medium,clear,available,3,manual,5.1
+RC-REQ-000299,2025-02-08 16:13:48,Airport Road,6.6,hospital,available,25,16,Saturday,high ,clear,AVAILABLE,6,automated,2.0
+RC-REQ-000300,2025-02-08 17:37:52,Central Market,6.0,hospital,limited,42,17,Saturday,medium,cloudy,limited,5,automated,?
+RC-REQ-000301,08-Feb-2025 18:31,null,5.2,hospital,busy,1,18,Saturday,medium,cloudy,available,2,automated,9.7
+RC-REQ-000302,08-Feb-2025 19:39,Southfield,4.8,amb,busy,2,19,Saturday,high,clear,not_applicable,5,automated,11.9
+RC-REQ-000272,2025-02-04 13:26:26,Northgate,5.0,ambulance,limted,4,13,Tuesday,high,clear,not_applicable,8,automated,6.4
+RC-REQ-000303,2025-02-08 21:26:50,Green Park,?,ambulance,available,9,21,Saturday,low,clear,not_applicable,2,automated,5.7
+RC-REQ-000304,09/02/2025 06:40,Harbor View,11.3,hospital,available,1,6,Sunday,medium,cloudy,limited,2,automated,4.0
+RC-REQ-000183,2025-01-23T10:08:54,Sunrise Colony,3.5,hospital,available,13,10,Thursday,high, rainy,available,9,automated,25.7
+RC-REQ-000305,09/02/2025 08:02,Maple Heights,4.9,ambulance,Avail.,0,8,Sunday,high,clear,not_applicable,0,manual,7.3
+RC-REQ-000306,2025-02-09 09:11:36,Central Market,6.9,ambulance,available,30,9,Sunday,high,clear,not_applicable,6,automated,6.9
+RC-REQ-000307,2025-02-09 09:41:58,southfield,3.5,hospital,busy,1,9,Sunday,high,Foggy,unavailable,7,automated,16.0
+RC-REQ-000308,2025-02-09 12:02:14,Northgate,5.0,hospital,limited,4,12,Sunday,medium,clear,available,6,automated,3.2
+RC-REQ-000309,09/02/2025 12:08,Harbor View,4.6,ambulance,available,6,12,Sunday,low,RAINY,Not-Applicable,9,automated,7.5
+RC-REQ-000310,2025/02/09 22:15,Sunrise Colony,6.4,ambulance,available,53,22,Sunday,medium,clear,not_applicable,8,automated,3.1
+RC-REQ-000311,2025-02-10 05:39:20,Central Market,8.2,hospital,NA,1,5,Monday,lo,cloudy,available,1,automated,7.7
+RC-REQ-000312,2025-02-10 08:17:49,Central Market,9.3,hospital,?,4,8,Monday, high,cloudy,  Available  ,7,automated,9.0
+RC-REQ-000313,10-Feb-2025 10:03,Sunrise Colony,3.3,ambulance,available,21,10,MONDAY,medium,cloudy,not_applicable,8,automatic,1.6
+RC-REQ-000314,2025-02-10 10:08:23,Riverside,11.5,hospital,available,12,10,Monday,high,rainy,limited,77,automated,1032.7
+RC-REQ-000315,2025-02-10 15:24:45,Sunrise Colony,3.6,ambulance,Available,unknown,15,Monday,low,clear,not_applicable,6,manual,3.7
+RC-REQ-000316,2025-02-10 15:56:56,Old Town,9.1,hospital,available,5,15,,high,clear,limited,10,manual,5.1
+RC-REQ-000317,2025-02-10 17:30:09,Lakeview,11.5,ambulance,available,2,17,Monday,medium,rainy,not_applicable,4,automated,7.8
+RC-REQ-000318,2025-02-10 17:54:42,Hillcrest,2.4,ambulance,available,null,17,Monday,medium,CLEAR,n.a.,8,automated,5.0
+RC-REQ-000319,2025-02-10 20:30:23,Lakeview,7.1,hospital,busy,0,20,Monday,high,rainy,unavailable,7,automated,16.5
+RC-REQ-000320,2025-02-11T01:36:45,Old Town,6.5,ambulance,AVAILABLE,34,1,Tuesday,medium,,not_applicable,3,manual,11.1
+RC-REQ-000321,2025-02-11 07:43:10, Industrial Zone,3.7,hospital,busy,9,7,Tuesday,high,foggy,limited,5,manual,23.1
+RC-REQ-000322,2025-02-11 09:01:30,Harbor View,4.9,hospital,available,5,9,Tue,medium,rainy,limited,8,manual,3.2
+RC-REQ-000323,02-11-2025 10:15 AM,SOUTHFIELD,2.9 km,ambulance,available,11,10,Tuesday,  High  ,clear,not_applicable,5,automated,6.1
+RC-REQ-000324,2025-02-11 11:21:49,Maple Heights,4.3,hospital,busy,6,11,Tuesday,low,clear,unavailable,8,automated,9.4
+RC-REQ-000325,2025-02-11 12:27:13,Old Town,4.7,hospital,available,2,12,Tuesday,Medium,rainy,available,3,automated,9.5
+RC-REQ-000326,11/02/2025 13:25,Airport Road,5.3,ambulance,busy,24,13,Tuesday,low,clear,not_applicable,3,automated ,5.5
+RC-REQ-000327,2025-02-11 14:28:19,Airport Road,7.1,hospital,available,12,14,Tuesday,medium,foggy,available,6,automated,6.5
+RC-REQ-000328,2025-02-11 16:51:20,Harbor View,4.6,ambulance,limited,5,16,Tuesday,high,clear,not_applicable,9,manual,11.4
+RC-REQ-000329,11/02/2025 18:48,Industrial Zone,3.7,  Hospital  ,limited,12,18,Tuesday,medium,clear, limited,4,automated,10.6
+RC-REQ-000330,,Riverside,3.8,ambulance,avail,1,6,Wednesday,medium,clear,not_applicable,9,automated,"1,7"
+RC-REQ-000331,02-12-2025 06:42 AM,University Area,5.1,ambulance,available,7,6,Wednesday,high,cloudy,not_applicable,4,automated,4.3
+RC-REQ-000332,2025-02-12 07:54:48,Industrial Zone,3.1,ambulance,limited,-,7,Wednesday,low,clear,not_applicable,7,manual,4.4
+RC-REQ-000333,12-Feb-2025 16:10,Riverside ,12.3,hospital,busy,20,16,Wednesday,medium,clear,unavailable,7,automated,12.0
+RC-REQ-000334,2025-02-12 17:14:38,Southfield,8.8,hospital,available,42mins,17,Wednesday,medium,foggy,available,6,manual,8.3
+RC-REQ-000335,2025-02-12 18:04:45,Industrial Zone,10.2,hospital,limited,26,18,Wednesday,high,CLEAR,limited,11,manual,9.1
+RC-REQ-000336,13-Feb-2025 00:16,  University Area  ,6.8,ambulance,busy,null,0,Thursday,low,clear,not_applicable,1,auto,18.9
+RC-REQ-000337,2025-02-13 07:54:23,Hillcrest,7.7 km,ambulance,limited,10,7,Thursday,high,RAINY,not_applicable,9,manual,12.1
+RC-REQ-000338,2025-02-13 08:47:50,southfield,17.5,hospital,available,3,8,Thursday,high,foggy,unavailable,3,manual,16.6
+RC-REQ-000339,2025-02-13 10:24:27,Hillcrest,3.6,hospital,available,12,10,Thursday,high,cloudy, available,3,automated,5.6
+RC-REQ-000340,2025-02-13 10:37:33,University Area,1.9,hospital,limited,10,10,unknown,high,rainy,available,6,automated,2.7
+RC-REQ-000341,2025-02-13 12:14:03,Northgate,4.7,hospital,busy,62,12,Thursday,medium,clear,limited,1,automated,10.2
+RC-REQ-000342,13/02/2025 14:20,Riverside,6.9 km,ambulance,available,41,14,Thursday,medium,cloudy,NOT_APPLICABLE,2,automated,8.4
+RC-REQ-000343,2025-02-13 15:37:06,HILLCREST,5.6km,ambulance,limited,2,15,Thursday,medium,clear,not_applicable,5,Manual,
+RC-REQ-000344,2025-02-13 16:45:52,Green Park,3.4,ambulance,limited,2,16,Thursday, high,clear,not_applicable,6,automated,5.1
+RC-REQ-000345,2025-02-13 19:46:01,Central Market,3.0,hospital,limited,4,19,Thursday,medium,cloudy, unavailable,null,automated,8.2
+RC-REQ-000332,2025-02-12 07:54:48,Industrial Zone,3.1,ambulance,limited,-,7,Wednesday,low,clear,not_applicable,7,manual,4.4
+RC-REQ-000346,2025-02-13 21:47:16,Sunrise Colony,8.1,hospital,limited,18,21,Thursday,medium,rainy,available,9,automated,5.5
+RC-REQ-000347,2025-02-13 22:30:33,Sunrise Colony,7.2,hospital,available,3,22,Thursday,medium,cloudy,available,5,automated,7.6
+RC-REQ-000348,14/02/2025 05:30,University Area,6.8,hospital,available,22,5,Friday,low,clear,available,2,automated,0.7
+RC-REQ-000349,2025-02-14 08:54:32,Southfield,"3,5",  Hospital  ,busy,7,8,Friday,high,clear,unavailable,3,manual,16.3
+RC-REQ-000350,14/02/2025 11:07,Old Town,?,hospital,busy,15,11,Friday,medium,cloudy,unavailable,5,automated,7.5
+RC-REQ-000351,2025-02-15 10:04:02,Maple Heights,2.7,ambulance,  Available  ,24,10,Saturday,high,clear,not_applicable,7,auto,5.5
+RC-REQ-000352,2025-02-15 13:49:15,Central Market,5.5,hospital,limited,5,13,SAT,low,  Cloudy  ,limited,9,automated,8.8
+RC-REQ-000353,2025-02-15 17:03:17,Northgate,5.4,ambulance,BUSY,5,17,Saturday,high,clear,?,8,AUTOMATED,6.4
+RC-REQ-000354,2025-02-15 18:16:49,Northgate,3.7,ambulance,available,2,18,Saturday,null,rainy,not_applicable,10,manual,4.9
+RC-REQ-000355,2025-02-15 18:29:18,Harbor View,2.4,ambulance,available,5,18,Saturday,high,clear,not_applicable,6,automated,3.0
+RC-REQ-000356,2025-02-15 19:03:58,Hillcrest,4.2,hospital,limited,2,19,Saturday,medium,foggy,limited,4,manual,7.4
+RC-REQ-000232,2025-01-30 12:16:50,Maple Heights,2.7,hospital,available,7,12,Thursday,high ,clear,not_applicable,7,manual,12.1
+RC-REQ-000357,2025-02-15 19:33:11,Harbor View,14.7,hospital,BUSY,4,19,Saturday,medium,foggy,,4,manual,21.4
+ RC-REQ-000358 ,2025-02-16 12:54:39,Southfield,"6,6",hospital,available,6,12,Sunday,low,cloudy,AVAILABLE,5,automated,1.6
+RC-REQ-000359,2025-02-16 12:56:56,Sunrise Colony,4.3,ambulance,busy,3,12,Sunday,low,cloudy,not_applicable,1,automated,10.2
+RC-REQ-000360,2025-02-16 15:44:13,Northgate,2.6,hosp,available,4,null,Sunday,high,cloudy,limited,7,automated,4.1
+RC-REQ-000361,2025-02-16 17:06:22,Northgate,4.2,ambulance,available,13,17,Sunday,medium,clear,not_applicable,11,manual,7.3
+RC-REQ-000362,2025-02-16 19:12:47,Riverside,3.9,ambulance,  Limited  ,56 min,19,Sunday,high,cloudy,not_applicable,6,automated,5.1
+RC-REQ-000363,2025-02-16 19:14:31,Sunrise Colony,-,hospital,LIMITED,13,19,Sunday,high,cloudy,limited,3,automated,12.4
+RC-REQ-000364,2025-02-16 19:29:22,Sunrise Colony,6.2,ambulance,available,9,19,Sunday,high,clear,not_applicable,5,automated,7.9
+RC-REQ-000365,16/02/2025 22:31,Maple  Heights,1.4,  Ambulance  ,  Limited  ,4 min,22,Sunday,medium,cloudy,not_applicable,2,manual,7.7
+RC-REQ-000366,02-17-2025 12:34 AM,Lakeview,10.2,hospital,available,34,0,Monday,low,clear,available,4,manual,6.4
+RC-REQ-000367,2025-02-17 08:31:47,Riverside,12.6,hospital,available,16,8,Monday,medium,clear,limited,-2,automated,8.9
+RC-REQ-000368,2025-02-17 17:41:13,Harbor View,4.7,ambulance,available,36,17,Monday,high,clear,not applicable,4,automated,12.6
+RC-REQ-000369,2025-02-17 21:10:19,Riverside,"8,4",hospital,available,1,21,Monday,medium,rainy,  Unavailable  ,9,automated,22.3
+RC-REQ-000245,2025-01-31 20:34:48,Green Park,19.3,hospital,Busy.,3,20,Friday,high,cloudy,limited,4,automated,16.3
+RC-REQ-000370,18/02/2025 05:49,Lakeview,7.8,hospital,available,28,5,TUE,  Low  ,foggy,  Available  ,6,manual,11.5
+RC-REQ-000371,2025-02-18 09:44:20,Airport Road,3.5,hospital,available,0,9,Tuesday,high,?,limited,4,automated,4.0
+RC-REQ-000372,2025-02-18 09:52:06,University Area,7.0,ambulance,busy,,9,Tuesday,high ,clear,not_applicable,1,automated,7.4
+RC-REQ-000175,2025-01-22 11:18:54,Riverside,NA,ambulance,busy,3,11,Wednesday,medium,,not_applicable,5,manual,11.4
+RC-REQ-000373,2025-02-18 09:56:22,Airport Road,3.3,ambulance,available,6,9,Tuesday,medium,cloudy,not_applicable,8,manual,9.3
+RC-REQ-000374,18/02/2025 14:53,Old Town,4.4,ambulance,limited,17,14,Tuesday,medium,rainy,not_applicable,8,manual,14.5
+RC-REQ-000375,2025-02-18 18:02:24,Maple Heights,7.5,ambulance,limited,1,18,Tuesday,medium,cloudy,not_applicable,4,automated,7.4
+RC-REQ-000376,2025-02-18 19:55:53,University Area,2.5 km,ambulance,busy,5,19,Tuesday,high,foggy,not_applicable,5,automated,10.5
+RC-REQ-000377,2025-02-18 23:26:13,Northgate,5.5,ambulance,busy,12,23,Tuesday,medium,cldy,not_applicable,1,automated,12.1
+RC-REQ-000378,2025-02-19 00:50:31,Northgate,4.0,hospital,limited,12,0,Wednesday,low,clear,available,3,automated,5.0
+RC-REQ-000379,2025-02-19 09:53:03,Lakeview,4.5,ambulance,available,19,9,Wednesday,medium,cloudy,not_applicable,8,automatic,6.5
+RC-REQ-000380,19-Feb-2025 12:06,Lakeview,4.9,hospital,available,21,12,Wednesday,low,rainy,available,5,manually,7.0
+RC-REQ-000381,2025-02-19 14:21:18,Southfield,4.5,hosp,available,35,14,Wednesday,high,cloudy,available,7,automated,-3.9
+RC-REQ-000382,19/02/2025 17:10,Harbor View,5.8,ambulance,busy,,17,Wednesday,high,cloudy,not_applicable,4,manual,14.3 min
+RC-REQ-000383,2025-02-19 17:13:54,Harbor View,4.3,ambulance,limited,7,17,Wednesday,high,cloudy,not_applicable,0,automated,10.8
+RC-REQ-000384,2025-02-19 19:11:04,Riverside,2.3,ambulance,available,31,19,Wednesday,medium,CLEAR,not_applicable,4,automated,"0,4"
+RC-REQ-000385,2025-02-20 09:01:09,University Area ,4.7,ambulance,available,12 min,09,Thursday,medium,rainy,not_applicable,6,manual,3.9
+RC-REQ-000386,2025-02-20 09:07:51,Harbor View,7.7,ambulance,available,31,9,Thursday, medium,?,not_applicable,3,manual,15.1
+rc-req-000387,20/02/2025 09:18,Riverside,30.0,hospital,,18,9,Thursday,high,cloudy,available,6,automated,23.7
+RC-REQ-000388,20/02/2025 09:27, Green Park,7.1,hospital,available,23,9,Thursday,medium,rainy,available,4,manual,7.9
+RC-REQ-000389,2025-02-20 09:57:40,University Area,6.6,ambulance,limited,3,9,Thursday,medium,clear,not_applicable,8,-,9.8
+RC-REQ-000390,20/02/2025 10:18,Northgate,13.5,hospital,busy,7,10,Thursday,high,clear,limited,2,automated,19.3
+RC-REQ-000391,2025-02-20 10:52:18,Hillcrest,2.8,hospital,available,13,10,Thursday,low,clear,limited,3,automated,7.7
+RC-REQ-000392,20-Feb-2025 11:39,Lakeview,1.9,ambulance,limited,9,11,Thursday,low,cloudy,not_applicable,3,-,3.5
+RC-REQ-000393,20/02/2025 13:39,Riverside,3.4,amb,available,44,13,Thursday,high,cloudy,not_applicable,-2,automated,7.9
+RC-REQ-000394,2025-02-20 13:58:32,Hillcrest,4.0,hospital,available,1,13,Thursday,  Medium  ,clear,available,8,manual,4.7
+RC-REQ-000395,2025-02-20 19:28:33,Industrial Zone,9.9 km,hospital,available,8,19,Thursday,hi,clear,available,6,manual,5.8
+RC-REQ-000396,2025-02-20 20:22:18,Harbor View,5.5,hospital,available,11,20,Thursday,medium,cloudy,unavailable,8,AUTOMATED,13.7
+RC-REQ-000397,2025-02-21 09:38:39,Lakeview,5.5,hospital,busy,15,9,Friday,medium,cloudy,limited ,2,manual,15.6
+RC-REQ-000398,21/02/2025 09:44,Green Park,4.9km,hospital,avaliable,6,9,Friday,high,cloudy, limited,7,,5.9
+RC-REQ-000399,2025-02-21 09:58:28,Sunrise Colony,11.8,,available,12,9,Friday,high,cloudy,not_applicable,10,manual,13.7
+RC-REQ-000400,2025-02-21 10:26:58,Maple Heights,3.1,ambulance,busy,6,10,Friday,high,clear,not_applicable,4,automated,10.0
+RC-REQ-000401,2025-02-21T14:04:46,Sunrise Colony,4.4,ambulance,available,2 min,14,Friday,medium,Cloudy,not_applicable,6,MANUAL,9.6
+RC-REQ-000402,21-Feb-2025 15:27,Maple Heights,23.9,hospital,available,53,15,Friday,medium,rainy,available,12,automated,21.5
+RC-REQ-000307,2025-02-09 09:41:58,southfield,3.5,hospital,busy,1,9,Sunday,high,Foggy,unavailable,7,automated,26.6
+RC-REQ-000403,2025-02-21 20:31:06,Industrial Zone,2.6,ambulance,limited,18,20,Friday,  Low  ,clear,not_applicable,,automated,8.1
+RC-REQ-000404,2025-02-21 22:10:03,Hillcrest,6.5,hospital,available,31,22,Friday, medium, cloudy,limited,4,automated,2.4
+RC-REQ-000405,2025-02-21 22:18:21,Airport Road,2.5,ambulance,available,6,22,Friday,high,clear,not_applicable,6,automated,5.7
+RC-REQ-000406,22/02/2025 06:36,MAPLE HEIGHTS,3.2,ambulance,limited,54,6,Sat,low,cloudy,not_applicable,6,manual,16.8
+RC-REQ-000407,2025/02/22 07:33,Central Market,3.7,ambulance,avaliable,54,7,Saturday,high,clear,not_applicable,4,auto,10.5
+RC-REQ-000408,2025-02-22 08:16:39, Northgate,3.6,ambulance,limited,15,,Saturday,high,clear,not_applicable,5,manual,8.8
+RC-REQ-000409,2025-02-22 10:09:35,Southfield,6.6,ambulance,busy,24,10,Saturday,high,rainy,not_applicable,3,manual,14.8
+RC-REQ-000410,2025-02-22 11:03:15,Hillcrest,5.3,Hospital,available,15,11,Saturday,high,clear,available,2,manual,10.7
+RC-REQ-000411,22/02/2025 12:14,Maple Heights,4.0km,hospital,available,27,12,Saturday,medium,rainy,available,5,automated,3.6
+RC-REQ-000412,2025-02-22 14:39:58,Riverside,2.6,ambulance,busy,8,14,Saturday,medium,clear,not_applicable,3,manual,14.6
+RC-REQ-000413,2025-02-22 20:31:03,Green Park,"17,1",ambulance,available,0,20,Saturday,high,clear,not_applicable,5,manual,
+RC-REQ-000414,2025-02-22 23:35:44,Sunrise Colony,2.3 km,ambulance,limited,31,23,Saturday,low,cloudy,not_applicable,4,manual,11.5
+RC-REQ-000415,23/02/2025 07:29,Old Town,2.8,  Hospital  ,available,,7,Sunday,medium,  Rainy  ,available,5,,-10.7
+RC-REQ-000416,2025/02/23 08:27,Sunrise Colony,1.1,ambulance,busy,7,8,Sunday,medium,clear,not_applicable,3,automated,7.9
+RC-REQ-000417,2025-02-23 11:14:38,Riverside,-,ambulance,available,9,11,Sunday,high,clr,not_applicable,5,manual,NA
+RC-REQ-000418,2025-02-23 11:49:27,Northgate,3.0,hospital,available,7,11,Sunday,high,clear,unavailable,5,manual,15.8
+RC-REQ-000419,2025-02-23 12:29:27,University Area,4.8,ambulance,available,2 min,12,Sunday,medium,foggy,not applicable,8,automated,3.9
+RC-REQ-000420,23-Feb-2025 14:16,Industrial Zone,NA,hospital,available,23,14,Sunday,  High  ,rainy,limited,4,automated,6.6
+RC-REQ-000288,2025-02-07 06:40:25,Maple Heights,3.9,ambulance,limited,N/A,6,Friday,high,foggy,not_applicable,?,automated,5.8
+RC-REQ-000421,2025-02-23 16:23:35,University Area,10.1,ambulance,available,3,16,Sunday,medium,rainy,not_applicable,4,automated,5.2
+RC-REQ-000422,23/02/2025 17:06,Green Park,3.6,ambulance, busy,16,17,Sunday,medium,cloudy,not_applicable,7,automated,11.9
+RC-REQ-000423,2025-02-23 17:17:55,Riverside,,hospital ,,21,17,  Sunday  ,high,clear,available,6,automated,10.0
+RC-REQ-000424,2025-02-23 18:13:13, Old Town,1.0,ambulance,available,0,18,Sunday,null,clear,not_applicable,6,manually,5.4
+RC-REQ-000425,2025-02-23 22:31:54,Central Market,4.9,ambulance,  Limited  ,15,22,Sunday,low,clear,not_applicable,2,automated,9.1
+RC-REQ-000426,2025-02-24 02:11:24,Riverside,1.7,ambulance,busy,9,2,Monday,low,clear,not_applicable,4,automated,13.7
+RC-REQ-000427,2025-02-24 08:07:27,Riverside,2.1,ambulance,available,N/A,8,Monday,low,rainy,not_applicable,7,automated,2.5
+RC-REQ-000428,2025-02-24 14:23:12,Central Market,5.7 km,hospital,available,NA,14,Monday,medium,clear,limited,4,manual,9.2
+RC-REQ-000429,2025-02-24 15:10:11,Sunrise Colony,8.9,hospital,available,26,15,Monday,low,foggy,available,NA,manual,13.6
+RC-REQ-000430,2025-02-24 16:55:19,SOUTHFIELD,7.9,hospital,available,N/A,16,Monday,hi,,available,6,automatic,4.7
+RC-REQ-000431,02-24-2025 06:20 PM,Maple Heights,49.8,hospital,limited,,18,Monday,high ,clear,available,2,manual,9.5
+RC-REQ-000432,2025-02-24 23:33:42,Sunrise Colony,3.0, ambulance,busy,10,23,Mon,medium,clear,not_applicable,5,automated,6.1
+RC-REQ-000433,2025-02-25 07:17:38,Southfield,8.7,ambulance,busy,6,7,Tuesday,medium,clear,not_applicable,5,automated,7.7
+RC-REQ-000434,2025-02-25T09:10:18,Old Town,2.2,hospital,limited,9,9,Tuesday,medium,clear,limited,4,manual,4.5
+RC-REQ-000435,2025-02-25 10:42:00,Southfield,2.5,ambulance,available,40,10,Tuesday,medium,rainy,not_applicable,5,automated,7.2
+RC-REQ-000328,2025-02-11 16:51:20,Harbor View,4.6,ambulance,limited,5,16,Tuesday,high,clear,not_applicable,9,manual,11.4
+RC-REQ-000436,2025-02-25 12:17:10,SOUTHFIELD,unknown,ambulance,busy,17,12,Tuesday,high,clear,not_applicable,7,automated,13.3
+RC-REQ-000437,25-Feb-2025 12:53,Maple Heights,2.6,ambulance,available,5,,Tuesday,medium,fog,not_applicable,9,manual,5.5
+RC-REQ-000438,2025-02-25 21:50:53,Central Market,5.8,ambulance,available,0,21,Tuesday,low,cloudy,not_applicable,5,,6.2
+RC-REQ-000439,2025/02/26 07:18,Airport Road,0.7,hospital,available,8,7,Wednesday,low,clear,available,6,automated,1.3
+RC-REQ-000440,2025-02-26 07:27:26,University Area,8.5,hospital,busy,10,7,Wednesday,medium,clear,unavailable,2,auto,21.1
+RC-REQ-000441,2025-02-26 07:28:34,Central Market,8.2,ambulance,limited,40,7,Wednesday,high,cloudy,not_applicable,4,automated,54.9
+RC-REQ-000442,2035-03-14 10:22:00,University Area,7.7,,,26,NA,?,,cloudy, limited,,N/A,8.6
+RC-REQ-000443,2025-02-26 10:09:46,Hillcrest,4.5,ambulance,limited,2 min,10,Wednesday, high,cloudy,not_applicable,4,manual,8.0
+RC-REQ-000444,2025-02-26 10:44:09,Sunrise Colony,3.8,hosp,available,4,10,Wednesday,medium,Clear,avail,8,automated,0.4
+RC-REQ-000445,2025-02-26 10:58:57,Central Market,5.7,hospital,AVAILABLE,N/A,10,Wednesday,high,rainy,limited,four,automated,5.4
+RC-REQ-000446,2025-02-26 15:40:55,Harbor View,6.0,ambulance,busy,6,15,Wednesday,medium,clear,not_applicable,4,automated,6.7
+RC-REQ-000447,2025-02-26 18:53:37,Green Park,6.4 km,hospital,available,15,18,Wednesday,high,?,available,5,manual,8.1
+RC-REQ-000448,2025-02-26 23:13:16,Northgate,3.5,Hosp.,limited,34,23,Wednesday,medium,cloudy,limited,1,automated,8.4
+RC-REQ-000449,2025-02-27 06:35:44,University  Area,6.9,ambulance,available,1,6,Thursday,medium,cloudy,  Not_Applicable  ,8,manual,9.2
+RC-REQ-000450,02-27-2025 09:34 AM,Old Town,5.0,ambulance,limited,,9,Thursday,low,cloudy,not_applicable,2,manual,11.8
+RC-REQ-000451,2025-02-27 09:36:49,Hillcrest,3.5,ambulance,available,8,25,Thursday,high,CLOUDY,not_applicable,4,automated ,6.8
+RC-REQ-000452,02-27-2025 10:06 AM,Industrial Zone,2.4,hospital,limited,25,10,Thursday,high,clear,unavailable,3,automated,12.3
+RC-REQ-000406,22/02/2025 06:36,MAPLE HEIGHTS,3.2,ambulance,limited,54,6,Sat,low,cloudy,not_applicable,6,manual,16.8
+RC-REQ-000453,2025-02-27 12:00:11,Maple Heights,2.9,hospital,limited,,12,-,med,cloudy,limited,3,manual,17.0
+RC-REQ-000454,2025-02-27T13:21:18,Old Town,,hospital,available,14,13,Thursday,high,,available,8,automated,3.2
+RC-REQ-000455,2025-02-27 20:12:07,Hillcrest,3.7,ambulance,-,1,20,Thursday,medium,rainy,not_applicable,NA,automated,4.1
+RC-REQ-000456,2025/02/27 20:45,Harbor View,3.3,hospital,available,2,20,Thursday,high,clear, available,5,automated,3.4
+RC-REQ-000457,2025-02-27 20:51:18,Sunrise Colony,6.2,ambulance,busy,0,20,Thursday,HIGH,clear,not_applicable,7,Manual,12.9
+RC-REQ-000458,2025-02-27 21:34:44,Northgate,10.3,hospital,available,8,21,Thursday,medium,Clear,available,4,  Automated  ,3.7
+RC-REQ-000459,2025/02/27 22:29,Southfield,13.1,hospital,available,2,22,Thursday,high ,rainy,limited,7,automated,4.5
+RC-REQ-000460,,Southfield,1.3,ambulance,available,0,7,Friday,medium,clear,not_applicable,8,manual,4.3
+RC-REQ-000461,2025-02-28 08:30:44,Northgate,-9.8,ambulance,limited,11 min,8,Friday,high,clear,not_applicable,3,automated,11.1
+RC-REQ-000462,2025-02-28 14:27:19,Old Town,7.2,ambulance,limited,1,14,Friday,medium,rainy,not_applicable,3,automated,11.5
+RC-REQ-000463,2025-02-28 16:50:20,Riverside,22.9,hospital,available,18,16,Friday,medium,clear,limited,2,manual,12.8
+RC-REQ-000464,2025-02-28 17:36:44,Central Market,4.7,HOSPITAL,limited,8,17,Friday,medium,rainy,available,5,manual,15.6
+RC-REQ-000465,2025-02-28 20:54:16,Hillcrest,3.9,hospital,available,64,20,Friday,medium,rainy,available,11,manual,5.7
+RC-REQ-000466,2025/02/28 21:47,Maple Heights,5.0,AMBULANCE,available,28,21,Friday,medium,rainy,not_applicable,3,automated,5.9
+RC-REQ-000467,2025-03-01 09:34:56,Central Market,5.4,HOSPITAL,available,5,9,Saturday,medium,rainy,available,10,man.,13.0
+RC-REQ-000468,01/03/2025 10:27,Harbor View,9.6,ambulance,available,32,10,Saturday,medium,clear,not_applicable,8,automated,8.7
+RC-REQ-000469,2025-03-01 10:36:54,unknown,6.5,hospital,available ,3,10,Saturday,high,cloudy,available,7,automated,3.5
+RC-REQ-000470,2025-03-01 10:44:36,  Harbor View  ,3.6,hospital,available,22,10,Saturday,high,clear,available,4,automated,9.3
+RC-REQ-000471,2025-03-01 12:02:41,University Area,13.2,ambulance,available,,12,  Saturday  ,low,clear,not_applicable,5,automated,4.6
+RC-REQ-000472,2025-03-01 14:56:48,Lakeview,6.6,hospital,limited,17,14,Saturday,,cloudy,limited,,manual,15.4
+RC-REQ-000473,2025-03-01 17:08:08,Northgate,3.7,ambulance,busy,11,17,Saturday,high,cloudy,not_applicable,6,automated,10.3
+RC-REQ-000474,2025-03-01 17:09:10,Harbor View,9.1,ambulance,available,4,17,Saturday,medium,cloudy,not_applicable,4,AUTOMATED,7.7 min
+RC-REQ-000475,2025-03-01 17:30:03,Riverside,1.9,hospital,available,37,17,Saturday,medium,cloudy,limited,4,automated,10.9
+RC-REQ-000333,12-Feb-2025 16:10,Riverside ,12.3,hospital,busy,20,16,Wednesday,medium,clear,unavailable,7,automated,12.0
+RC-REQ-000476,2025-03-01 17:38:46,Airport Road,14.1,hospital,busy,3,17,Saturday,high,clear,limited,2,manual,18.2
+RC-REQ-000477,2025-03-01 17:45:25,Hillcrest,11.5,hospital,AVAILABLE,14,17,Saturday,high,clear,available,3,automated,5.2
+RC-REQ-000478,2025-03-01T18:08:57,Lakeview,8.0,ambulance,available,15,18,Saturday,high,cloudy,not_applicable,9,automated ,4.7
+RC-REQ-000479,2025-03-02 05:32:13,Green Park,73.1,ambulance,busy,13,5,Wednesday,low,foggy,not_applicable,1,manual,13.2
+RC-REQ-000480,2025-03-02 08:28:25,Southfield,5.4,ambulance,limited ,25,8,Sunday,high,rainy,not_applicable,6,manual,15.6
+RC-REQ-000481,2025-03-02T09:10:37,Northgate,9.8,ambulance,available,41,9,Sunday,MEDIUM,clear,not_applicable,6,manual,20.1
+RC-REQ-000482,2025-03-02 11:25:14,Maple Heights,7.3,ambulance,available,6,11,Sunday,medium,clear,not_applicable,4,auto,5.7
+RC-REQ-000483,03-02-2025 06:23 PM,Central Market,"4,5",hospital,limited,null,18,Sunday,high,clear,limited,11,automated,9.1
+RC-REQ-000484,2025-03-02 20:14:12,Central Market,2.5,ambulance,busy,6,20,Sunday,low,FOGGY,not_applicable,8,automated,7.0
+RC-REQ-000485,2025-03-02 21:45:47,Maple Heights,5.8 km,ambulance,available,30,21,SUNDAY,medium,cloudy,not_applicable,9,  Manual  ,3.8
+RC-REQ-000486,2025-03-02 21:56:30,Northgate,3.3,hospital,limited,1,21,Sunday,low ,cloudy,limited,8,manual,10.5
+RC-REQ-000487,2025-03-03 10:14:48,Old Town,46.0,ambulance,available,19,10,Monday,high,clear,not_applicable,5,Manual,21.7
+RC-REQ-000488,2025-03-03 14:43:05,Northgate,7.5,hospital,available,1,14,Monday,Medium,cloudy,available,8,manual,8.2
+RC-REQ-000436,2025-02-25 12:17:10,SOUTHFIELD,unknown,ambulance,busy,17,12,Tuesday,high,clear,not_applicable,7,automated,13.3
+RC-REQ-000489,2025/03/03 16:49,University Area,"2,0",Hospital,limited,0,16,Monday,high,clear,unavailable,12,manual,7.6
+RC-REQ-000490,03/03/2025 20:30,Southfield,3.2,hospital,avail,3,20,Monday,NA,clear,available,3,automated,5.7
+RC-REQ-000491,03-03-2025 09:14 PM,Riverside,13.8,hospital,available,12,21,Monday,high,cloudy,limited,11,automated,5.5
+RC-REQ-000492,2025-03-03 21:40:57,Central Market,1.9,hospital,available,4,21,Monday,medium,clear,available,7,manual,4.4
+RC-REQ-000493,2025-03-04 02:22:10,,7.6,hospital,busy,12,2,Tuesday,low,cloudy,limited,5,manual,6.0
+RC-REQ-000494,04/03/2025 09:44,University Area,2.9,ambulance,busy,7,9,Tuesday,high,clear,not_applicable,7,manual,18.4
+RC-REQ-000495,2025/03/04 15:10,Hillcrest,16.2km,hospital,limited,null,15,Tuesday,high,clear,limited,3,manual,12.6
+RC-REQ-000496,2025-03-04 22:49:25,Northgate,2.1 km,AMBULANCE,busy,41 min,22,Tuesday,low,cloudy,not_applicable,6,automated,7.4
+RC-REQ-000497,2025-03-05 04:38:51,Old Town,3.0,hospital,Busy,4,4,Wednesday,low,cloudy,limited,3,manual,10.0
+RC-REQ-000498,2025-03-05 05:49:20,Sunrise Colony,5.0,hospital,available,41,5,Wednesday,low,cloudy,unavailable,3,manual,17.4
+RC-REQ-000499,05/03/2025 09:19,Sunrise Colony,6.5,hospital,limited,1,9,Wednesday,,clear,available,3,manual,15.1
+RC-REQ-000500,2025-03-05 09:20:34,Industrial Zone,1.8,ambulance,busy,null,9,Wednesday,high,foggy,not_applicable,4,manual,16.4
+RC-REQ-000501,05-Mar-2025 16:09,Southfield,1.9,ambulance,available,0,16,Wednesday,medium,clear,not_applicable,7,automated,0.8
+RC-REQ-000502,2025-03-05T16:19:13,Lakeview,3.2 km,ambulance,available,51,16,Wednesday,high,cloudy,not_applicable,5,manual,14.6
+RC-REQ-000503,2025-03-05 16:19:43,industrial zone,5.2,ambulance,limited,27,16,Wednesday,high,clear,not_applicable,6,manual,0
+RC-REQ-000504,2025-03-05 16:31:51,University Area,"3,0",hospital,available,11,16, Wednesday,high,clear,available,9,automated,4.8
+RC-REQ-000505,2025-03-05 21:24:13,Southfield,2.8,hospital,available,11,21,Wednesday,medium,RAINY,available,,automated,5.8
+RC-REQ-000506,2025-03-06 06:44:17,Riverside,2.2,ambulance,available,17 min,6,Thursday,medium,rainy ,not_applicable,4,manual,9.9
+RC-REQ-000507,2025-03-06 08:02:54,Green Park,5.3,ambulance, available,0,8,Thursday,medium,rainy,not_applicable,10,manual,7.0
+RC-REQ-000508,2025-03-06 10:15:37,Sunrise Colony,8.5,hospital,available,8,10,Thursday,medium,clear,limited,5,?,1.3 min
+RC-REQ-000509,2025-03-06 13:43:00,Northgate,3.6,ambulance,available,18,13,Thursday,Low,cloudy,not_applicable,5,manual,-19.1
+RC-REQ-000510,06-Mar-2025 15:04,Harbor View,3.6,hospital,available,20,15,Thursday,low,clear,Limited,5,manual,6.1
+RC-REQ-000511,2025-03-06 15:12:52,Airport Road,2.7,hospital,available,4,15,Thursday,low,cloudy,limited,5,automated,3.3
+RC-REQ-000512,2025-03-06 15:23:09,University Area,9.6,ambulance,limited,-4,15,Thursday,high,clear,not_applicable,7,manual,11.0
+RC-REQ-000513,2025-03-06 15:53:52,Industrial Zone,9.2 km,ambulance,available,6,15,Thursday,high,cloudy,not_applicable,6,automated,3.3
+RC-REQ-000514,2025-03-06 17:25:39,Central Market,7.0,Ambulance,available,6,17,Thursday,high,cloudy,not_applicable,4,automatic,9.3
+RC-REQ-000515,2025-03-06 18:18:05,Lakeview,3.6,hospital,limited,12,18,Thursday,high,cloudy,available,3,manual,15.5
+RC-REQ-000516,2025-03-06 18:36:39,Lakeview,41.0,hospital,  Available  ,42,18,Thursday,high,rainy,available,12,manual,0.7
+RC-REQ-000517,2025-03-06 20:11:14,Lakeview,3.6,ambulance,limited,0,20,Thursday,high,foggy,not_applicable,3,manual,10.8
+RC-REQ-000518,06/03/2025 23:04,Southfield,4.0,ambulance,available,0,23,Thursday,NA,clear, not_applicable,2,manual,8.7
+RC-REQ-000519,2025-03-07 03:03:56,Riverside,11.3,hospital,available,2,3,Friday,low,clear,available,2,automated,7.4
+RC-REQ-000520,2025-03-07 08:57:03,University Area,3.4,hospital,limited,41,8,Friday,high,clear,limited,2,manual,0
+RC-REQ-000521,07-Mar-2025 09:14,Green Park,"6,0",hospital,available,19,9,Friday,high,rainy,available,5,manual,9.1
+RC-REQ-000522,2025-03-07 12:12:33,Riverside,2.0,ambulance,available,0,12,Friday,low,cloudy,not_applicable,4,manual,5.2
+RC-REQ-000523,2025-03-07 16:34:55,Central Market,4.3,ambulance,limited,14,16,Friday,high,clear,not_applicable,6,automated,11.8
+RC-REQ-000524,2025-03-07 16:59:43,Lake View,8.2,hospital ,limited,4mins,16,Friday,high,clear,LIMITED,1,automated,13.7
+RC-REQ-000525,2025-03-07 17:43:06,Hillcrest,2.2,hospital,limited,11,17,Friday,high,rainy,limited,6,automated,15.7
+RC-REQ-000526,2025-03-08 00:55:51,Sunrise Colony,7.1,hospital,available,45,0,Saturday,medium,clear,available,?,automated,6.0
+RC-REQ-000527,2025-03-08 01:40:42,Sunrise Colony,15.1,ambulance,limited,11,1,Saturday,low,foggy,not_applicable,1,manual,12.1
+RC-REQ-000528,08-Mar-2025 08:13,Hillcrest,2.5,ambulance,available,8mins,8,Saturday,high,cldy,not_applicable,8,manual,10.7
+RC-REQ-000529,2025-03-08 08:19:27,Hillcrest,19.2,ambulance,limited,8,8,Saturday,medium,clear,,9,automated,15.8
+RC-REQ-000530,08-Mar-2025 09:41,Industrial Zone,8.0,hospital,limited,9,9,Saturday,high,foggy,,6,automated,13.6
+RC-REQ-000531,2025-03-08 10:33:02,Sunrise Colony,9.8,ambulance,limited,2,10,Saturday,high,CLEAR,not_applicable,4,automated,14.5
+RC-REQ-000532,2025-03-08 10:51:56,University Area,2.7,hospital,available,1,10,Saturday,high,clear,available,7,MANUAL,6.5
+RC-REQ-000533,2025-03-08 12:06:54,Old Town,4.0,Ambulance,available,8,12,Saturday,medium,cloudy,not_applicable,4,automated,5.9 min
+RC-REQ-000534,2025-03-08 16:17:40,Hillcrest,10.4,ambulance,limited,8,16,Saturday,medium,cloudy,not_applicable,6,manual,6.3
+RC-REQ-000535,2025-03-08 17:56:59,Southfield,10.1,hospital,busy,41,17,Saturday,high,cloudy,available,12,automated,4.5
+RC-REQ-000536,2025-03-08 19:03:26,University Area,3.7,hospital,available,1 min,19,SAT,,cloudy,available,5,automated,9999
+RC-REQ-000537,2025-03-09 01:09:09,Northgate,9.7,hospital,busy,2,1,Sunday,low,NA,limited,1,automated,
+RC-REQ-000538,2025-03-09 10:19:52,University Area,2.1,hospital,limited,20,10,Sunday,medium,cloudy,limited,6,,5.8
+RC-REQ-000539,2025-03-09 12:27:54,Maple Heights,7.4,ambulance,available,5,12,Sunday,low,cloudy,not_applicable,10,automated,1.0
+RC-REQ-000540,2025-03-09 13:17:42,University Area,3.9,ambulance,available,8,13,,low,,NOT_APPLICABLE,3,automated,1.8
+RC-REQ-000470,2025-03-01 10:44:36,  Harbor View  ,3.6,hospital,available,22,10,Saturday,high,clear,available,4,automated,9.3
+RC-REQ-000541,2025-03-09 15:38:46,Old Town,9.8,ambulance,busy,7,15,Sunday,low,cloudy,not_applicable,2,manual,7.1
+RC-REQ-000542,2025-03-09 15:47:48,Harbor View,2.2 km,ambulance,busy,8,15,Sunday,medium,rainy,not_applicable,1,automated,4.6
+RC-REQ-000543,10/03/2025 05:09,Riverside,1.7,hospital,available,7,5,Monday,low,rainy,available,null,manual,5.6
+RC-REQ-000544,2025-03-10 07:23:15,Central Market,5.3,hospital,available,3,7,Monday,low,clr,available,4,automated ,5.7
+RC-REQ-000545,10-Mar-2025 08:02,Riverside,7.1,hospital,available,12,13,Monday,High,foggy,available,3,automated,5.6
+RC-REQ-000546,2025-03-10 10:15:29,Airport Road,10.3,hospital,busy,0,10,Monday,high,clear,limited,7,automated,10.0
+RC-REQ-000547,10/03/2025 15:25,-,1.8,ambulance,available,11,15,Monday,LOW,cloudy,not_applicable,3,automated,4.2
+RC-REQ-000548,2025-03-10T15:29:32,Airport Road,3.8,ambulance ,available,29,15, Monday,high,foggy,not_applicable,6,  Manual  ,17.7
+RC-REQ-000549,10/03/2025 17:44,Riverside,5.9,hospital,limited,NA,17,MONDAY,high,clear,limited,2,  Manual  ,16.3
+RC-REQ-000550,11-Mar-2025 11:47,Hillcrest,null,hospital,available,NA,11,Tuesday, medium,clear,available,4,manual,4.6
+RC-REQ-000551,2025-03-11 17:44:15,Harbor View ,28.5,hospital,limited,2,17,Tuesday,high ,clear,limited,9,automated,18.5
+RC-REQ-000552,2025-03-11 18:01:32,Green Park,4.6,Hosp.,available,41,18h,Tuesday,high,clear,available,2,manual ,9.7
+RC-REQ-000553,2025-03-11 19:26:54,Sunrise Colony,2.1,ambulance,available ,1,19,Tuesday,high,clear,unknown,6,automated,5.3
+RC-REQ-000397,2025-02-21 09:38:39,Lakeview,5.5,hospital,busy,15,9,Friday,medium,cloudy,limited ,2,manual,15.6
+RC-REQ-000554,11-Mar-2025 22:41,AIRPORT ROAD,"4,7",HOSPITAL,available,1,22,Tuesday,medium,clear,available,6,manual,5.2
+RC-REQ-000555,2025-03-12 11:26:13,Riverside,4.5,hospital,available,10,11,Wednesday,medium,rainy,limited,8,automated,4.2
+RC-REQ-000556,03-12-2025 01:42 PM,Harbor View,4.3,hospital,busy,17,13,WED,High,,limited,3,automated,7.5
+RC-REQ-000557,2025-03-12 17:07:11,Central Market,3.9,hospital,available,4,17,Wednesday,medium,  Clear  ,available,12,manual,4.2
+RC-REQ-000558,12-Mar-2025 17:24,Central Market,4.2,ambulance,available,7,17,N/A,medium,clear,not_applicable,4,automated,3.4
+RC-REQ-000559,2025-03-12 17:33:58,Green Park,2.2,hospital,available,9,17,Wednesday,high,clear,available,4,automated,4.5
+RC-REQ-000560,03-12-2025 06:25 PM,Old Town,12.1,hospital,limited,46,18,Wednesday,high,foggy,available,5,automated,12.9
+RC-REQ-000561,2025-03-12T19:04:40,Lakeview,2.3,ambulance,available,61,19,Wednesday,high,foggy,not_applicable,4,manual,
+RC-REQ-000562,2025-03-13 01:12:48,University Area,2.0,ambulance,limited,0,1,Thursday,low,clear,not_applicable ,3,  Automated  ,6.9
+RC-REQ-000563,2025-03-13 09:57:13,Airport  Road,?,hospital,busy,14,9,Thursday,high,cloudy,unavailable,2,manual,27.8
+RC-REQ-000564,2025-03-13 11:13:30,University Area,3.1,hospital,available,16,11,Thursday,medium,clear,available,5,manual,4.1
+RC-REQ-000565,2025-03-13T11:23:24,Hillcrest,5.1,ambulance,available,2,11,Thursday,low,clear,not_applicable,9,automated,0.8
+RC-REQ-000566,2025-03-13 15:07:53,Hillcrest,2.3,hospital,available,4,15,Thursday,high,foggy,unavailable,,automated,"7,7"
+RC-REQ-000546,2025-03-10 10:15:29,Airport Road,10.3,hospital,busy,0,10,Monday,high,clear,limited,7,automated,10.0
+RC-REQ-000567,03-13-2025 05:06 PM,Old Town,2.0,ambulance,limited,10,17,Thursday,medium,cloudy,not_applicable,6,automated,8.2
+RC-REQ-000568,03-13-2025 06:08 PM,Lakeview,8.7,  Hospital  ,available,9,18,Thursday,medium,cloudy,limited,5,automated,6.4
+RC-REQ-000569,,Northgate,-,, limited,0,18,Thu,N/A,clear,available,N/A,,7.0
+RC-REQ-000570,1999-07-21 08:30:00,Riverside,2.0,ambulance,available,3,21,  Thursday  ,medium,rainy,not_applicable,10,automated,1.1
+RC-REQ-000571,2025-03-14 06:28:24,Old Town,1.6,ambulance,limited,13,6,Friday,medium,clear,not_applicable,2,automated,10.4
+RC-REQ-000572,2025-03-14 06:50:50,MAPLE HEIGHTS,2.2,ambulance,available,12,6,Friday,high,cloudy,not_applicable,8,automated,1.0
+RC-REQ-000573,14/03/2025 07:15,Maple Heights,9.0,hospital,limited,3,7,Fri,medium,cloudy,unavailable,5,automated,11.5
+RC-REQ-000574,14-Mar-2025 08:30,Northgate,2.8,ambulance,available,2,8,Friday,high,N/A,not_applicable,3,manual,15.2
+RC-REQ-000575,2025-03-14 08:31:47,Industrial Zone,4.2km,ambulance,N/A,17,8,Friday,high,clear,not_applicable,6,automated,3.9
+RC-REQ-000576,2025-03-14 08:56:04,Maple Heights,12.8,hospital,available,16,8,Friday,high,cloudy,available,7,automated ,16.1
+RC-REQ-000577,2025-03-14 10:25:22,Riverside,1.6,hospital,available,4,10, Friday,high,foggy,available,99,automated,6.4
+RC-REQ-000578,2025-03-14 14:14:40,Airport Road,7.0,hospital,available,1,14,Friday,high,-,available,8,automated,6.1
+RC-REQ-000579,03-14-2025 05:21 PM, Green Park,4.4,hospital,limited,0,17,Friday,high,foggy,limited,3,automated,4.8
+RC-REQ-000580,2025-03-14 18:02:33,Hillcrest,1.6,Ambulance,busy,30,18,Friday,high,rainy,not_applicable,2,automated,9.4
+RC-REQ-000581,2025-03-14 20:21:39,RIVERSIDE,7.5,hospital,busy,31,20,Friday,Med.,clear,limited,5,automated,11.2
+RC-REQ-000582,15/03/2025 00:26,Hillcrest,?,hospital,available,17,0,Saturday,low,clear,available,5,automated,4.6
+RC-REQ-000583,2025-03-15 07:48:15,Old Town,2.4,Hospital,busy,20,7,Saturday,high,foggy,unavailable,7,manual,19.3
+RC-REQ-000584,2025-03-15 07:56:56,Industrial Zone ,2.4,-,available,29,7,Saturday,high,clear,not_applicable,6,manual,11.9
+RC-REQ-000585,2025-03-15 10:49:38,Airport Road,19.1 km,hospital,available,11 min,10,Saturday,medium,cloudy,available,3,automated,9.8
+RC-REQ-000586,15-Mar-2025 12:13,Central Market,5.1, hospital,,6,12,Saturday,medium,foggy,unavailable,2,manual,32.1
+RC-REQ-000587,2025-03-15 16:28:47,Green Park,7.3,hospital,available,18,16,Saturday,medium,  Clear  ,limited,,automated,3.8
+RC-REQ-000588,15-Mar-2025 18:13,University Area,13.7,N/A,limited,12,18,Saturday,high,clr,limited,5,automated,9.0
+RC-REQ-000589,15/03/2025 23:55,Maple Heights,8.8,hospital,available,32,23,Saturday,low,cloudy,not_applicable,3,manual,7.7
+RC-REQ-000590,2025-03-16 06:15:44,Green Park,4.7,ambulance,available,37,6,SUNDAY,medium,rainy,not_applicable,3,manual,7.8
+RC-REQ-000591,2025-03-16 07:55:55,Airport Road,6.6, hospital,available,2,7,Sunday,high,unknown,limited,7,automated,9.4
+RC-REQ-000592,2025-03-16 07:59:52,Maple Heights,5.7,ambulance,available,17,7,Sunday,  Low  ,clear,not_applicable,2,automated,5.9
+RC-REQ-000593,2025-03-16 08:39:58,Central Market,3.8,Hosp.,available,8,8,Sunday,high,clear,available,4,automated,6.7
+RC-REQ-000594,2025-03-16 11:08:22,Northgate,4.4 km,hospital,avaliable,12,11,Sunday,low,cloudy,available,6,manual,10.7
+RC-REQ-000595,2025-03-16 12:45:19,Sunrise Colony,6.8,hospital,available,26,12,Sunday,medium,cloudy,limited,8,automated,5.3
+RC-REQ-000596,2025-03-16 12:59:42,Northgate,2.6,hospital,available,9,12,Sunday,medium,clear,available,4,automated,3.0
+RC-REQ-000597,2025-03-16 14:47:23,Lakeview,9.5,hospital,available,17,14,Sunday,low,clear,available,4,manual,9.4
+RC-REQ-000598,16-Mar-2025 17:03,Riverside,3.7,hospital,available,34,17,Sunday,MEDIUM,clear ,available,7,manual,5.6
+RC-REQ-000599,2025-03-16 19:55:59,,4.8,ambulance,available,6,19,SUNDAY,high,cloudy,not_applicable,3,manual,12.1 min
+RC-REQ-000600,2025-03-16 19:56:54,Green Park,3.3,ambulance,limited,,19,Sunday,high,clear,  Not_Applicable  ,7,automated,6.1
+RC-REQ-000601,2025-03-16 23:43:26,University Area,2.0,ambulance,available,NA,7,Sunday,medium,rainy,not_applicable,4,manual,4.4
+RC-REQ-000602,03-17-2025 09:27 AM,Old Town,2.6,hospital,available,4,9,Monday,medium,clear,available,8,automated,4.4
+RC-REQ-000603,2025-03-17T11:11:46,Lakeview ,13.1,hospital,limited,3,NA,Monday,medium,Clear,limited,8,automated,6.7
+RC-REQ-000604,2025/03/17 11:50,Airport Road,2.9,hospital,available,10,11,Monday,medium,clear,available,9,manual,3.4
+RC-REQ-000605,2025-03-17 12:19:03,Airport Road,3.3,hospital,available,14,12,Monday,low,clear,available,8,manual,2.2
+RC-REQ-000606,17/03/2025 15:20,Central Market,1.9,ambulance,available,6,15,Monday,med,cloudy,not_applicable,9,automated,0.4
+RC-REQ-000607,2025-03-17 16:34:10,Industrial Zone,5.2,ambulance,busy,9,16,Monday,high,Rainy,not_applicable,7,manual,14.1
+RC-REQ-000608,17/03/2025 17:36,Sunrise  Colony,15.7,hospital,available,0,17,Monday,medium,cloudy,available,9,manual,10.4
+RC-REQ-000609,2025-03-17 20:26:22,Southfield,3.4,ambulance,available,13,20,Monday,high,clear,not_applicable,unknown, automated,5.5
+RC-REQ-000610,2025-03-18 06:48:22,Green Park,6.8,hospital,available,19,6,TUE,medium,foggy,available,5,automated,8.7
+RC-REQ-000611,2025-03-18 06:59:45,University Area,10.3,hospital,busy,14,30,Tuesday,low,  Clear  ,unavailable,0,manual,9.0
+RC-REQ-000612,2025-03-18 08:47:21,Riverside,11.3,hospital, available,16,8,Tuesday,medium,rainy,available,5,automated,6.9
+RC-REQ-000613,03-18-2025 09:16 AM,Lakeview,14.6,hospital,avail,48,9,Tuesday,medium,rainy ,available,8,manual,14.4
+RC-REQ-000614,18/03/2025 13:54,Airport Road,6.8,hospital,available,33,13,Tuesday,high,clear,limited,6,manual,14.2
+RC-REQ-000615,03-18-2025 06:56 PM,Northgate,46.3,ambulance,available,4,18,Tuesday,medium,clear,not_applicable,7,manual,0.5
+RC-REQ-000616,2025-03-18 20:28:20,Lakeview,3.2,hospital,available,5,99,Tuesday, high,cloudy,available,6,manual,6.2
+RC-REQ-000617,2025-03-19 05:27:07,Hillcrest,12.4,hospital,available,11,5,Wednesday,low,Foggy,available,7,manual,9.0
+RC-REQ-000618,19/03/2025 08:26,Airport Road ,9.3,hospital,limited,,8,Wednesday ,medium,clear,unavailable,4,manual,16.9
+RC-REQ-000619,2025-03-19 08:45:08,Riverside,3.7,hospital,available,18,8,Wednesday,high,foggy,limited,8,automated,5.6
+RC-REQ-000620,2025-03-19 14:32:18,Airport Road,5.8,hospital,available,18,14,Wednesday,medium,clear,available ,6,automated,5.3
+RC-REQ-000621,2025-03-19 16:18:59,Northgate,4.4,ambulance,limited,9,16,Wednesday,high,rainy,not_applicable,6,automated,7.6
+RC-REQ-000622,19/03/2025 16:26,Southfield,3.9,ambulance,null,8,16,Wednesday,N/A,cloudy,not_applicable,4,manual,10.4
+RC-REQ-000623,2025-03-19 18:17:55,Southfield,17.7,hospital,limited,3,18,Wednesday,high,rainy,limited,5,automated,14.3 min
+RC-REQ-000624,19/03/2025 18:56,Central Market,1.7,ambulance,available,2,18,Wednesday,high,rainy,not_applicable,0,manual,"8,1"
+RC-REQ-000625,2025-03-19 19:12:58,Industrial Zone,2.7,ambulance,available,2,19,Wednesday,high,clear,not_applicable,10,automated,6.5
+RC-REQ-000626,2025-03-19 19:13:37,Maple  Heights,3.8,Hosp.,busy,13,19,Wednesday,medium,rainy,available ,4,automated,"10,3"
+RC-REQ-000627,2025-03-20 05:40:48,Hillcrest,4.9,ambulance,Limited,11 min,05,Thursday ,low,cloudy,not_applicable,2,automated,5.0
+RC-REQ-000628,2025-03-20 06:50:13,Lakeview,"2,5",ambulance,available,40,6,THU,medium,foggy,not_applicable,7,automated,6.5
+RC-REQ-000629,2025-03-20T08:12:12,Riverside,6.3,hospital,busy,5,8,Thursday,medium,foggy,unavailable,3,automated,9.5
+RC-REQ-000630,2025-03-20 10:01:07,Hillcrest,2.8,ambulance,limited,30,10,Thursday, low,clear,not_applicable,6,manual,6.2
+RC-REQ-000631,2025-03-20 11:03:29,Northgate,2.0,null,available,12,11,Thursday,high,foggy,not_applicable,2,automated,6.5
+RC-REQ-000632,20/03/2025 12:15,Green Park,3.6,ambulance,limited,16,12,Thursday,high,foggy,not_applicable,6,automated,11.0
+RC-REQ-000633,20-Mar-2025 19:58,Central Market,4.7,hospital,busy,15,19,Thursday,medium,rainy,limited,6,automated,11.7
+RC-REQ-000634,2025-03-21 07:55:37,Green Park,5.5,ambulance,busy,,7,Friday,high,foggy,not_applicable,3,manual,18.6
+RC-REQ-000635,2025-03-21 09:13:39,Industrial Zone,5.1,hospital,  Available  ,1 min,9,Friday,medium,clear,available,5,manual,4.7
+RC-REQ-000636,2025-03-21 09:18:14,University Area,unknown,hospital,available,NA,9,Friday,high, rainy,limited,3,automated,7.4
+RC-REQ-000637,03-21-2025 07:31 PM,Southfield,10.4,hospital,available,6,19,Friday,,clear,AVAILABLE,2,  Manual  ,4.6
+RC-REQ-000638,2025-03-21 19:42:54,Lakeview,3.2,hospital,limited,49,19,Friday,high,clear,available,5,automated,7.8 min
+RC-REQ-000639,2025/03/21 19:54,Northgate,3.0,ambulance,limited,1,19,Friday,high,  Clear  ,not_applicable,4,automated,11.9
+RC-REQ-000640,2025-03-21 20:59:24,Lakeview,1.3,hospital,Available,4,20,Friday,unknown,clear,  Available  ,5,automatic,3.7
+RC-REQ-000641,2025-03-21T21:22:18,Hillcrest,15.1,hospital,available,32,21,Friday,low, clear,limited ,5,automated,6.0
+RC-REQ-000642,22/03/2025 07:09,Lakeview,1.9,ambulance,busy,28,7,Sat,medium,clear,not_applicable,unknown,automated,8.2
+RC-REQ-000643,22/03/2025 07:44,Southfield,4.0,  Hospital  ,limited,6,7,Saturday,medium,clear,limited,7,automated,3.2
+RC-REQ-000644,2025-03-22 09:20:56,Industrial Zone,3.8, hospital,limited,26,9,  Saturday  ,medium,cloudy,limited,2,automated,7.4
+RC-REQ-000645,2025-03-22 10:20:23,River side,9.2,hospital,avail,6,10,Saturday,medium,rainy,available,6,automated,6.3
+RC-REQ-000646,2025-03-22T12:36:53,Hillcrest,3.2,ambulance,available,29,12,Saturday,low,clear,not_applicable,5, manual,5.3
+RC-REQ-000647,2025-03-22 23:28:58,Green Park,,hospital,available,18,23,Saturday,low,clear,available,2,automated,11.3
+RC-REQ-000463,2025-02-28 16:50:20,Riverside,22.9,hospital,available,18,16,Friday,medium,clear,limited,2,manual,12.8
+RC-REQ-000648,2025-03-23 09:57:41,University Area,2.2,amb,available,4,9,Sunday,medium,foggy,not_applicable,4,automated,5.2
+RC-REQ-000649,2025-03-23 10:11:28,CENTRAL MARKET,3.5,hospital,Avail.,NA,10,Sunday,high,clear,,2,automated,3.8
+RC-REQ-000650,2025-03-23 12:20:37,Industrial Zone,4.0 km,hospital,limited,16 min,12,SUNDAY,high,clear,limited,5,automated,5.3
+RC-REQ-000651,2025-03-23 15:58:47,Green Park,11.8,hospital,busy,4,15,Sunday,medium ,cloudy,limited,6,manual,23.5
+RC-REQ-000652,2025-03-23 18:25:13,University Area,4.5,ambulance,available,26,18,Sunday,medium,rainy,not_applicable,6,manual,7.8
+RC-REQ-000653,2025-03-23 18:28:58, University Area,5.4,ambulance,available,0,18,Sunday,high,clear,not_applicable,4,automated,7.1
+RC-REQ-000654,2025-03-23 19:42:29,Hillcrest,"9,5",hospital,limited,41,19,SUN,high,cloudy,unavailable,5,manual,21.2
+RC-REQ-000655,23-Mar-2025 22:08,  Harbor View  ,6.5,ambulance,,12,22,Sunday,Med.,clear,not_applicable,5,automated,1.5
+RC-REQ-000656,2025-03-24 06:10:51,University Area,4.9,ambulance,available,17,6,Monday,medium,rainy,not_applicable,5,manual,13.8
+RC-REQ-000657,2025-03-24 11:56:28,Northgate,3.9,ambulance,available,15,11,Monday,,clear,not_applicable,4,?,6.1
+RC-REQ-000658,03-24-2025 01:42 PM,Hillcrest,6.0,ambulance,available,NA,13,Monday,low,foggy,not_applicable ,5,automated,5.1
+RC-REQ-000659,24/03/2025 15:23,Northgate,-8.6,hospital,available,2,15,Monday,medium,cloudy,available,2,manual,5.5
+RC-REQ-000660,2025-03-24 16:32:03,Maple Heights,3.0,hospital,Avail.,13,16,Monday,null,cloudy,available,5,automated,6.7
+RC-REQ-000661,24/03/2025 16:45,Lakeview,5.2,hospital,available,12,16,Monday,,null,,4,manual,2.5
+RC-REQ-000662,2025-03-24 16:50:50,Northgate,3.5,hospital,available,N/A,16,Monday,medium,clear,available,5,automated,1.9
+RC-REQ-000663,2025-03-25 08:19:03,  Northgate  ,1.8,ambulance,available,11,,Tuesday,,clear,not_applicable,8,automated,2.8
+RC-REQ-000664,03-25-2025 08:26 AM,Central Market,7.2,hospital,busy,12,8,Tuesday ,high,cloudy,limited,2,automated,15.3
+RC-REQ-000665,2025-03-25 10:01:58,Northgate,2.8,ambulance,available,4,10,Tuesday,medium,clear,not_applicable,6,manual,8.6
+RC-REQ-000666,25/03/2025 13:23,Riverside,7.5,AMBULANCE,busy,0,13,Tuesday,medium,cloudy,not_applicable,4,automated,6.5
+RC-REQ-000667,2025-03-25 15:23:36,UNIVERSITY AREA,11.5,hospital,available,2,15,Tuesday,high,clear,,6,automated,1309.5
+RC-REQ-000668,2025-03-25 16:24:23,Industrial Zone,4.3,hospital,available,9,16,Tuesday,medium,clr,available,7,manual,6.4
+RC-REQ-000669,2025-03-25 17:19:10,Industrial Zone,1.4,ambulance,available,1,17,Tuesday,high,clear,not_applicable,10,manual,6.7
+RC-REQ-000670,2025-03-25 18:48:18,University Area,,hospital,available,6,18,,high,clear,?,?,,6.6
+RC-REQ-000671,2025-03-25 20:24:31,Northgate,7.5,hospital,available,20,20,Tuesday,medium,clear,available,6,automated,11.3
+RC-REQ-000672,25/03/2025 20:28,Maple Heights,NA,ambulance,available,43,20,Tuesday,medium,rainy,not_applicable,4,manual,8.4
+RC-REQ-000673,03-25-2025 09:50 PM,Sunrise Colony,4.0,ambulance,available,19,21,Tuesday,medium,clear,not_applicable,11,automated,2.4
+RC-REQ-000674,2025-03-26 07:43:18,Airport Road,7.0,ambulance,available,32,7,Wednesday,high,cloudy,not_applicable,6,automated,3.0
+RC-REQ-000675,2025-03-26 07:53:15,Riverside,2.2,hospital,available,0,7,  Wednesday  ,high,clear,available,3,automated,1.8
+RC-REQ-000676,2025-03-26 08:20:52,University Area,5.0,hospital,available ,2,8,Wednesday,high,cloudy,available,8,automated,3.7
+RC-REQ-000677,2025-03-26 13:05:07,Sunrise Colony,5.3,ambulance,available,1,13,Wednesday,medium,clear,not_applicable,5,manual,7.4
+ RC-REQ-000678 ,2025-03-26 15:19:05,Old Town,2.3,ambulance,busy,9,15,Wednesday,medium,rainy,,5,automated,15.4
+RC-REQ-000679,26/03/2025 15:41,Maple Heights,5.4,hospital,available,unknown,15,Wednesday,low,cloudy,available,8,manually,6.4
+RC-REQ-000680,2025-03-26T15:48:24,Harbor View,2.4,hospital,available,6,15,Wednesday,low,clear,limited,4,manual,7.8
+RC-REQ-000681,26-Mar-2025 16:00,  Northgate  ,5.2,hospital,available,7,16,Wednesday,medium,foggy,limited,5,manual,10.2
+RC-REQ-000682,03-26-2025 05:55 PM,Industrial Zone,2.9,ambulance,available,11,NA,Wednesday,high,clear,not_applicable,7,AUTOMATED,2.5
+RC-REQ-000683,03-26-2025 09:06 PM,Maple Heights,1.6,ambulance,available,,21,Wednesday,LOW,cloudy,not_applicable,4,automated,2.5
+RC-REQ-000684,26/03/2025 23:09,RIVERSIDE,3.7,hospital,limited,9,23,Wednesday,high,  Clear  ,limited,2,automated,10.5 min
+RC-REQ-000685,2025-03-27 02:10:59,Northgate,3.2,ambulance,limited,12,2,Thursday,medium,rainy,not_applicable,3,automated,8.5
+RC-REQ-000686,2025-03-27 07:16:55,Airport Road,8.3,hospital,available,17,7,Thursday,high,  Foggy  ,available,6,manual,18.6
+RC-REQ-000687,2025-03-27 10:36:42,University Area,"4,6",ambulance,available,26,10,Thursday,medium,clear,not_applicable,12,automated,2.8
+rc-req-000688,2025-03-27 11:22:35,Airport Road,1.9,ambulance,available,12,11,Thursday,low,cloudy,not_applicable ,5,automated,1.2
+RC-REQ-000689,2025-03-27 13:58:02,Sunrise Colony,3.0,hospital,  Available  ,7,13,,medium,rainy,limited,6,automated,5.2
+RC-REQ-000690,2025-03-27 16:32:44,Northgate,3.3,ambulance,limited,19,16,Thursday,medium,cloudy,not_applicable,6,automated,8.0
+RC-REQ-000691,27/03/2025 17:40,Central Market,5.3,hospital,busy,0,17,Thursday,high,cloudy,NA,6,manual,17.8
+RC-REQ-000692,27-Mar-2025 18:14,Industrial Zone,4.5,ambulance,available,5,18,Thursday,high,clear,not_applicable,5,manual,5.7
+RC-REQ-000693,2025-03-27 19:07:02,Riverside,4.1,ambulance,available,2,19,Thursday,high,clear,not_applicable,7,manual,3.9
+RC-REQ-000694,27/03/2025 22:00,Riverside,2.4,ambulance,available,24,22,Thursday,high,,not_applicable,4,manual,9.5
+RC-REQ-000588,15-Mar-2025 18:13,University Area,13.7,N/A,limited,12,18,Saturday,high,clr,limited,5,automated,9.0
+RC-REQ-000695,2025-03-27 23:21:06,Maple Heights,5.0,hospital,avail,21,23,Thursday,medium,clear,available,4,automated,3.3
+RC-REQ-000696,2025-03-28 00:34:46,Harbor View,11.1,ambulance,busy,12,0,FRI,,rainy,not_applicable,?,manual,19.9
+RC-REQ-000697,2025-03-28 03:26:04,Green Park,1.1,amb,limited,33,3,Friday,low,clear,not_applicable,2,manual,12.0
+RC-REQ-000698,03-28-2025 03:30 PM,unknown,2.0,ambulance,available,11,15,Friday,low,clear,not_applicable,3,automated,3.0
+RC-REQ-000699,2025-03-28 18:22:50,Central Market,6.5,ambulance,available,?,18,Friday,high,cloudy,not_applicable,8,automated,4.6
+RC-REQ-000700,28/03/2025 18:55,Old Town,8.2,ambulance,available,0,18,Friday,high,cloudy,not_applicable,6,manual,15.5
+RC-REQ-000701,null,Central Market,1.2,ambulance,busy,8,7,Saturday,high,foggy,not_applicable,8,automated,10.7
+RC-REQ-000702,2025-03-29 09:27:18,Airport Road,5.2,ambulance,limited,5,-1,Saturday,high,N/A,not_applicable,7,automated,10.7
+RC-REQ-000703,2025-03-29 11:21:01,Riverside,999,ambulance,available,21,11,Saturday,high,clear,not_applicable,6,automated,5.7
+RC-REQ-000704,29/03/2025 18:15,Airport Road,5.6,hospital,available,7,18,Saturday,medium,clear,available,2,,5.8
+RC-REQ-000705,2025-03-29 21:54:56,Hillcrest,4.9,hosp,busy,13,21,Saturday,medium,clear,limited,8,manual,22.7
+RC-REQ-000706,2025-03-29 22:41:25,Lakeview,2.8,hospital,busy,5,22,Saturday,high,cloudy,null,,manual,16.2
+RC-REQ-000707,2025-03-30 07:45:17,Airport Road,4.0,hospital,limited,3,7,Sunday,low,clear,limited,2,automated,19.1
+RC-REQ-000708,2025-03-30 12:36:05,Riverside,4.6,hospital,available,4,12,Sunday,medium,rainy,available,3,manual,8.9
+RC-REQ-000709,2025-03-30 13:07:52,Sunrise Colony,3.7,hospital,available,5,13,Sunday,low,Clear,available ,5,automated,2.8
+RC-REQ-000710,30-Mar-2025 16:37,Old Town,"1,5",ambulance,available,4,16,Sunday,medium,cloudy,not_applicable,5,manual,7.2
+RC-REQ-000711,2025-03-30 18:26:02,Northgate,4.8,ambulance,BUSY,5,18,Sunday,low,cloudy,not_applicable,4,,6.0
+RC-REQ-000712,2025-03-30 18:58:36,Old Town,8.3,hospital,limited,9,-1,Sunday,medium,clear,available,6,manual,2.1
+RC-REQ-000713,2025-03-30 23:11:14,Maple Heights,5.2,ambulance,available,14,23,Sunday,low,cloudy,not_applicable,5,automated,2.1
+RC-REQ-000714,2025-03-31T09:50:14,Airport Road,2.8,ambulance,limited,4,9,Monday,high,clear,not_applicable,5,manual,5.9
+RC-REQ-000715,2025-03-31 09:59:57,Northgate,6.5,hospital,limited,45,9,Monday,medium,cloudy,?,6,automated,8.5
+RC-REQ-000633,20-Mar-2025 19:58,Central Market,4.7,hospital,busy,15,19,Thursday,medium,rainy,limited,6,automated,11.7
+RC-REQ-000716,31-Mar-2025 11:13,Central Market,10.0,hospital,limited,4,11,Monday,medium,NA,available,5,automated,12.9
+RC-REQ-000717,2025-03-31T12:01:39,Sunrise Colony,21.2 km,hospital,limited,6,12,Monday,high,foggy,available,7,automated,18.1
+RC-REQ-000718,31/03/2025 14:06,Hillcrest,6.0,ambulance,available,12,14,Monday, medium,clear,Not_Applicable,4,manual,16.0
+RC-REQ-000719,2025-03-31 18:09:22,Lakeview,5.5,ambulance,available,0,18,Monday,high,clear,not_applicable,8,manual,3.0
+RC-REQ-000720,2025-03-31 18:14:23,Maple Heights,7.8,hospital,Available,11,18,Monday,-,rainy,available,5,automated,12.4
+RC-REQ-000721,2025-03-31 19:04:00,Central Market,18.1,Hosp.,limited,30,19,Monday,high,cloudy,available,4,automated,10.4
+RC-REQ-000722,2025-03-31T19:31:23,Southfield,6.7,hospital,available,2,19,Monday,high,clear,available,5,manual,6.9
+RC-REQ-000723,2025-03-31 19:35:53,Sunrise Colony,6.1,hospital,busy,4,,NA,high,cloudy,unavailable,6,AUTOMATED,17.6
+RC-REQ-000724,2025-03-31 19:42:40,Industrial Zone,6.4,ambulance,available,7,19,Monday,medium,foggy,not_applicable,2,automated,4.5
+RC-REQ-000725,2025-03-31 20:23:12,Central Market,1.3,ambulance,available,9,20,  Monday  ,medium,rainy,not_applicable,6,automated,7.3
+RC-REQ-000726,01-Apr-2025 06:52,Sunrise Colony,6.1,hospital,available,0,6,Tuesday,low,clear,available,4,automated,1.1
+RC-REQ-000727,2025-04-01 08:27:44,Harbor View,3.7,hospital,limited,51,8,Tuesday,medium,clear,,2,automated,9.7
+RC-REQ-000728,2025-04-01T11:37:34,Maple Heights,11.0,hospital,available,17,11,Tuesday,low,cloudy,available,N/A,manual,9.0
+RC-REQ-000729,2025-04-01 17:39:43,Southfield,5.9,ambulance,available,NA,17,Tuesday,high,cloudy,not_applicable,4,automated,5.5
+RC-REQ-000730,2025-04-01 17:43:18,Airport Road,3.9,hospital,available,9,17,Tuesday,high,clear,available,6, manual,14.9
+RC-REQ-000731,2025-04-01 19:36:27,Northgate,,hospital,limited,10,19,Tuesday,medium,clear,limited,4,manual,10.4
+RC-REQ-000732,01/04/2025 19:37,Sunrise Colony,2.2,ambulance,available,18,19,TUESDAY,low,foggy,not_applicable,8,automated,5.8
+RC-REQ-000733,2025-04-02 07:14:50,Airport Road,12.5,hospital,available,35,7,Wednesday,high,clear,available,8,automated,9.5
+ RC-REQ-000734 ,02-Apr-2025 10:19,Northgate,10.7 km,hospital,available,4,10,Wednesday,high,cloudy,available,4,automated,13.5
+RC-REQ-000735,2025-04-02 11:32:08,University Area,7.0,ambulance,available,0,11,Wednesday, low,clear,not_applicable,6,automated,
+RC-REQ-000736,2025-04-02 12:16:32,Sunrise Colony,5.0,hospital,limited,4,12,Wednesday,,rain,available,N/A,automated,5.6
+RC-REQ-000737,2025-04-02 14:50:43,Central Market,6.2 km,hospital,limited,2,14,Wednesday,high,foggy,limited,7,automated,10.7
+RC-REQ-000738,2025-04-02 17:22:36,Maple Heights,6.0,hospital,available,9,17,Wednesday,medium,clear,available,8,automated,6.1
+RC-REQ-000739,02/04/2025 20:09, Northgate,8.7 km,ambulance,limited,NA,20,Wednesday,high,cloudy,not_applicable,,automated,8.6
+RC-REQ-000740,03/04/2025 07:37,Riverside,9.8,ambulance,available,18,7,Thursday,high,cloudy,not_applicable,10,automated,7.5
+RC-REQ-000741,2025-04-03T08:20:38,Green Park,2.8,ambulance,limited,4,8,Thursday,medium,clear,not_applicable,10,manual,5.8
+RC-REQ-000742,2025-04-03 08:31:31,Sunrise Colony,7.7,hospital,busy,28,8,Thursday,high,foggy,limited,6,automated,17.2
+RC-REQ-000743,2025-04-03 09:17:18,Harbor View,6.6,ambulance,available,12,9,Thursday,high,rainy,not_applicable,6,manual,7.1
+RC-REQ-000744,2025-04-03T12:42:29,Central Market,13.0, hospital,  Available  ,7mins,12,Thursday,med,clear,available,8,automated,6.9
+RC-REQ-000594,2025-03-16 11:08:22,Northgate,4.4 km,hospital,avaliable,12,11,Sunday,low,cloudy,available,6,manual,10.7
+RC-REQ-000745,03/04/2025 13:02,Central Market,11.0,hospital,available,0,13,Thursday,low,null,available,4,automated,5.4
+RC-REQ-000746,04-03-2025 03:33 PM,Green Park,3.3,ambulance,available,33,15,Thursday,medium,cloudy,not_applicable,4,automated,4.5
+RC-REQ-000747,2025/04/03 22:16,University Area,2.4,ambulance,AVAILABLE,6,22,Thursday, medium,clear,not_applicable,4,manual,5.3
+RC-REQ-000748,2025-04-04 07:38:57,Harbor View,6.8,ambulance,available,19,7,Friday,high,clear,not_applicable,3,manual,37.4
+RC-REQ-000749,2025-04-04T07:49:01,Old Town,8.1,hospital,available,20,7,Friday,high,rainy,NA,7,automated,2.3
+RC-REQ-000750,04/04/2025 07:49,Southfield,8.2,hospital,available ,11,7,Friday,medium,clear,available,3,automated,7.8
+RC-REQ-000751,2025-04-04 10:06:48,Airport Road,8.1,ambulance,limited,23,10,Friday,medium,foggy,not_applicable,6,automated,6.8
+RC-REQ-000752,04/04/2025 10:19,Old Town,3.0,ambulance,limited,31,10,Friday,low,clear,not_applicable,7, manual,8.3
+RC-REQ-000753,2025-04-04 15:20:25,Lakeview,1.6, ambulance,busy,2,15,Friday,high,clear,not_applicable,7,automated,"8,3"
+RC-REQ-000754,04-04-2025 05:09 PM,University Area,7.5,AMBULANCE,busy,9 min,17h,Friday,medium,rainy,not applicable,6,automated,18.4
+RC-REQ-000755,2025-04-04 17:28:35,University Area,12.2,ambulance,available,3,17,Friday,,clear,not_applicable,5,manual,10.4
+RC-REQ-000756,2025-04-04 20:15:05,University Area,1.2,ambulance,busy,20,20,Friday,medium,cloudy,not_applicable,5,automatic,7.3
+RC-REQ-000757,2025-04-04 20:42:19,Central Market,3.2,hospital,Avail.,12,20,Friday,high,clear,available,5,manual,7.0
+RC-REQ-000758,04/04/2025 21:24,Maple Heights,4.8,ambulance,available,37,21,Friday,low,clear,not_applicable,4,auto,3.0
+RC-REQ-000759,2025-04-05 01:13:20,Southfield,9.0,hospital,busy,14,01, Saturday,low,clear,limited,0,automated,9.4
+RC-REQ-000760,05-Apr-2025 11:07,Airport Road,4.5,ambulance,limited,0,20,Saturday,low,rainy,n.a.,9,automated,3.6
+RC-REQ-000761,2025-04-05 14:15:20,Old Town,8.6,hospital,limited,12,14,Saturday,medium,clear,limited,4,manual,9.2
+RC-REQ-000762,04-05-2025 04:52 PM,Industrial Zone,2.9,hospital,,10,16,Saturday,high,clear,available,3,automated,6.9
+RC-REQ-000763,2025-04-05T17:58:08,Hillcrest,2.9,Hospital,available ,10,17,Saturday,high,foggy,limited,8,automated,10.5
+RC-REQ-000764,2025-04-05 18:44:37,Maple Heights,4.8,ambulance,limited ,15,18,Saturday,medium,cloudy,not_applicable,3,manual,5.7
+RC-REQ-000765,2025-04-06 06:44:59,Hillcrest,4.9,hospital,available,68,6,Sunday,medium,CLEAR,unavailable,4,automated,13.0
+RC-REQ-000766,2025-04-06 07:05:12,Lakeview,5.5,hospital,available,0,7,Sunday,high,clear,available,3,automated,3.8
+RC-REQ-000767,2025-04-06 10:04:05,Central Market,3.6,hospital,limited,8,10,Sunday,medium,foggy,unavailable,6,automated,0
+RC-REQ-000768,2025-04-06 16:48:41,Airport Road,14.0,NA,available,24,NA,N/A,medium,,not_applicable,,automated,6.3
+RC-REQ-000769,2025/04/06 17:11,University Area,6.7,hospital,available,0,17,Sunday,high,cloudy,available,3,AUTOMATED,4.4
+RC-REQ-000770,2025-04-06 18:26:34,University  Area,3.2,hospital,available,3,18,Sunday,high,cloudy,available,4,manual,7.5
+RC-REQ-000771,2025-04-06 19:16:32,Maple Heights,7.2,hospital,available,4,19,Sunday,medium,clear,available,4,automated,9.8
+RC-REQ-000772,2025-04-06 21:38:11,Industrial Zone,5.0,hospital,available,25,21,Sunday,Medium,clear,available,7,automated,3.7
+RC-REQ-000773,2025-04-07 05:24:43,  University Area  ,8.2,hospital,available,1 min,5,Monday,,foggy,available,5,automated,3.2
+RC-REQ-000774,2025-04-07 06:00:41,Airport Road,8.9,ambulance,available,2,6,Monday,med,rainy,not_applicable,8,automated,3.7
+RC-REQ-000775,2025-04-07 10:28:39,Riverside,18.5,ambulance,available,29,10,Monday,high,clear,Not-Applicable,0,manual,13.7
+RC-REQ-000776,2025-04-07 14:12:42,Lakeview,5.8,ambulance,available,5,14,Monday,medium,rainy,not_applicable,4,automated,6.6
+RC-REQ-000777,2025-04-07T14:25:45,Central Market,5.1,hospital,busy,8,14,Monday,medium,clear,limited,5,automated,3.4
+RC-REQ-000778,2025-04-07 16:17:49,Southfield,15.7,hospital,available,7,16,Monday,high,cloudy,limited,4,manual,16.9
+RC-REQ-000779,2025-04-07 18:32:33,Sunrise Colony,6.7,hospital,?,9,18,Monday,medium,clear,LIMITED,-,automated,14.9
+RC-REQ-000780,,Northgate,6.3 km,ambulance,available,5,18,Monday,medium,clear,not_applicable,5,manual,11.4
+RC-REQ-000781,2025-04-07 18:56:04,green park,6.7,hospital,  Limited  ,0,18,Monday, high,clear,available,6,manually,11.9
+RC-REQ-000782,2025-04-07 20:35:55,central market,0.9,ambulance,Avail.,0,20,Monday,high,rainy,not_applicable,4,manual,10.2
+RC-REQ-000783,2025-04-08 12:19:24,Maple Heights,4.0,ambulance,available,7,12,Tuesday,medium,clear,not_applicable,6,automated,3.3
+RC-REQ-000784,2025-04-08 13:50:56,Southfield,7.2,hospital,busy,6,13,Tuesday,high,clear,limited,1,automated,12.8
+RC-REQ-000785,2025-04-08 15:29:48,Old Town,5.1,ambulance,available,2,15,Tuesday,medium,clear,not applicable,6,automated,3.9
+RC-REQ-000786,2025-04-08 21:34:17,Harbor View,1.8,ambulance,available,13,2,Tuesday,medium,cloudy,not applicable,7,automated,2.5
+RC-REQ-000787,08/04/2025 23:39,Sunrise Colony ,4.9,hospital,available,10,23,Tuesday,medium,cloudy,limited,5,automated,7.6
+RC-REQ-000788,NA,Lakeview,4.2,hospital,available,1,2,Wednesday,medium,cloudy,available,6,automated,5.8
+RC-REQ-000694,27/03/2025 22:00,Riverside,2.4,ambulance,available,24,22,Thursday,high,,not_applicable,4,automated,27.4
+RC-REQ-000789,2025-04-09 08:17:52,University Area,2.8,hospital,limited ,3,8,Wednesday,high,cloudy,unavailable,4,man.,14.6
+RC-REQ-000790,09-Apr-2025 08:36,Maple Heights,2.6,ambulance ,available,7,8,Wednesday,high,foggy,not_applicable,-1,automated,1209.1
+RC-REQ-000607,2025-03-17 16:34:10,Industrial Zone,5.2,ambulance,busy,9,16,Monday,high,Rainy,not_applicable,7,manual,14.1
+RC-REQ-000791,N/A,null,9.4,hospital,null,37,8,N/A,N/A,foggy,,4,automated,10.6
+RC-REQ-000792,09-Apr-2025 10:49,Central Market,2.9,hospital,limited,40,10,Wednesday,high,clear ,available,7,automated,7.8
+RC-REQ-000793,2025-04-09 17:50:12,Sunrise Colony,9.3,hospital,available,0,17,Wednesday,high,fog,available,8,automated,5.3
+RC-REQ-000794,2025-04-09 18:00:48,Old Town,1.5,ambulance,available,13,18,Wednesday,medium,clear,not_applicable,4,AUTOMATED,1.9
+RC-REQ-000795,2025-04-09 19:01:46,Maple Heights,2.0,ambulance,available,21,19,Wednesday,low,clear,null,6,automated,3.3
+RC-REQ-000796,2025-04-09 19:23:17,Old Town,2.4,ambulance,available,1,19,Wednesday,medium,  Cloudy  ,not_applicable,5,automated,4.5
+RC-REQ-000797,2025-04-09 21:17:21,Southfield,"4,4",ambulance,available,17,21,Wednesday,low,cloudy,not_applicable,unknown,manual,7.3
+RC-REQ-000798,2025-04-10 09:29:58,Old Town,4.6,ambulance,available,6,9,Thursday,medium ,clear,available,8,manual,4.2
+RC-REQ-000799,2025-04-10 14:11:20,Central Market,,ambulance,available,21,14,Thursday,medium,Clear,not_applicable,10,manual,8.8
+RC-REQ-000800,10/04/2025 14:39,Hillcrest,2.7,ambulance,limited,9,14,Thursday,medium,rainy,not_applicable,10,auto,7.3
+RC-REQ-000801,2025-04-10 17:04:30,Old Town,NA,hospital,limited,3,17,Thursday,medium,clear,limited,6,automated,8.2
+RC-REQ-000802,10/04/2025 17:43,Central Market,5.9,hospital,limted,14,17,Thursday,  Medium  ,cloudy,,6,auto,12.3
+RC-REQ-000803,2025-04-10 18:37:28,NA,5.7,hospital,available,1,18,Thursday,high,clear,available,6,automated,8.7
+RC-REQ-000804,2025-04-10 20:06:36,Harbor View,3.4,ambulance,limited,3,20,Thursday,HIGH,cloudy,not_applicable,4,automated,10.8
+RC-REQ-000805,2025-04-10 21:14:06,Northgate,5.0,hospital,available,51,21,Thursday,medium,clear ,available,,manual,6.7
+RC-REQ-000629,2025-03-20T08:12:12,Riverside,6.3,hospital,busy,5,8,Thursday,medium,foggy,unavailable,3,automated,9.0
+RC-REQ-000806,2025-04-11 00:07:34,Riverside,4.9,ambulance,available,20,0,Friday,medium,foggy,not_applicable,2,automated,6.4
+RC-REQ-000807,2025/04/11 06:25,Central Market,4.9,ambulance,available,34,6,Friday,Med.,foggy,not_applicable,9,manual,15.6
+RC-REQ-000808,11/04/2025 09:57,Airport Road,2.8,hospital,  Available  ,1,9,Friday,high,clear,available,8,automated,2.3
+RC-REQ-000809,2025-04-11 11:03:08,Sunrise Colony,2.7,ambulance,available,1,11,Friday,high,cloudy,not_applicable,10,manual,8.5
+RC-REQ-000810,2025-04-11 17:24:04,Riverside,2.0,AMBULANCE,available,1,17,Friday,low,clr,not_applicable,5,automated,3.2
+RC-REQ-000811,-,Hillcrest,6.5,hospital,limited,5,17,Friday,medium, foggy,limited,9,manual,10.9
+RC-REQ-000812,2025-04-11 17:44:05,Sunrise Colony,7.9,ambulance,available,12,17,Friday,medium,cloudy,not_applicable,7,automated,
+RC-REQ-000813,2025-04-11 22:23:51,Old Town,10.6,hospital,available,3,22,Friday,low,cloudy,avail,4,automated,3.8
+RC-REQ-000814,04-11-2025 11:20 PM,Maple Heights,10.3,hospital,available,12,23,Friday,medium,clear, available,4,manual,7.2 min
+RC-REQ-000815,12-Apr-2025 08:01,Lakeview,1.6,ambulance,available,28,8,Saturday,medium,clear,not_applicable,unknown,manual,6.8
+RC-REQ-000816,2025-04-12 08:47:26,Airport Road,5.1,ambulance,limited,20,8,Saturday,medium,clear,not_applicable,2,automated,11.1
+RC-REQ-000817,12/04/2025 11:04,Lakeview,6.4,hospital,available,8,11,Saturday,low,cloudy,available,5,manual,3.3
+RC-REQ-000818,2025-04-12 15:44:07,Southfield,3.3,ambulance,busy,24mins,15,Saturday,medium,cldy,not_applicable,6,manual,10.3
+RC-REQ-000635,2025-03-21 09:13:39,INDUSTRIAL ZONE,5.1, hospital ,  Available  ,1 min,9,Friday,medium,clear,available,5,manual,4.7
+RC-REQ-000819,2025-04-12 16:41:27,Airport Road ,5.5,hospital,AVAILABLE,52,16,SATURDAY,high,clear,limited,7,automated,7.0
+RC-REQ-000820,04-12-2025 06:03 PM,Central Market,2.0,ambulance,busy,42,18,Saturday,medium,clear,not_applicable,7,manual,6.3
+RC-REQ-000821,2025-04-12 21:40:53,INDUSTRIAL ZONE,N/A,hospital,available,12,21,Saturday,medium,clr,available,8,automated,4.9
+RC-REQ-000822,2025-04-13 06:57:17,Southfield,5.5,hospital,limited,29,6,Sunday,medium,clear,limited ,2,automated,13.2
+RC-REQ-000823,2025-04-13 11:14:37,Central Market,6.9,hospital,available ,9,11,Sunday,medium,,available,5,automated,10.0
+RC-REQ-000824,2025-04-13 11:48:37,Lakeview,4.5,hospital,available,72,11,Sunday, low,clear,available,9,automated,7.7
+RC-REQ-000825,2025-04-13 18:59:27,Harbor View,3.0,hospital,available,9,18,Sunday,high,rainy ,available,6,automated,11.8
+RC-REQ-000826,2025-04-14 06:30:59,Maple Heights,5.5,hospital,limited,-,6,Monday,high,foggy,available,2,manual,14.9
+RC-REQ-000827,2025-04-14T07:04:12,Maple Heights,7.1,hospital,AVAILABLE,3,7,Monday,high,clear,available,4,automated,10.6
+RC-REQ-000828,2025-04-14 08:32:59,  Southfield  ,2.2,ambulance,,20,8,Monday,high,foggy,not_applicable,7,automated,5.8
+RC-REQ-000829,2025-04-14 11:10:38,null,1.7,ambulance,available,4,11,Monday ,medium,cloudy,not_applicable,6,manual,2.0
+RC-REQ-000830,2025-04-14 13:23:30,Lakeview,4.3,hospital,Available,3,13,Monday,low ,cloudy,AVAILABLE,4,automated,5.3
+RC-REQ-000831,2025-04-14T13:23:33,Southfield,4.9,hospital,busy,,13,Monday,medium,clear,unavailable,1,manual,15.5
+RC-REQ-000832,2025-04-14 17:16:04,  Industrial Zone  ,5.1,hospital,available,6,17,Monday,medium,clear,available,7,automated,5.4
+RC-REQ-000833,2025-04-14 17:52:04,Hillcrest,2.8,ambulance,limited,3,17,Monday,medium,clear,not_applicable,3,automated,7.1
+RC-REQ-000834,2025-04-14 19:46:49,Airport Road,8.9,hospital,busy,29,19,Monday,medium,clear,limited,,,13.7
+RC-REQ-000835,2025-04-14 20:38:02,Maple Heights,5.7,hospital,available,-,20, Monday,high,clear,available,7,auto,5.0
+RC-REQ-000836,14/04/2025 20:59,Northgate,4.7,ambulance,available,42,20,Monday,medium,clear,not_applicable,5,manual,9.3
+RC-REQ-000837,2025-04-15 06:05:58,Riverside,4.3,ambulance,available,3,6,Tuesday,  High  ,rainy,not_applicable,5,automated,4.8
+RC-REQ-000838,15/04/2025 08:03,Old Town,3.6,hospital,available,12,8,Tuesday,medium,clr,available,10,MANUAL,4.8
+RC-REQ-000839,2025-04-15 08:25:28,University Area,0.8,  Ambulance  ,busy,13,8,Tuesday,medium,foggy,not_applicable,1,automated,13.9
+RC-REQ-000840,2025-04-15 12:55:42,Riverside,16.5,hospital,available,8,12,Tuesday,medium,clear, available,5,manual,11.5
+RC-REQ-000841,2025-04-15 16:10:52,Hillcrest,7.8,hospital,busy,9,16,Tuesday,medium,rainy,unavailable,5,automated,19.5
+RC-REQ-000842,2025-04-15 19:00:45,Lakeview,2.6,ambulance,available,16,19,Tuesday,high,clear,not_applicable,8,automated,0.8
+RC-REQ-000843,2025-04-15 19:29:07,central market,7.3,ambulance,available,5,19,Tuesday,high,rainy,NA,5,automated,13.8
+RC-REQ-000844,15/04/2025 20:24,Old Town,10.0,hospital,busy,17,20,null,high,cloudy,available,10,manual,14.3
+RC-REQ-000845,2025-04-15 21:32:58,Riverside,2.2,ambulance,available,10,21,Tuesday,medium,cloudy,  Not_Applicable  ,8,automated,4.2
+RC-REQ-000846,04-16-2025 06:14 AM,Sunrise Colony,4.3,amb,available,5,6,Wednesday,medium,clear,NOT_APPLICABLE,3,manual,9.4
+RC-REQ-000847,04-16-2025 07:32 AM,Hillcrest,6.6,hospital,limited,753,7,Wednesday,  High  ,rainy,available,1,automated,11.6
+RC-REQ-000848,2025/04/16 08:35,Northgate,2.4,hospital,available,10,8,Wednesday,high, clear,available ,6,automated,6.6
+RC-REQ-000849,2025-04-16 15:11:36,Green Park,9.8,ambulance,available,8,15,Wednesday,medium,clear,not_applicable,7,manual,6.9
+RC-REQ-000850,16/04/2025 18:43,Riverside,7.5,hospital,available,25,18,Wednesday,medium,cloudy,available,5,manual,17.1
+RC-REQ-000851,16/04/2025 18:46,Riverside,7.5,hospital,busy,8,18,Wednesday,high,rainy,,4,manual,12.6
+RC-REQ-000852,2025-04-16 18:47:41,Northgate,9.1,ambulance,available,4,18,Wednesday,low,clear,not_applicable,4,automated,5.8
+RC-REQ-000853,2025-04-16 19:50:01,Central Market,NA,ambulance,limited,33,19,Wednesday,high,  Clear  ,not_applicable,7,automated,12.9
+RC-REQ-000854,2025-04-16 19:52:40,University Area,3.5,ambulance,available,20,19,  Wednesday  ,high,foggy,not_applicable,6,automated,2.5
+RC-REQ-000855,2025-04-16 22:16:11,Northgate,7.0,hospital,busy,14,22,Wednesday,medium,Clear,unavailable,1,  Automated  ,21.1
+RC-REQ-000856,2025-04-17 09:09:14,Green Park,5.6,ambulance ,limited,2mins,9,Thursday,high,clear,not_applicable,6,automated,6.3
+ RC-REQ-000857 ,17-Apr-2025 09:19,Lakeview,7.4,HOSPITAL,available,18,9,Thursday,high,clear,available,5,automated,5.6
+RC-REQ-000858,2025-04-17 10:38:47,Hillcrest,5.0,hospital,,8,10,Thursday,high,foggy,unavailable,2,automated,26.6
+RC-REQ-000859,2025-04-17 11:14:57,Lakeview,4.4 km,ambulance,limited,15,11,Thursday,medium,clear,not_applicable,10,automated,4.0
+RC-REQ-000860,04-17-2025 04:39 PM,Green Park,1.5,hospital,limited,38,16,Thursday,high ,foggy,limited,3,automated,16.1
+RC-REQ-000861,2025-04-17 17:09:28,Green Park,5.3, ambulance,available,6,17,Thursday ,medium ,clear,not_applicable ,8,manual,4.1 min
+RC-REQ-000862,2025-04-17 19:09:15,Maple Heights,26.5,hospital,available,?,19,Thursday,high,clear, limited,4,automated,13.1
+RC-REQ-000863,2025-04-17T22:27:02,Lakeview,6.8,hospital,avail,2123,22,Thursday,high,clear,available,4,automated,7.3
+RC-REQ-000864,2025-04-18 01:38:46,Sunrise Colony,21.1,hospital,limited,10 min,1,Friday,low,cloudy,limited,2,manual,14.3
+RC-REQ-000865,2025-04-18 09:18:40,Maple Heights,4.4,hospital,available,2,12,Friday,high,cloudy,limited,6,automated,5.1
+RC-REQ-000866,-,Riverside,null,hospital,avail,18,-,,medium,,,,manual,-16.8
+RC-REQ-000867,2025-04-18 11:57:00,Central Market,3.8,hospital,limited,15,11,Friday,high,foggy,Limited,5,automated,11.9
+RC-REQ-000868,18-Apr-2025 12:54,Old Town,12.1,hospital,limited,3,12,Friday,medium,cloudy,limited,3,manual,13.3
+RC-REQ-000869,2025-04-18 17:03:10,Central Market,4.6,hospital,busy,30,17,FRI,Med.,clear,Available,6,manual,10.4
+RC-REQ-000870,2025-04-18 18:00:14,Central Market,5.2,hospital,busy,31,18,Friday,medium,Clear,not_applicable,6,automated,8.5
+RC-REQ-000871,2025-04-18 21:55:58,Harbor View,4.2,ambulance,limited,4,21,Friday,low,clear,not_applicable,8,automated,4.3
+RC-REQ-000872,2025-04-19 07:20:29,Central Market,7.2,hospital,available,2,7,Saturday,medium,clear,available,6,Automated,5.5
+RC-REQ-000873,2025-04-19 08:34:49,Green Park,0,hospital,available,62,8,Saturday,high,cloudy,available,2,manual,19.3 min
+RC-REQ-000874,04-19-2025 08:41 AM,Lakeview,5.7,Hosp.,available,17,8, Saturday,high,clear,limited,5,automated,5.3
+RC-REQ-000875,2025-04-19 08:50:00,Industrial Zone,30.0,hospital,available,14,8,Saturday,medium,clear,available,5,manually,17.3
+RC-REQ-000876,2025-04-19 08:58:08,Old Town,8.7,hospital,limited,13,8,Saturday,high,clear,available,7,manual,15.1
+RC-REQ-000877,2025-04-19 09:35:17,University Area,73.5,ambulance,available ,23 min,09,Saturday,high,rainy,not_applicable,7,automated,3.6
+RC-REQ-000878,2025-04-19 12:31:40,Maple Heights,3.7,ambulance, available,2,12,Saturday,high ,clear,not_applicable,9,automated,4.2
+RC-REQ-000879,2025-04-19 14:49:43,Hillcrest,4.1,hospital,NA,18,14,Saturday,medium,rainy,available,5,automated,3.1
+RC-REQ-000880,NA,SUNRISE COLONY,4.5km,hospital,limited,12,15,Saturday,low,rainy,available,NA,manual,"3,2"
+RC-REQ-000881,2025-04-19 16:47:50,Maple Heights,2.5,hospital,busy,11,16,Saturday,medium,clear,limited,1,automated,8.1
+RC-REQ-000882,2025-04-19 19:35:03,Sunrise Colony,3.2,hospital,limited,5,19,Saturday,low,clear,limited,8,automated,3.0
+RC-REQ-000883,2025-04-19 21:43:51,Harbor View,11.5,ambulance,available,4,21,Saturday,medium,clear,not_applicable,4,automated,8.0
+RC-REQ-000884,2025-04-19 23:13:52,Industrial Zone,2.8,ambulance,limited,7,23,Saturday,low,clear,not_applicable,3,?,6.0
+RC-REQ-000885,2025-04-20 00:34:33,Central Market,,hospital,busy,36,0,Sunday,low,clear,limited,56,automated,16.1
+RC-REQ-000886,04-20-2025 07:50 AM,Hillcrest,3.6,hospital,limited,7,7,Sunday,medium,cloudy,limited,8,automated,4.0
+RC-REQ-000887,2025-04-20T12:21:20,Lakeview,4.3,ambulance,limited,9,12,  Sunday  ,medium,clear,not_applicable,2,manual,6.3
+RC-REQ-000888,2025-04-20 16:04:12,Airport Road,4.7,ambulance, available,65,16,Sunday,low,clear,,6,automated,9.4
+RC-REQ-000797,2025-04-09 21:17:21,Southfield,"4,4",ambulance,available,17,21,Wednesday,low,cloudy,not_applicable,unknown,manual,3.7
+RC-REQ-000889,2025-04-20 16:07:50,Industrial  Zone,3.9,ambulance,available,21,16,Sunday,medium,cloudy,Not_Applicable,6,automated,7.8
+RC-REQ-000890,2025-04-20 16:56:51,Green Park,91.3,ambulance,available,14,16,SUNDAY,high,clear,,7,manual,1.4
+RC-REQ-000891,2025-04-20 17:34:33,Central Market,999,ambulance,available,5,17,Sunday,high,cloudy,not_applicable,8,automated,0.4
+RC-REQ-000892,2025-04-20 17:42:41,Riverside,5.4,ambulance,null,22,17,Sunday,medium,cloudy,not_applicable,6,automated,6.2
+RC-REQ-000893,20-Apr-2025 17:47,Maple Heights,2.3,ambulance,available,23,17,Sunday,high, clear,not_applicable,10,automated,1.0
+RC-REQ-000894,2025-04-20 17:58:25,Green Park,7.2,hospital,busy,26,17, Sunday,High,clear,ltd,9,AUTOMATED,12.1
+RC-REQ-000895,2025-04-20 20:08:24,Green Park,11.8,ambulance,Avail.,36,20,Sunday,high,clear,not_applicable,4,manual,9.0
+RC-REQ-000896,2025-04-20 20:53:08,Industrial Zone,13.8,hospital,AVAILABLE,6,20,Sunday,low,clear,available,4,-,3.2
+RC-REQ-000897,2025-04-21 07:26:50,Airport Road,41.1,ambulance,limited,12,7,Monday,high,,Not-Applicable,3,manual,0.5
+RC-REQ-000898,2025-04-21 11:36:13,Green Park,12.6,hospital,available,2,11,Monday,medium,rainy,available,3,manual,14.5
+RC-REQ-000899,04-21-2025 03:49 PM,Harbor View,4.5,ambulance,busy,17mins,15,Monday,medium,cloudy,not_applicable,NA,automated,6.9
+RC-REQ-000900,2025-04-21 16:30:23,Harbor View,999,ambulance,busy,11,16,Monday,high,Cloudy,not_applicable,5,automated,6.4
+RC-REQ-000901,2025-04-21 17:54:16,Old Town,2.5,ambulance,available,10,17,Monday,high,clear,not_applicable,8,manual,631.4
+RC-REQ-000902,2025-04-21 19:30:29,Maple Heights,3.4,hospital,available,0,19,Monday,low,cloudy,LIMITED,5,  Manual  ,17.9
+RC-REQ-000903,21/04/2025 20:26,Green Park,,hospital,available,4,20,Monday,high,rainy ,AVAILABLE,12,automated,5.8
+RC-REQ-000904,2025-04-21 22:21:31,Industrial Zone,3.4,ambulance,available,3,22,Mon,medium,foggy,not_applicable,8,automated,9.0
+RC-REQ-000905,2025-04-22 08:18:33,Industrial Zone,13.0,ambulance,available,17,8,Tuesday,medium,clear,not_applicable,6,automated,5.5
+RC-REQ-000906,2025-04-22 09:02:21,Old Town,7.2,hospital,available,10,9,Tuesday,high,cloudy,unavailable,4,manual,6.9
+RC-REQ-000907,2025-04-22 10:19:50,Old Town,1.8,ambulance,limited,12,10,Tuesday,unknown,foggy,not_applicable,4,automated,8.2
+RC-REQ-000908,2025-04-22 18:09:42,Southfield,3.4,ambulance,busy,51,18,Tuesday,high,clear,not_applicable,4,manual,17.5
+RC-REQ-000909,2025-04-22 22:20:20,Maple Heights,N/A,hospital,available,11 min,3,Tuesday,medium,rainy,,8,automated,5.2
+RC-REQ-000910,2025-04-23 08:17:24,University Area,1.9,ambulance,available,7,8,Wed,Med.,foggy,not_applicable,5,automated,1.1
+RC-REQ-000911,23/04/2025 09:54,Airport Road,15.3,hospital,available,43,9,Wednesday,high,cloudy,available,6,automated,11.5
+RC-REQ-000912,23/04/2025 13:15,Lakeview,6.3,  Ambulance  ,available,1,13,Wednesday,  Low  ,rainy,not_applicable,4,automated,4.4
+RC-REQ-000913,2025-04-23 13:45:03,Lakeview,-9.1,hospital,available,18,13,Wednesday,low,clear,available,7,automated,6.1
+RC-REQ-000914,2025-04-23 15:35:13,Lakeview,3.1,Ambulance Svc,available,10,15,Wednesday,low,clear,not_applicable,5,automated,2.9
+RC-REQ-000915,2025-04-23 16:22:57,Lakeview,2.5,amb,available,3,16,Wednesday,medium,clear,NOT_APPLICABLE,8,manual,0.7
+RC-REQ-000916,23-Apr-2025 21:19,Sunrise Colony,4.6,hospital,limited,8 min,21,Wednesday,medium,clear,limited,8,manual,9.9
+RC-REQ-000917,2025-04-23 21:34:45,Northgate,5.9,hospital,busy,5,21,Wednesday,medium,cloudy,unavailable,7,manual,14.3
+RC-REQ-000918,2025-04-24 11:22:17,Green Park,2.9,ambulance,available,NA,11,Thursday,medium,cloudy,not_applicable,6,manual,8.2
+RC-REQ-000919,24-Apr-2025 15:00,Maple Heights,12.2,ambulance,limited,5,15,Thursday,medium,clear,  Not_Applicable  ,3,automated,12.0
+RC-REQ-000920,2025-04-24 18:14:28,Green Park,13.0,hospital,Avail.,2449,18,Thursday,medium,rainy,limited,3,automated,9.8
+RC-REQ-000921,2025-04-25 07:42:25,Central Market,78.0,hospital,busy,45,7,Friday,high,clear,unavailable,7,automated,10.2
+RC-REQ-000922,2025-04-25 10:39:33,Sunrise Colony,44.7,ambulance,available,13,10,Friday ,medium,rainy,not_applicable,,automated ,0.7
+RC-REQ-000923,2025-04-25T13:46:44,Riverside,4.6,hospital,available,19,13,Friday,low,clear,available,7,automated,6.1
+RC-REQ-000924,2025-04-25 19:51:13,Airport Road,5.3,hospital,limited,32,19,Friday,high ,?,available,7,automated,6.4
+RC-REQ-000925,26/04/2025 06:50,Green Park,17.2,hospital,  Busy  ,3,6,Saturday,medium,cloudy,limited,7,automated,11.8
+RC-REQ-000926,2025-04-26 06:52:54,Old Town,2.5,ambulance,AVAILABLE,8,6,Saturday,medium,clear,available,3,automated,6.7
+RC-REQ-000927,26/04/2025 11:39,Sunrise Colony,0,ambulance,avail,19,11,Saturday,low,rainy,not_applicable,3,manual,10.8
+RC-REQ-000928,2025-04-26 16:28:28,Maple Heights,6.8 km,ambulance,limited,5,16,Saturday,high,foggy,not_applicable,5,automated,5.9
+RC-REQ-000929,2025-04-26 16:29:56,Airport Road,1.7,hospital,available,NA,16,Saturday, medium,cloudy,available,8,automated,6.0
+RC-REQ-000930,26/04/2025 16:55,Industrial Zone,6.0,hospital,available,4,16,Saturday,high,cloudy,available,6,automated,4.0
+RC-REQ-000931,26/04/2025 17:24,Maple Heights,4.6,ambulance,available,10,17,Saturday,high,rainy,not_applicable,2,manual,7.1
+RC-REQ-000932,2025-04-26 20:09:07,Maple Heights,3.2,hospital,limited,11,20,Saturday,high,clear,unavailable,7,manual,6.1
+RC-REQ-000933,2025-04-27 08:40:22,Maple Heights,7.7,ambulance,limited ,10,8,Sunday,high,foggy,not_applicable,5,automated,14.3
+RC-REQ-000934,2025-04-27 10:10:44,Maple Heights,8.0,hospital,limited,2,10,Sunday,medium,clear,unavailable,0,automated,847.0
+RC-REQ-000935,2025-04-27T10:34:03,University Area,3.2,ambulance,available,24,10,Sunday,high,clear,not_applicable,6,manual,10.2
+RC-REQ-000936,,Hillcrest,13.1,hospital, limited,31,14,Sunday,medium,clear,unavailable,2,automated,9.8
+RC-REQ-000937,2025-04-27 14:42:20,Lakeview,3.7,ambulance,busy,3,14,Sunday,medium,clear,not_applicable,NA,manual,12.0
+RC-REQ-000938,27-Apr-2025 16:11,Lakeview,3.0,ambulance,Available,,16,Sunday,medium,rainy,not_applicable,7,AUTOMATED,3.0
+RC-REQ-000939,27/04/2025 17:44,Old Town,5.6,hospital,busy,50,17,Sunday,high,clear,unavailable,3,automated,8.2
+RC-REQ-000940,2025-04-27 18:01:12,Maple Heights,9.2,hospital,available,5,18,Sunday,high,rainy,available,7,automated,7.3
+RC-REQ-000941,2025/04/27 18:48,Sunrise Colony,4.8,ambulance,busy,10,NA,Sunday,Med.,clear,not_applicable,2,automated,11.2
+RC-REQ-000942,28/04/2025 07:25,Airport Road,5.3,hospital,limited,,7,Monday,high,cloudy,limited,3,automated,15.0
+RC-REQ-000943,28-Apr-2025 07:31,Lakeview,6.5,ambulance,limited,7,7,Monday,high,rainy,not_applicable,1,manual,11.4
+RC-REQ-000944,2025-04-28 09:02:00,Airport Road,2.8,ambulance,limited,18,9,Monday,MEDIUM,rainy,not_applicable,6,manual,10.5
+RC-REQ-000945,2025-04-28 10:18:28,Lakeview,6.3,hospital,available,12,10,Monday,medium,cloudy,available,7,automated,4.6
+RC-REQ-000946,28/04/2025 13:56,Northgate,4.3, ambulance,AVAILABLE,9,13,Monday,high,clear,not_applicable,9,automated,3.9
+RC-REQ-000947,2025-04-28 19:56:19,Green Park,4.5,  Hospital  ,available,4,19,Monday,medium,rainy,available,3,automated,4.7
+RC-REQ-000948,2025-04-28 23:01:44,Northgate,3.8,ambulance,limited,11,23,Monday,low,cloudy,not_applicable,3,automated,5.9
+RC-REQ-000949,2025-04-29 00:09:00,University Area,,ambulance,busy,13,0,Tuesday,low,cloudy,not_applicable,3,?,4.7
+RC-REQ-000950,2025-04-29 06:17:01,Green Park,5.5,ambulance,available,17,6,Tuesday,medium,cldy,n.a.,5,automated,4.0
+RC-REQ-000951,2025-04-29 09:38:57,Industrial Zone,17.7,hospital,available,6 min,9,Tuesday,medium,cloudy, available,7,automated,8.2
+RC-REQ-000952,2025-04-29 10:49:03, Riverside,6.0,hospital,available,5,10,Tuesday,medium,clear,available,4,manual,8.2
+RC-REQ-000953,2025-04-29 13:28:07,Lakeview,5.5,hospital,Available,12,13,Tuesday,low ,,available,5,automated,2.8
+RC-REQ-000954,2025-04-29 13:56:34,University Area,14.6,hospital,available,21,13,Tuesday,,cloudy,null,4,automated,-16.7
+RC-REQ-000955,2025-04-29 15:03:54,Southfield,14.5,ambulance,limited,33,15,Tuesday,medium,rainy,Not_Applicable,3,automated,16.7
+RC-REQ-000956,2025-04-29 15:49:31,Hillcrest,3.3,hospital,available,2,15,Tuesday,medium,clr,available,3,Manual,9.3
+RC-REQ-000957,29-Apr-2025 18:26,Green  Park,5.8,ambulance,available,1,18,Tuesday,high,clear,not_applicable,4,Automated,
+RC-REQ-000958,29/04/2025 19:13,Lakeview,7.0,ambulance,available,2422,19,Tuesday,low,cloudy,Not-Applicable,8,manual,9.7
+RC-REQ-000959,2025-04-29 21:36:59,Northgate,4.0,ambulance,limited,9,21,Tuesday,low,clear,not_applicable,6,manual,9.7
+RC-REQ-000960,2025-04-30 02:29:41,N/A,2.5,hospital,available,10 min,2,Wednesday,low,cloudy,available,4,automated,5.1
+RC-REQ-000961,2025-04-30 05:03:45,Hillcrest,2.2,hospital,NA,9,5,Wednesday,low,foggy,limited,4,automated,7.2
+RC-REQ-000962,30/04/2025 10:14,Sunrise Colony,6.4,ambulance,available,20,10,Wednesday,medium,Cloudy,not_applicable,7,automated,5.6
+RC-REQ-000963,2025-04-30 10:28:57,Green Park,7.7,ambulance,limited,7,10,Wednesday,high,clear,not_applicable,6,manual,21.9
+RC-REQ-000964,2025-04-30 11:23:13,Harbor View ,5.8,hospital,limited,3,null,Wednesday,medium,  Clear  ,limited,6,manual,8.2
+RC-REQ-000965,2025-04-30 11:26:50,Maple Heights,10.9,ambulance,busy,28,11,Wednesday,medium,cloudy,not_applicable,4,automated,9.9
+RC-REQ-000881,2025-04-19 16:47:50,Maple Heights,2.5,hospital,busy,11,16,Saturday,medium,clear,limited,1,automated,8.1
+RC-REQ-000966,,Industrial Zone,3.8,hospital,available,3,13,Wednesday,low,foggy,available,7,manual,13.0
+RC-REQ-000967,30/04/2025 15:50,Northgate,4.3,ambulance,available,6,15,Wednesday,  Low  ,rainy,not_applicable,8,manual,3.5
+RC-REQ-000968,30/04/2025 18:59,Riverside,1.3,ambulance,limited,9,18,Wednesday,high,rainy,not_applicable,2,manual,11.3
+RC-REQ-000969,2025-05-01 06:57:04,  Old Town  ,8.5,ambulance,limited,1,NA,Thursday, medium,foggy,not_applicable,5,automated,9.5
+RC-REQ-000970,2025-05-01 10:07:51, Industrial Zone,7.3,ambulance,limited,0,10,Thursday,high ,clear,not_applicable,5,automated,7.4
+RC-REQ-000971,2025-05-01 15:03:44,Green Park,"6,6",ambulance,limited,0,15,Thursday,medium,clear,not_applicable,6,automated,5.2
+RC-REQ-000972,01-May-2025 16:32,Central Market,8.0,ambulance,  Busy  ,4,16,Thursday,?,rainy,not_applicable,5,manual,13.0
+RC-REQ-000973,2025-05-01 17:08:56,Central Market,1.9,ambulance,LIMITED,4,17,Thursday,high,cloudy,not_applicable,5,manual,12.2 min
+RC-REQ-000974,2025-05-01 19:06:44,Southfield,16.1,hospital,AVAILABLE,null,19,Thursday,medium,clear,available,5,manual,12.1
+RC-REQ-000975,2025-05-01 22:07:01,Central  Market,,ambulance,,0mins,22,Thursday ,medium,rainy,not_applicable,5,automated,10.5
+RC-REQ-000976,2025-05-02 11:41:34,Maple Heights,10.4,hospital,available,,11,Friday,medium,cloudy,available,8,automated,6.0
+RC-REQ-000977,2025-05-02 11:58:55,Southfield,1.7,ambulance,available,3,11,Friday,high,rainy,not_applicable,4,automated,18.6
+RC-REQ-000978,2025-05-02 12:14:17,Hillcrest,9.9,ambulance,available,14,12,Friday,medium,clear,not_applicable,7,automated,5.9
+RC-REQ-000979,02/05/2025 12:55,Harbor View,5.4,hospital,available,11,12,Friday,low,clear,available,5,manual,"10,5"
+RC-REQ-000980,2025-05-02 18:00:45,Industrial Zone,1.9,ambulance,available,42,18,Friday, medium,rainy,not_applicable,4,manual,2.8
+RC-REQ-000981,2025-05-02 19:33:55,University Area,5.9,hospital,available,31,19,Friday,high,clear,avail,4,?,21.0
+RC-REQ-000982,02-May-2025 19:35,green park,7.6,hospital,limited,1,19,Friday,medium,clear,not available,2,automated,"13,5"
+RC-REQ-000983,2025-05-02 21:06:18,Northgate,1.6,,,11,21,NA,,N/A,,N/A,manual,9.0
+RC-REQ-000984,03-May-2025 08:16,Industrial Zone,5.1,ambulance,available,20,8,Saturday,high,cloudy,not_applicable,8,automated,18.2
+RC-REQ-000985,03-May-2025 08:33,Harbor View,4.7,hospital,limited,148,8,Saturday,high,clear, limited,7,automated,18.8
+RC-REQ-000986,2025-05-03 09:19:14,Central Market,4.7,hospital,busy,,9,  Saturday  ,high,clear,unavailable,NA,automated,10.5
+RC-REQ-000987,2025-05-03T15:20:22,Sunrise Colony,1.8,ambulance,available,30,15, Saturday,low,clear,not_applicable,10,automated,5.5
+RC-REQ-000988,2025-05-03 15:34:28,Northgate,6.2,  Ambulance  ,Limited,5,15,Saturday,low,clear,not_applicable,,automated,5.9
+RC-REQ-000989,2025-05-03 17:18:34,Industrial Zone,3.7,ambulance,available,12,17,Saturday,medium,clear,not_applicable,2,automated,0.5
+RC-REQ-000990,2025-05-03 17:49:24,Sunrise Colony,12.0,hospital,available,0,17,SATURDAY,low,rainy,available,6,automated,2.3
+RC-REQ-000991,2025-05-03 18:29:02,Industrial Zone,4.7,hospital,available,47,18,Saturday,Medium,clear,available,9,automated,2.6 min
+RC-REQ-000992,2025-05-03 22:30:07,University Area,7.1,ambulance,available,23,22,Saturday,low,clear,not_applicable,5,automated,7.5
+RC-REQ-000993,2025-05-04 05:56:58,Riverside,2.0,ambulance,busy,,5,Sunday,low ,clear,NA,4,automated,9.1
+RC-REQ-000994,2025-05-04 09:42:37,Northgate,2.0 km,ambulance,busy,15,9,Sunday,high,cloudy,not_applicable,5,manual,12.3
+RC-REQ-000995,2025-05-04 10:15:18,Riverside,5.8,hospital ,available,22,10,Sunday,medium,clear,available,9,automated,7.4
+RC-REQ-000996,2025-05-04 11:11:38,Central Market,"10,5",hospital,available,0,11,Sunday,medium,clear,available,7,automated,6.2
+RC-REQ-000997,2025-05-04 17:25:07,Northgate,7.8,hospital,available,1,17,Sunday,high,cloudy,  Available  ,4,manual,5.9
+RC-REQ-000998,2025-05-05 07:20:08,Hillcrest,5.2,hospital,limited,5 min,7,Monday,high,clear, limited,4,automated,13.1
+RC-REQ-000999,2025-05-05 07:45:16,Lakeview,6.8 km,ambulance,available,20,7,Monday,high,foggy,not_applicable,0,automated,6.4
+RC-REQ-001000,2025-05-05 08:17:17,Southfield,9.7,ambulance,available,8,8,Monday,hi,Foggy,n.a.,2,automated,8.9
+RC-REQ-001001,2025-05-05 15:37:05,Green Park,1.7,ambulance,available,2,15,Monday,high,clear,NOT_APPLICABLE,7,automated,2.8
+RC-REQ-001002,2025-05-05 18:37:51,Lakeview,2.0,ambulance,available,,18,Monday,high,cloudy,not_applicable,7,automated,5.9
+RC-REQ-001003,2025-05-05 19:17:34,Southfield,unknown,ambulance,available,3,19,Monday,Medium,rainy,not_applicable,5,automated,5.9
+RC-REQ-001004,2025-05-05 19:29:51,Central Market,,hospital,limited,40,19,Monday,high,cloudy,limited,4,automated,10.4 min
+RC-REQ-001005,05-May-2025 20:10,Lakeview ,7.1,HOSPITAL,available,27,20,Monday,high,cloudy,available,4,automated,5.6
+RC-REQ-001006,05-06-2025 06:43 AM,Industrial Zone,2.7,ambulance,limited,17,6,Tuesday,medium,clear,not_applicable,3,automated,6.6
+RC-REQ-001007,2025/05/06 08:25,Green Park,3.3,ambulance,limited,11,8,TUE,low,foggy,not_applicable,5,manual,8.8
+RC-REQ-001008,05-06-2025 10:56 AM,Maple Heights,2.5,ambulance,limited,19,,TUESDAY,  High  ,cloudy,not_applicable,5,automated,7.5
+RC-REQ-001009,2025-05-07 06:54:23,University Area,3.7,hospital,limited,3,6,Wednesday,low,cloudy,available,5,automated,6.0
+RC-REQ-001010,2025-05-07T07:27:45,Hillcrest,1.7,ambulance,busy,26,7,Wednesday,medium,clear,not_applicable,7,manual,8.3
+RC-REQ-001011,2025-05-07 09:52:13,Northgate,5.5,hospital,available,5,9,Wednesday,high,cloudy,limited,11,automated,6.3
+RC-REQ-001012,2025-05-07 13:04:41,Maple Heights,3.1,ambulance,available,3,13,Wednesday,low,clear,not_applicable,8,manual,4.5
+RC-REQ-001013,2025-05-07 15:28:02,Old Town,1.4,ambulance,available,20 min,15,Wednesday,high,clear ,not_applicable,7,automated,5.0
+RC-REQ-001014,2025-05-07 16:16:02,Northgate,5.7,hospital,available,44,16,Wednesday,medium,clear,AVAILABLE,N/A,automated,6.1
+RC-REQ-001015,2025-05-07 18:04:08,Northgate,3.9,hospital,avail,70,18,Wednesday,medium,foggy,limited,5,auto,8.8
+RC-REQ-001016,2025-05-07 19:12:10,Central Market,8.9,hospital,available,12,19,Wednesday,high,clear,available,4,manually,14.5
+RC-REQ-001017,07-May-2025 19:50,Maple Heights,7.9 km,hospital,available,17,19,Wednesday,hi,clear,available,4,manual,10.3
+RC-REQ-001018,2025-05-07 20:11:46,University Area,2.6,Ambulance,available,3,20,Wednesday,medium,foggy,not_applicable,9,?,4.7
+RC-REQ-001019,2025-05-07 21:56:51,Southfield,-8.6,hospital,busy,,21,Wednesday,low,clear,available,2,automated,11.3
+RC-REQ-001020,08/05/2025 05:50,Hillcrest,15.2,hospital,limited,8,5,Thursday,medium,rainy,limited,6,automated,14.8
+rc-req-001021,08/05/2025 07:04,Sunrise Colony,8.4,hospital,available,6,7,Thursday,hi,clear ,available,4,automated,6.8
+RC-REQ-001022,05-08-2025 07:56 AM, Industrial Zone,1.7, ambulance,available,14,7,Thursday,medium,foggy,not_applicable,5,automated,6.6
+RC-REQ-001023,2025-05-08 11:56:51,Central Market,2.0,ambulance,  Available  ,12,11,Thursday,medium,clear,not_applicable,4,manual,5.4
+RC-REQ-001024,08/05/2025 16:03,Northgate,3.8,hospital,avaliable,8,16,Thursday,high,foggy,available,6,automated,5.4
+RC-REQ-001025,05-08-2025 05:25 PM,Old Town,?,,limited,null,17,Thursday,null,N/A,not_applicable,2,automated,N/A
+RC-REQ-001026,2025-05-08 19:10:02,Green Park,7.3,Ambulance Svc,busy,20,19,Thursday, high,clear,not_applicable,4,automated,13.4
+RC-REQ-001027,08/05/2025 21:33,Hillcrest,,ambulance,limited,7,21,THURSDAY, medium,cloudy,not_applicable,9,manual,10.1
+RC-REQ-001028,2025-05-09 05:27:02,Southfield,3.3,hospital,limited,16,5,Friday,low,clear,limited,3,AUTOMATED,11.6
+RC-REQ-001029,2025-05-09 06:14:55,Riverside,5.5,ambulance,available,14,6,Friday,high,cloudy,not_applicable,11,AUTOMATED,5.5
+RC-REQ-001030,2025-05-09T08:22:11,Harbor View,5.2,HOSPITAL,available,30,08,Friday,high,,available,6,manual,14.6
+RC-REQ-001031,09/05/2025 08:59,Riverside,3.5,hospital,available,13,8,Friday,medium,null,available,10,manual,5.8
+RC-REQ-001032,2025-05-09 15:40:13,Northgate,6.5,hospital,available ,9mins,15,Friday,medium,rainy,available,3,manual,15.2
+RC-REQ-001033,2025-05-09 15:52:16,Hillcrest,4.0,ambulance,available,13,15,Tuesday,low,cloudy,not_applicable,5,manual,3.0
+RC-REQ-001034,2025-05-09 23:21:47,Northgate,N/A,ambulance,busy,22,NA,Friday,MEDIUM,cloudy,not_applicable,0,manual,23.6
+RC-REQ-001035,2025-05-10 10:01:05,Hillcrest,5.0,Ambulance Svc,,12,10,Saturday,high,cloudy,not_applicable,7,Automated,11.7
+RC-REQ-001036,2025-05-10 12:52:59,Maple Heights,4.7,ambulance,available,16,12,Saturday,high,cloudy,Not-Applicable,3,automated,5.9
+RC-REQ-001037,2025-05-10 13:18:55,Hillcrest,2.5,hospital,available,6,13,Saturday,medium,cloudy,available,6,manual,9.7
+RC-REQ-001038,10/05/2025 15:44,Northgate,7.5,hospital,limited,14,15,Saturday,medium,clear,available,7,automated,6.6
+RC-REQ-001039,2025-05-10 16:52:27,Airport Road,10.2,hospital,unknown,39,16,SATURDAY,high,foggy,available,7,manual,45.0
+RC-REQ-001040,2025-05-10 17:48:14,Lakeview,8.9,ambulance,limited,9,17,Saturday,low,rainy,not_applicable,4,manual,10.3
+RC-REQ-001041,2025-05-10 17:54:00,Northgate,8.5,hospital,limited,13,4,Saturday,medium,clear,?,5,automated,7.1
+RC-REQ-001042,2025-05-10 21:14:32,Hillcrest,6.5,ambulance,limted,18,21,Saturday,high,clear,not_applicable,4,automated,10.9
+RC-REQ-001043,2025-05-10 23:07:21,Harbor View,1.0,ambulance,limited,4,23,Saturday,low,clear,not_applicable,6,automated,3.8
+RC-REQ-001044,2025-05-10 23:19:30,Hillcrest,7.7,hospital,available,9,23,Saturday,medium,clear, limited,2,automated,8.0
+RC-REQ-001045,2025-05-11 06:19:56,Central Market,4.0,ambulance,available,3,6,Sunday,medium,clear,NOT_APPLICABLE,5,manual,7.6
+RC-REQ-001046,2025-05-11 07:57:46,Harbor View,2.8,ambulance,null,28,7,Sunday,high,rainy,not_applicable,6,manual,4.5
+RC-REQ-001047,2025-05-11 09:33:50,Southfield,6.4,ambulance,available,1,9,Sunday,high,cloudy,not_applicable,7,automated,4.7
+RC-REQ-001048,2025-05-11 10:59:06,Industrial Zone,3.1,hospital,busy,0,10,  Sunday  ,high,clear,unavailable,5,automated,13.1
+RC-REQ-001049,2025-05-11 11:34:31,Sunrise Colony,1.7,hospital,available,1,11,Sunday,medium,, limited,4,automated,5.7
+RC-REQ-001050,2025-05-11 20:57:48,Green Park,6.9,ambulance,limited,13,20,Sunday,medium,rainy,not_applicable,9,automated,8.2
+RC-REQ-001051,2025-05-11 21:14:40,Northgate,13.3,hospital,available,11,21,Sunday,low,clear,available,3,automated,10.6
+RC-REQ-001052,2025-05-12 01:28:02,Old Town,5.1,hospital,available,3,01,Monday,low,cloudy,limited,1,automated,7.5
+RC-REQ-001053,05-12-2025 08:01 AM,Harbor View,2.9,,busy,3,8,Wednesday,high,clear,unavailable,2,automated,8.8
+RC-REQ-001054,2025-05-12 09:31:07,Harbor View,3.4,ambulance,limited,0,9,Monday,high,rainy,not_applicable,7,,8.4
+RC-REQ-001055,12-May-2025 10:38,Harbor View,7.0,hospital,available,null,10,,medium,cloudy,available,5,auto,7.0
+RC-REQ-001056,2025-05-12 10:45:00,University Area,6.0,hospital,Avail.,2,10,Monday,medium,cloudy ,limited,5,manual,6.5
+RC-REQ-001057,2025-05-12 12:50:09,Hillcrest,2.5,ambulance,available,unknown,12,Monday,low,clear,not_applicable,7,automated,3.4
+RC-REQ-001058,2025-05-12 13:23:11,Hillcrest,24.3,hospital,available,3,13,Monday,medium,clear,available,2,manual,7.7
+RC-REQ-001059,2025-05-12 17:13:00,Southfield,2.5,hospital,available,18,17,Monday,low,clr,not_applicable,1,automated,1.8
+RC-REQ-001060,2025-05-13 02:10:11,Sunrise Colony,9.4,hospital,busy,18,2,Tuesday,medium,clear,limited,6,automated,10.0
+RC-REQ-001061,05-13-2025 08:05 AM,Central Market,1.7,ambulance,limited,11,8, Tuesday,medium,cloudy,,3,automated,10.1
+RC-REQ-001062,2025-05-13 11:57:05,Hillcrest,9.3,hospital,busy,17,11,Tuesday,low,clear,limited,1,manual,10.8
+RC-REQ-001063,2025-05-13 13:49:24,University Area,1.1,ambulance,busy,39,13,Tuesday,NA,cloudy,not_applicable,3,automated,16.3
+RC-REQ-001064,2025-05-13 16:00:02,Riverside,5.5,hospital,busy,14,16,Tuesday,high,cloudy,available,2,automated,3.4
+RC-REQ-001065,2025-05-13 16:01:49,Central Market,10.1,ambulance,busy,NA,16,Tuesday,high,rainy,not_applicable,1,manual,20.2
+RC-REQ-001066,2025-05-13 17:43:02,Riverside,6.7,ambulance,available,21,17,Tuesday,medium,clear,not_applicable,5,automated,3.6
+RC-REQ-001067,13-May-2025 18:49,Green Park,3.4,hospital,limited,9,18,Tuesday,medium,clear,unavailable,7,manual,12.1
+RC-REQ-001068,2025-05-14 08:07:07,Green Park,10.6,hospital,limited,1,8,Wednesday,medium,foggy,available,7,manual,9.2
+RC-REQ-001069,14/05/2025 08:59,Industrial Zone,4.4,ambulance,limited,14,8,Wednesday,low,foggy,not_applicable,9,automated,9.6
+RC-REQ-001070,2025-05-14 09:21:39,Southfield,?,ambulance,available,25,NA,Wednesday,high,clear,not_applicable,3,manual,13.7
+RC-REQ-001071,2025-05-14 11:05:33,Maple Heights,13.6,ambulance,available,10,11,Wednesday,low,clear,not_applicable,11,automated,5.1
+RC-REQ-001072,unknown,Maple Heights,7.0,hospital,limited,0,18,Wednesday,medium,clear,limited,2,manual,7.2
+RC-REQ-001073,2025-05-14 18:41:12,Old Town,5.3,ambulance,available,6,18,Wednesday,MEDIUM,clear,not_applicable,3,manual,9.8
+RC-REQ-001074,2025-05-15 02:12:32,Lakeview,4.2,hospital,busy,2,2,Thursday,medium,clear,available,3,automated,NA
+RC-REQ-001075,2025-05-15 06:05:08,Harbor View,8.8,hospital,limited,5,6,Thursday,medium,rainy,limited,5,manual,6.4
+RC-REQ-001076,2025/05/15 08:35,Airport Road,5.3,hospital,available,10,8,  Thursday  ,medium,foggy,limited,9,automated,6.1
+RC-REQ-001077,2025-05-15 09:59:51,Industrial Zone,14.6,hospital,busy,18,9,Thursday,low,cloudy,unavailable,3,MANUAL,8.4
+RC-REQ-001078,2025-05-15 11:27:32,Southfield,9.6,hospital,busy,6mins,11,Thursday,medium,clear,unavailable,3,MANUAL,16.2
+RC-REQ-001079,2025-04-31 22:40:00,Harbor View,1.6,AMBULANCE,available,24,12,Thursday,medium,clear,not_applicable,2,?,6.7
+RC-REQ-001080,2025-05-15 14:59:17,Hillcrest,5.1 km,ambulance,available,6,14,Thursday,high,  Cloudy  ,not_applicable,4,automated,6.9
+RC-REQ-001081,2025-05-15 15:10:59,Old Town,10.6,ambulance,limited,5,15,Thursday,medium,rainy,not_applicable,3,automated,11.5
+RC-REQ-001082,2025-05-15T20:16:50,Old Town,114.5,hospital,limited,8,20,Thursday,medium,rainy,available,5,manual,2.1
+RC-REQ-001083,2025-05-15 21:27:01,Old Town,11.2,hospital,available,7,21,Thursday,medium,rainy,Available,4,automated,4.4
+RC-REQ-001084,2025-05-15 21:47:07,Sunrise Colony,2.6,hospital,available,12,21,Thursday,high,,limited,4,manual,6.8
+RC-REQ-001085,2025/05/16 11:29,Harbor View,5.9,hospital,available,1,11,Friday,medium,rainy,unavailable,2,manual,11.1
+RC-REQ-001086,05-16-2025 12:13 PM,Old Town,-12.3,hospital,available,8,12,Friday,low,rainy,available,4,automated,3.5
+RC-REQ-001087,2025-05-16 14:01:59,University Area,3.9,ambulance,limited,5,14,Friday,medium,clear,not_applicable,null,manual,6.9
+RC-REQ-001088,2025-05-16 14:16:29,,5.3,hospital,available,13,14,Friday,medium,clear,limited,9,automated,6.5
+RC-REQ-001089,2025-05-16 17:06:32,Northgate,7.7,ambulance,available,9,17,Friday,medium,clear,not_applicable,9,automated,3.7
+RC-REQ-001090,2025-05-16 17:23:06,Harbor View,4.2,hosp,available,,17,Friday,medium,rainy,available,5,automated,4.2
+RC-REQ-001091,2025-05-16T17:50:09,Harbor View,6.9,HOSPITAL,limited,2,17,Friday,high,rainy,limited,7,automated,10.3
+RC-REQ-001092,2025-05-17 06:46:27,Maple Heights,6.1,ambulance,limited,68,25,Saturday,medium,foggy,not_applicable,6,automated,10.4
+RC-REQ-001093,2025-05-17 09:43:16,Hillcrest,2.1,ambulance,available,21,9,Saturday,medium,clear,not_applicable,8,automated,0.8
+RC-REQ-001094,17/05/2025 11:01,Old Town,"1,7",ambulance,available,13,11,Saturday,medium,clear,NOT_APPLICABLE,-3,manually,5.7
+RC-REQ-001095,2025-05-17 11:09:45,Maple Heights,3.3,ambulance,available,11,11,Saturday,low,cloudy,not_applicable,8,automated,2.0
+RC-REQ-001096,05-17-2025 01:43 PM,Airport Road,9.6,hospital,avaliable,6,13,Saturday,medium,clr,NA,4,manual,9.4
+RC-REQ-001097,2025-05-17 18:21:41,Northgate,1.6,ambulance,busy,1612,,Saturday,high,Cloudy,not_applicable,2,manual,14.4
+RC-REQ-001098,17/05/2025 18:27,  Hillcrest  ,17.5,hospital,limited,,18,Saturday,high,rainy,limited,9,manual,18.1
+RC-REQ-001099,2025-05-17 22:35:06,University Area,"4,3",hospital,busy,22,22,Saturday,low,clear,AVAILABLE,9, automated,6.9
+RC-REQ-001100,18-May-2025 06:03,  University Area  ,0,hospital,available,12,6,Sunday,medium,clear,available,7,manual,6.3
+RC-REQ-001101,2025-05-18 07:23:48,Industrial Zone,,ambulance,avaliable,16,7,Sunday,medium,clear,not_applicable,9,manual,6.3
+RC-REQ-001102,2025-05-18 08:21:21,Riverside,-8.8,hospital,Limited,3,8,Sunday,high,foggy,limited,2,manual,15.8
+RC-REQ-001103,2025-05-18 12:18:30,LAKEVIEW,2.1,ambulance,limited,0,12,Sunday,high,clear ,not_applicable,7,automated,"6,7"
+RC-REQ-001104,18/05/2025 16:05,Riverside,3.7,hospital,available,9,16,Sunday,high,cloudy,limited,3,automated,15.8
+RC-REQ-001105,2025-05-18 16:38:18,Southfield,3.8,hospital,available,18,16,Sunday,high,cloudy,available,6,manual,6.6
+RC-REQ-001106,2025-05-18T21:55:00, Southfield,12.3,hosp,available,4,21,Sun,medium,clear,available,6,automated,3.8
+RC-REQ-001107,2025-05-19 03:59:56,Lakeview ,"4,6",ambulance,limited,N/A,3,Monday,medium,rainy,not_applicable,0,manual,16.5 min
+RC-REQ-001108,2025/05/19 10:29,Riverside,6.0,hospital,avail,3,10,Mon,high,rainy,available,7, automated,4.2
+RC-REQ-001109,05-19-2025 11:41 AM,Hillcrest,5.7,ambulance,limited,11,11,Monday,high,clear,NOT_APPLICABLE,2,  Manual  ,8.2
+RC-REQ-001110,19/05/2025 12:04,Industrial Zone,12.5,hospital,limited,13,12,Monday,medium,rainy,limited,4,automated,19.1
+RC-REQ-001111,unknown,-,N/A,NA,available,12,,,high,cloudy,not_applicable,,manual,6.2
+RC-REQ-001089,2025-05-16 17:06:32,Northgate,7.7,ambulance,available,9,17,Friday,medium,clear,not_applicable,9,automated,3.7
+RC-REQ-001112,2025-05-19 19:55:36,Central Market,3.8,hospital,limted,26,19,Monday,medium,clear,Limited,8,manual,8.4
+RC-REQ-001113,2025/05/19 20:36,INDUSTRIAL ZONE,7.6,ambulance,available,2,20,Monday,medium,clear,not_applicable,7,manual,"4,3"
+RC-REQ-001114,2025-05-19 23:42:59,Southfield,4.7,,available,43,23,Monday,low,clear,not_applicable,4,automated,3.3
+RC-REQ-001115,2025-05-20 09:05:17,Old Town,4.1,ambulance,limited,5,9,Tuesday, high,cloudy,not_applicable,7,automated,5.5
+RC-REQ-001116,2025-05-20 10:21:12,Lakeview,3.1,hospital,limited,8,10,Tuesday ,high,cloudy,limited,5,automated,1.0
+RC-REQ-001117,2025-05-20 10:38:14,Harbor View,3.6,hospital,busy,38,10,Tuesday,medium,clear,available ,5,automated,4.5
+RC-REQ-001118,2025-05-20 15:54:52,,6.1,ambulance,limited,2,15,Tuesday,high,clear,not_applicable,3,automated,15.5
+RC-REQ-001119,20-May-2025 17:18,Riverside,2.0,ambulance,available,1,17,Tuesday,high,cloudy,not_applicable,7,manual,7.7
+RC-REQ-001120,2025-05-21 06:23:30,Southfield,7.1,ambulance,busy,10,6,Wednesday,low,clear,not_applicable,12,manual,13.7
+RC-REQ-001121,2025-05-21 06:56:37,Lakeview,3.7,-,,3,,,low,foggy,limited,,automated,5.0
+RC-REQ-001122,2025-05-21 07:23:47,Old Town,2.8,hospital,available,2,7,Wednesday,medium,foggy,available,6,automated,4.3
+RC-REQ-001123,21/05/2025 07:48,Industrial Zone,9.7,hospital,available,2,7,Wednesday,medium,clr,available,12,automated,7.2
+RC-REQ-001124,21/05/2025 11:16,Hillcrest,5.3,hospital,busy,74,11,Wednesday,low,clear,  Unavailable  ,7,automated,17.6
+RC-REQ-001125,2025-05-21 13:09:03,Maple Heights,3.0,ambulance,limited,7,13,Wednesday,medium,clear,not_applicable,4,automated,4.1
+RC-REQ-001126,05-21-2025 03:12 PM,Northgate,2.9,Hosp.,available,6,15,Wednesday,low,foggy,limited,?,automated,2.8
+RC-REQ-001127,2025/05/21 17:31,University Area,4.0,hospital,limited,0,17,Wednesday,medium,clear,AVAILABLE,8,automated,0.9
+RC-REQ-001128,2025-05-21 17:46:20,Hillcrest,3.7,hospital,available,20,17,Wednesday,  High  ,clear,available ,6,  Automated  ,6.0
+RC-REQ-001129,21/05/2025 19:42,University Area,14.1, hospital,avaliable,4,19,Wednesday,low,clear,available,5,manual,9.7
+RC-REQ-001130,21/05/2025 20:31,Riverside,3.6,ambulance,busy,6,20,Wednesday,hi,cloudy,,5,automated,3.6
+RC-REQ-001131,21/05/2025 20:50,Hillcrest,4.9,ambulance,available,0,20,Wednesday,medium,clear,not_applicable,7,automated,6.0
+RC-REQ-001132,2025-05-21 21:48:38,Lakeview,13.5,ambulance,limited,9,21,Wednesday,hi, cloudy,not_applicable,6,automated,8.3
+RC-REQ-001133,2025-05-21 21:49:43,Harbor View,4.6,ambulance,limited,16,21,Wednesday,medium,rainy,not_applicable,41,manual,12.5
+RC-REQ-001134,2025-05-22 05:10:52,,5.0,ambulance,available,39,5,Thursday,medium,rainy,not_applicable,4,automated,9.6
+RC-REQ-001135,05-22-2025 11:57 AM,Central Market,4.9,hospital,available,1,11,Thursday,low,clear,available,5,manual,4.8
+RC-REQ-001136,2025-05-22 17:55:02,Old Town,5.8,hospital,busy,14,17,Thursday,high,clear,limited,3,manual,11.4
+RC-REQ-001137,2025-05-22 19:00:46,Maple Heights,3.4,  Ambulance  ,available,1,19,Thursday,high,clear,not_applicable,2,automated,3.7
+RC-REQ-001138,05-22-2025 07:06 PM,Southfield,6.1, hospital,available,0,19,Thursday,medium,cloudy,available,8,automated,1.7
+RC-REQ-001139,2025-05-22 19:53:31,Riverside,6.0,ambulance,limited,1,19,Thursday,medium,rainy,not_applicable,9,automated,4.4
+RC-REQ-001140,2025-05-22 21:50:47,Southfield,1.7,ambulance,available,30,21,Thursday,medium,cloudy,not_applicable,7,manual,5.1
+RC-REQ-001141,2025-05-23 04:11:22,Old Town,3.9,ambulance,available,13,4,Friday,medium,clear,not_applicable,2,automated,6.9
+RC-REQ-001142,2025-05-23 08:18:25,Hillcrest,2.3,ambulance,limited,13,8,Friday,medium,cloudy,not_applicable,8,automated,8.9
+RC-REQ-001143,2025-05-23 08:26:19,Riverside,-,HOSPITAL,available,0,8,Friday,  Medium  ,cloudy,available,3,automated,?
+RC-REQ-001144,2025-05-23 08:39:14,Lakeview,4.7,hospital,limited,22,8,Friday,high,cloudy,Limited,2,automated,7.7
+RC-REQ-001145,2025-05-23 09:00:49,Industrial Zone,3.2,Hospital,busy,20,9,Friday,medium,cloudy,ltd,6,manual,36.4
+RC-REQ-001146,,Harbor View,1.1,ambulance,available,13,10,Friday,high,cloudy,not_applicable,5,automated,1.7
+RC-REQ-001147,2025-05-23 14:35:13,Lakeview,2.7,ambulance,busy,1,14,Friday,high,cloudy,not_applicable,2,automated,9.3
+RC-REQ-001148,2025-05-23 15:10:28,Central Market,3.6,ambulance,available,5,15,Fri,medium,cloudy,NOT_APPLICABLE,4,automated,4.7
+RC-REQ-001149,2025-05-23 15:42:07,Old Town,8.3,ambulance,available,3,15,Friday,low,cloudy,not_applicable,2,manual,6.5
+RC-REQ-001150,2025-05-23 19:11:45,Harbor View,8.9,hospital,limited,26,19,Friday,medium,clear,unavailable,5,automated,12.4
+RC-REQ-001151,2025-05-23 20:16:37,,5.9,ambulance,avail,12,20,Friday,high,cloudy,not_applicable ,10,automated,2.0
+RC-REQ-001152,2025-05-23 20:20:50,Airport Road,9.2,hospital,available,43,20,Friday,med,rainy,available,5,manual,7.3
+RC-REQ-001153,23/05/2025 20:49,Southfield,9.1,hospital,,?,20,Friday,high,cloudy, available,4, automated,6.0
+RC-REQ-001154,2025-05-23 21:45:40,Sunrise Colony,2.2,Hosp.,busy,17,21,Friday,low,clear,unavailable,3,manual,13.2
+RC-REQ-001155,24-May-2025 17:04,Southfield,6.8,ambulance,available,0,17,Saturday,medium,rainy,not_applicable ,2,automated,8.2
+RC-REQ-000990,2025-05-03 17:49:24,Sunrise Colony,12.0,hospital,available,0,17,SATURDAY,low,rainy,available,6,manual,17.6
+RC-REQ-001156,2025-05-24 19:23:33,University Area,4.6,hospital,busy,0,19,Saturday,medium,clear,limited,3,automated,11.3
+RC-REQ-001157,2025-05-24 19:24:37,Riverside,11.0,ambulance,available,12,19,Saturday,high,clear,not_applicable,6,automated,9.3
+RC-REQ-001158,24/05/2025 20:54,Southfield,2.7,ambulance,limited,32,20,Saturday,high,clear,not_applicable,4,manual,10.4
+RC-REQ-001159,2025-05-25 07:26:01,,15.2,hospital,ltd,25,7,Sun,high,clear,limited,6,manual,22.4
+RC-REQ-001160,2025-05-25 11:01:15,Old Town,3.0km,hospital,available,0,11,Sunday,high,cloudy,AVAILABLE,8,  Manual  ,7.0
+RC-REQ-001161,25/05/2025 13:58,Maple Heights,11.7,ambulance,busy,0,13, Sunday,low,clear,not_applicable,1,automated,10.9
+RC-REQ-001162,2025-05-25 16:42:27,University Area,13.1,hospital,available,2222,16,Sunday,medium,clear,available,8,automated,5.7
+RC-REQ-001163,25-May-2025 17:48,Industrial Zone,7.6,hospital,available,1,17,Sunday,LOW,cloudy,available,6,AUTOMATED,3.5
+RC-REQ-001164,2025-05-25 20:58:58,-,2.8,ambulance,busy,1,20,Sunday,medium ,rainy,not_applicable,4,automated,7.0
+RC-REQ-001165,2025-05-25 21:52:55,Riverside,10.1,hospital,busy,-22,21,Sunday,medium,cloudy,limited,3,automated,14.5
+RC-REQ-001166,2025-05-25 23:09:13,Airport  Road,5.4km,ambulance,available,14,23,Sunday,low,clear,not_applicable,2,automated,3.0
+RC-REQ-001053,05-12-2025 08:01 AM,Harbor View,2.9,,busy,3,8,Wednesday,high,clear,unavailable,2,automated,8.8
+RC-REQ-001167,2025-05-26 11:21:23,Maple Heights,3.0,ambulance,limited,1,11,Monday,high,rainy,,5,manual,9.8
+RC-REQ-001168,2025-05-26 16:44:21,Maple Heights,4.0,ambulance,available,4,16,Monday,medium,clear,not_applicable,5,automated,2.2
+RC-REQ-001169,2025-05-26 17:09:15,Maple Heights,6.2,ambulance,available,6,17,Monday,medium,clear,not_applicable,8,automated,2.0 min
+RC-REQ-001170,2025-05-26 17:49:46,UNIVERSITY AREA,4.5,ambulance,limited,29,17,Monday,low,clear,not_applicable,-3,automated,5.8
+RC-REQ-001171,2025-05-26 21:32:02,  Lakeview  ,4.1,hospital,available,1,21,Monday,medium,foggy,available,5,manual,6.9
+RC-REQ-001172,2025-05-26 21:41:08,Industrial Zone,7.2,ambulance,limited,16,21,Monday,medium,clear,  Not_Applicable  ,6,automated,4.9
+RC-REQ-001173,2025-05-27 06:31:15,HARBOR VIEW,4.5,ambulance,available,,6,Tuesday,medium,rainy,not_applicable,0,manual,1.7
+RC-REQ-001174,05-27-2025 09:35 AM,N/A,5.0,ambulance,  Available  ,3,9,Tuesday,medium,clear,not_applicable,4,automated,3.8
+RC-REQ-001175,2025-05-27 09:49:59,Old Town,6.7,ambulance,available,13,9,Tuesday,medium,cldy,not_applicable,2,manual,8.7
+RC-REQ-001176,27-May-2025 11:26,Industrial Zone,8.4,hospital,available,23,11,Tuesday,medium,clear,available,4,automated ,6.5
+RC-REQ-001177,2025-05-27 13:05:25, Central Market,2.6,ambulance,busy,?,13,Tuesday,high,clear,not_applicable,3,automated,18.5
+RC-REQ-001178,27/05/2025 15:45,HARBOR VIEW,1.4,,available,10,15,Tuesday,medium,rainy,not_applicable,3,automated,2.9
+RC-REQ-001179,2025-05-27 18:38:26,Southfield,0, ambulance,AVAILABLE,7,18,Tuesday,medium,cloudy,not_applicable,6,manual,7.1
+RC-REQ-001180,2025-05-27 19:03:00,Harbor View,1.5km,hospital,available,6,19,Tuesday,High,cloudy,available,10,automated,4.0 min
+RC-REQ-001181,2025-05-27 23:24:09,Lakeview,3.7,ambulance,available,15,23,Tuesday,high,cloudy,not_applicable,7,automated,5.5
+RC-REQ-001182,2025-05-28T06:15:31,LAKEVIEW,"3,9",ambulance,limted,6,6,Wednesday,medium,clear,not_applicable,8,automated,8.8
+RC-REQ-001183,28/05/2025 07:00,Airport Road,11.7,hospital,busy,,7,Wednesday,high,clear,limited,7,manual,12.0
+RC-REQ-001184,2025-05-28 10:58:32,Southfield,10.0,hospital,limited,,10,Wednesday,medium,clear,limited,5,automated,12.1
+RC-REQ-001185,2025-05-28 13:55:33,Old Town,2.2,ambulance,available,32,13,Wednesday,medium,clear,not_applicable,11,manual,8.6
+RC-REQ-001186,28/05/2025 14:15,Sunrise Colony,8.2,hospital,available,8,14,Wednesday,low,clear,limited,5,manual,7.7
+RC-REQ-001187,28/05/2025 19:53,Maple Heights,10.5,hospital,available,6,19,Wednesday,high,rainy,limited,6,automated,14.6
+RC-REQ-001188,28/05/2025 20:27,Green Park,4.1,hospital,available,7,20,Wednesday,low,cloudy,available,5,manual,7.3
+RC-REQ-001189,2025-05-29 06:24:34,Riverside,7.0,hospital,busy,20,6,Thursday,low,foggy,unavailable,8,manual,11.1
+RC-REQ-001190,2025-05-29 07:51:04,University Area,3.6,ambulance,limited,3,7,Thursday,medium,cloudy,  Not_Applicable  ,8,automated,6.0
+RC-REQ-001191,29-May-2025 08:49,Maple Heights,5.7,ambulance,available,41,8,Thursday,high,clear,not_applicable,5,null,7.4
+RC-REQ-001192,2025-05-29 09:35:59,Airport Road,1.9,ambulance,busy,0,9,,medium ,cloudy,not_applicable,1,manual,7.1
+RC-REQ-001193,2025-05-29 18:58:35,Sunrise Colony,4.3,hospital,,N/A,18,Thursday,high,clear,available,6,manual,5.5
+RC-REQ-001194,2025-05-30 08:52:36,Sunrise Colony,17.2,ambulance,available,0,8,Friday,high,foggy,not_applicable,6,automated,null
+RC-REQ-001195,30/05/2025 09:45,University Area,7.1,ambulance,limited,34,9,Friday,high,cloudy,not_applicable,3,automated,9.3
+RC-REQ-001196,2025-05-30T11:22:21,Sunrise Colony,7.1,hospital,AVAILABLE,8,11,Friday,medium,rainy,available,9,automated ,4.4
+RC-REQ-001197,05-30-2025 01:33 PM,Lakeview,4.5,hospital,available,0,13,Friday,medium,clear,available,5,automated,7.6
+RC-REQ-001198,2025-05-30 18:27:10,Hillcrest,4.8,hospital,available,0,18,Friday,high,clear,available,5,automated,1.6
+RC-REQ-001199,2025-05-30 19:00:18,Hillcrest,2.9,ambulance,available,7,19,Friday,high,rainy,not_applicable,4,automated,6.3
+RC-REQ-001200,30-May-2025 19:06,Northgate,5.4,hospital, available,,19,Friday,high,clear,available,3,manual,17.4
+RC-REQ-001201,05-30-2025 08:51 PM, Maple Heights,2.3,ambulance,limited,38mins,20,Friday,high,cloudy,not_applicable,5,manual,8.2
+RC-REQ-001202,2025-05-30 21:17:14,Central Market,6.2,ambulance,limited,24,21,Friday,low,clear,limited,6,automated,4.3
+RC-REQ-001203,2025-05-30 22:07:10,Riverside,2.3,ambulance,busy,30,22,Friday,low,clear,not_applicable,4,automated,7.3
+RC-REQ-001204,31/05/2025 09:37,Sunrise Colony,8.3,hospital,,7,9,Sat,low,clear,available,4,automated,5.5
+RC-REQ-001205,2025-05-31 15:17:13,Old Town,3.0,hospital,available,12,15,Saturday,medium,clear,limited,4,manual,8.1
+RC-REQ-001206,31/05/2025 18:04,Sunrise Colony,2.5,ambulance,limited,9,18,Saturday,hi,rainy,NA,7,manual,5.3
+RC-REQ-001207,05-31-2025 07:01 PM,Airport Road,3.4,ambulance,limited,null,19,Saturday,high,cloudy,not_applicable ,4,manual,16.8
+RC-REQ-001208,2025-06-01 15:35:38,Industrial Zone,5.5,ambulance,limited,15,15,Sunday,medium,rainy,not_applicable,12,manual,11.8
+RC-REQ-001209,2025-06-01 16:19:31,Old Town,11.0,hospital,available,55,16,Sunday,high,cldy,available,9,manual,14.9
+RC-REQ-001210,2025-06-01 16:21:44,Sunrise Colony,7.5,hospital,available,2,16,Sunday,high,clear,available,8,automated,4.1
+RC-REQ-001211,01-Jun-2025 21:39,-,2.6,ambulance, limited,27,21,Sunday,,cloudy,not_applicable,7,automated,2.6
+RC-REQ-001212,2025-06-02 07:22:56,River side,4.6,hospital,limited,39,7,Monday,medium,clear,unavailable,,automated,17.1
+RC-REQ-001213,2025-06-02T09:49:04,Maple Heights,14.0,ambulance,,17,9,Monday,high,cloudy,not_applicable,2,automated,10.9
+RC-REQ-001214,02/06/2025 10:06,Maple Heights,6.1,hospital,available,22,24,Monday,high,clear,limited,5,automated,7.6
+RC-REQ-001215,02-Jun-2025 11:19,Hillcrest,3.3,ambulance,busy,12,11,Monday,low,cloudy,not_applicable,6,automated,5.6
+RC-REQ-001216,2025-06-02 12:15:25,Industrial Zone,3.5,ambulance,available,5,12,Monday,,clear,not_applicable,4,automated,2.9
+RC-REQ-001217,2025-06-02 12:45:02,Northgate,11.2,hospital,available,13,12,Monday,high,cloudy,unknown,9,automated,11.3
+RC-REQ-001218,2025-06-02 13:10:47,Airport Road,,hospital,available,7,13,Monday,medium,foggy,available,6,automatic,7.7
+RC-REQ-001219,2025-06-02 17:22:56,Northgate,2.0,ambulance,busy,4,17,Monday,medium,Cloudy,not_applicable,8,manual,19.3
+RC-REQ-001220,06-02-2025 10:21 PM,Airport Road,4.1,hospital,limited,16,22,Monday,low,cloudy,UNAVAILABLE,3,manual,10.5
+RC-REQ-001221,02/06/2025 23:26,Maple Heights,6.9,hospital,available,9,23,Monday,low,clear,limited,3,automated,14.0
+RC-REQ-001222,2025-06-03 00:52:38,Industrial Zone,9.8,hospital,limited,9,0,Tuesday,  Low  ,clear,available,1,manual,7.0
+RC-REQ-001223,2025-06-03 06:34:51,Riverside,112.4,hospital,available,2,6,Tuesday,medium,cloudy,available,4,automated,1.1
+RC-REQ-001224,2025-06-03 08:37:23,Old Town,6.9,ambulance,limited,13,8,Tuesday,high,cloudy,not_applicable,,manual ,10.4
+RC-REQ-001225,2025-06-03 13:27:20,Riverside,6.7,hospital,available,22,-1, Tuesday,high,clear,limited,7,automated,13.5
+RC-REQ-001226,03/06/2025 14:50,Airport Road,8.9,hospital,Busy,7,14,Tuesday,lo,cloudy,unavailable,5,manual,12.7
+RC-REQ-001227,2025-06-03 18:35:36,Northgate,9.0,Ambulance,available,45,18,Tuesday,medium,rainy,not_applicable,6,man.,12.9
+RC-REQ-001228,2025-06-03 19:25:35,Sunrise Colony,,hospital,busy,5,19,Tuesday,medium,clear,unavailable,2,automated,20.3
+RC-REQ-001229,2025-06-03 22:17:10,Northgate,5.9,hospital,available,6,22,Tuesday,high,rainy,available,8,manual,872.8
+RC-REQ-001230,03/06/2025 23:34,Northgate,4.8,ambulance,available,6,23,Tuesday,medium,clear,not_applicable,2,manual,10.8
+RC-REQ-001231,2025-06-04 00:55:18,unknown,,unknown,available,NA,0,Wednesday,,clear,,4,automated,10.1
+RC-REQ-001232,2025-06-04 07:47:32,Southfield,12.0,ambulance,avaliable,28,7,Wednesday,medium,rainy,,two,automated,9.1
+RC-REQ-001233,04-Jun-2025 12:20,Lakeview,4.1,hospital,limited,30,12,Wednesday,high,clear,limited,2,manual,9.0
+RC-REQ-001234,2025-06-04 14:36:46,Sunrise Colony,2.7,hospital,limited,1 min,14,Wednesday,low,clear,limited,4,manual,14.9
+RC-REQ-001206,31/05/2025 18:04,SUNRISE COLONY,2.5, ambulance ,limited,9,18,Saturday,hi,rainy,NA,7,manual,5.3
+RC-REQ-001235,2025-06-04 15:24:17,Airport Road,9.1,ambulance,available,4,15,Wednesday,medium,cloudy,not_applicable,9,manual,10.7
+RC-REQ-001236,06-04-2025 03:56 PM,Industrial Zone,8.2,hospital,available,31,15,Wednesday,medium,rainy,available,5,manual,10.7
+RC-REQ-001237,2025-06-05 04:31:25,university area,5.6,hospital,available,19,4,Thursday,low,clear,available,2,manual,6.1
+RC-REQ-001238,2025-06-05T08:20:59,University Area,8.9,hospital,available,12,99,Thursday,low,foggy,,9,automated,4.1
+RC-REQ-001239,2025-06-05T08:40:53,Riverside,6.4,hospital,available,2,8,Thursday,medium,rainy ,available,6,manual,4.8
+RC-REQ-001240,06-05-2025 09:15 AM,Airport Road,2.0,ambulance,available,2,9,Thursday,medium,clear,not_applicable,4,manual,6.8
+RC-REQ-001241,2025-06-05 10:24:42,Industrial Zone,,ambulance,available,1,10,Thursday,high,rainy,not_applicable,2,automated,4.9
+RC-REQ-001242,2025-06-05 11:41:40,Southfield,2.5,ambulance,available,6,11,Thursday,medium,clear,not_applicable,6,automated,4.2
+RC-REQ-001243,2025-06-05 14:28:53,  Lakeview  ,2.9,ambulance,available,26,14,Thursday,low,rainy,not_applicable,9,manual,6.0
+RC-REQ-001244,2025-06-05 18:48:16,Riverside,10.1,ambulance,available,21,18,Thursday,high,clear,not_applicable,5,Manual,32.9
+RC-REQ-001245,2025-06-06 06:44:11,Harbor View,4.6 km,HOSPITAL,available,11,6,Friday,high,cloudy,available,1,automated,3.4
+RC-REQ-001246,06/06/2025 07:19, Central Market,6.3,hospital,limited,19,7,Friday,high,  Cloudy  ,available,0,manual,15.7
+RC-REQ-001247,06-Jun-2025 08:33,Green  Park,2.3km,amb,limited,0,8,Friday,high,,,7,manual,6.3
+RC-REQ-001248,06-06-2025 09:36 AM,Lakeview,7.8,ambulance,available,5,9,Friday,medium,clear,not_applicable,6,automated,0.6
+RC-REQ-001174,05-27-2025 09:35 AM,N/A,5.0,ambulance,  Available  ,3,9,Tuesday,medium,clear,not_applicable,4,automated,3.8
+RC-REQ-001249,06/06/2025 09:54,Riverside,1.6,ambulance,available,-,9,Friday,medium,cloudy,not_applicable,4,manual,6.7
+RC-REQ-001250,2025-06-06 12:45:48,Harbor View,1.4,ambulance,limited,5,12,Friday,low,foggy,not_applicable,4,automated,3.4
+ RC-REQ-001251 ,2025-06-06 16:17:57,Sunrise Colony,5.2,hospital,busy,2 min,16,Friday,high,clear,limited,6,automated,11.2
+RC-REQ-001252,2025-06-06 16:38:42,Central Market,24.8,hospital,available,8,16,Friday,high,cloudy,available,7,automated,5.4
+RC-REQ-001253,2025-06-06 17:16:26,Harbor View,9.4,ambulance,limited,14,17,Friday,high,clear,not_applicable,4,automated,9999
+RC-REQ-001254,06-06-2025 08:25 PM,Riverside,8.3,ambulance,busy,3,20,Friday,medium,clear,not_applicable,5,automated,5.2
+RC-REQ-001198,2025-05-30 18:27:10,Hillcrest,4.8,hospital,available,0,18,Friday,high,clear,available,5,automated,1.6
+RC-REQ-001255,2025-06-07 06:43:06,Sunrise Colony,10.3,hospital,available,7,6h,Saturday, high,cloudy,available,,automated,5.9
+RC-REQ-001256,2025-06-07 07:37:56,Green Park,6.9,hospital,busy,8,7,Saturday,high,clear,limited,2,automated,13.5
+RC-REQ-001257,2025-06-07 10:10:02,Lakeview,6.2,ambulance,  Busy  ,0,10,Saturday,high,rainy,not_applicable,2,automated,10.5 min
+RC-REQ-001258,2025-06-07 10:58:29,NA,2.9,hospital,available,13,10,Saturday,high,RAINY,available,5,automated,5.0
+RC-REQ-001259,2025-06-07 12:02:00,Southfield,7.7,ambulance,available,3,12,Saturday,medium,clr,not_applicable,6,manual,5.8
+RC-REQ-001260,07/06/2025 15:07,Hillcrest,8.8,hospital,available,5,15,Saturday,medium,cloudy,available,4,automated,7.7
+RC-REQ-001261,2025-06-07T16:05:44,Central Market,4.7,ambulance,BUSY,14,16,Saturday,high,cloudy,not_applicable,NA,automated,12.8
+RC-REQ-001262,07/06/2025 16:33,Northgate,5.0,hospital,available,39,16,Saturday,low,clear,available,3,manual,3.4
+RC-REQ-001263,2025-06-08 03:36:52,  Southfield  ,2.7,hospital,busy,10,3,  Sunday  ,low,clear,available,1,manual,10.2
+RC-REQ-001264,2025-06-08 05:19:49,Harbor View,16.7,hospital,LIMITED,3,5,Sunday,low,clr,unavailable,1,automated,13.7
+RC-REQ-001265,2025-06-08 09:11:41,University Area,1.9,hospital,available,11,16,Sunday,medium,clear,available,4,manual,7.9
+rc-req-001266,2025-06-08 09:42:21,Airport Road,null,hospital,available,?,9,Sunday,high,cloudy,AVAILABLE,5,automated,7.9
+RC-REQ-001267,06-08-2025 10:01 AM,Industrial Zone,5.3,hospital,available,8,10,Sunday,,clear,available,5,manual,6.4 min
+RC-REQ-001268,2025-06-08 13:14:18,Old Town,8.9 km,hospital,busy,1,13,Sunday,medium,rainy,available,3,automated,7.7
+RC-REQ-001269,2025-06-08 17:59:52,University Area,7.8,Hospital,available,8,17,Sunday,medium,cloudy,unavailable,6,automated,9.2
+RC-REQ-001270,2025-06-08 18:27:54,Harbor View,3.5,ambulance,null,4,18,SUN,high,clear,not_applicable,5,automated,3.7
+RC-REQ-001271,08/06/2025 19:21,Old Town,,hospital,available,26,19,Sun,medium,clear,limited,7,manual,16.8
+RC-REQ-001272,09-Jun-2025 05:14,Riverside,1.3,AMBULANCE,,6,5,Monday,low,foggy,not_applicable,4,automated,6.3
+RC-REQ-001273,09/06/2025 07:11,Central Market,6.1,  Ambulance  ,limited,15,7,Monday,high,foggy,not_applicable,5,automated,17.6
+RC-REQ-001274,2025-06-09 10:04:32,Riverside,5.3,amb,available,18,10,Monday,high,clear,not_applicable,3,automated,7.6
+RC-REQ-001275,09/06/2025 10:13,Green Park,5.2,hospital,limited,42 min,10,Monday,medium,clear,limited,3,manual,16.2
+RC-REQ-001276,2025-06-09 10:47:09,Northgate,23.6 km,ambulance,available,-23,10,Monday,high,clear,not_applicable,5,automated,22.2
+RC-REQ-001277,2025-06-09 10:55:02,Industrial Zone,8.5,hospital,available,10,10,Monday,,clear,available,4,automated ,8.4
+RC-REQ-001278,2025-06-09 12:37:07,Southfield,15.7,hospital,available,0,12,Monday,low,clear,available,10,automated,4.2
+RC-REQ-001279,09/06/2025 19:21,Central Market,4.7,ambulance,available,1,19,Monday,medium,clear,not_applicable,7,automated,1.8
+RC-REQ-001280,2025-06-09 19:51:44,Hillcrest,6.9,ambulance,available,43,19,Monday,high,,not_applicable,7,manual,11.8
+RC-REQ-001281,2025-06-09 20:53:04,Southfield,5.8,hospital,available,55,20,Monday,medium,cloudy,unavailable,6,automated,7.7
+RC-REQ-001282,2025-06-09 21:18:10,Northgate,7.9,hospital,available,1,21,Monday,medium,clear,available,6,manual,?
+RC-REQ-001283,2025-06-10 03:28:24, Northgate,12.6,hospital,busy,17,3,Tuesday,medium,clear,available,1,automated,11.9
+RC-REQ-001284,2025-06-10 09:23:05,Maple Heights,N/A,hospital,busy,8,9,Sunday,high,cloudy,limited,5,automated,12.4
+RC-REQ-001285,2025-06-10 09:34:44,Airport Road,6.1,hospital,available,59,9,Tuesday,low,clear,available,4,automated,5.6
+RC-REQ-001286,2025-06-10 11:15:45,Green Park,3.0, ambulance,available,3,11,Tue,low,,not_applicable,0,automated,3.0
+RC-REQ-001287,,,7.1,ambulance,available,32,11,Tuesday,,rainy,not_applicable,7,,6.0
+RC-REQ-001288,10/06/2025 15:11,Southfield,4.0,hospital,available,8,15,Tuesday,low,cloudy,available,5,automated,3.3
+RC-REQ-001289,2025-06-10 16:56:29,University Area,3.3,ambulance,available,2,16,Tuesday,,Clear,not_applicable,8,automated,3.6
+RC-REQ-001290,2025-06-10 17:39:38,Airport Road,,ambulance,available,2,17,Tuesday,high,clear,not_applicable,4,manual,6.8
+RC-REQ-001291,2025-06-10 19:28:00,Airport Road,"5,5",  Ambulance  ,AVAILABLE,27,19,Tuesday,high,rainy,not_applicable,5,automated,4.7
+RC-REQ-001292,NA,Airport Road,11.1,hospital,Busy.,6,23,Tuesday,medium,clear,limited,2, automated,19.3
+RC-REQ-001293,11/06/2025 09:08,hillcrest,8.3,hospital,avaliable,0,9,Wednesday,high,CLEAR,available,5,automated,5.0
+RC-REQ-001294,,Airport Road,6.3,ambulance,,8,NA,, high,clear,not_applicable,N/A,automated,5.9
+RC-REQ-001295,2025-06-11 11:06:15,Central Market,9.4,ambulance,available,5,11,Wednesday,med,rainy,not_applicable,8,automated,4.6
+RC-REQ-001296,2025-06-11 12:19:16,Green Park,2.3,hospital,limited,3,12,Wednesday,low,clear,unavailable,7,manual,7.8
+RC-REQ-001297,2025-06-11 15:33:14,Maple Heights,7.4,hospital,available,20,15,Wed,high,clear,available,6,automated,6.4
+RC-REQ-001298,2025-06-11 18:41:56,Harbor View,2.5,hospital,limited,13,18,Wednesday,medium,clear,limited,7,automated,7.2
+RC-REQ-001299,2025-06-11 19:09:06,Harbor View,10.2,hospital ,available,10,19,Wednesday,high,fog, available,6,manual,6.7
+RC-REQ-001300,2025-02-30 09:15:00,Lakeview,3.0,hospital, available,3,20,Wednesday,medium,clear,AVAILABLE,4,manual,7.1
+RC-REQ-001301,2025-06-12T09:54:27,Hillcrest,2.8,ambulance,limited,3,9,Thursday,high,rainy,unavailable,7,automated,3.5
+RC-REQ-001302,2025/06/12 10:27,Southfield,3.7,hospital,available,24,10,Thursday,medium,cloudy,not_applicable,10,Manual,7.5
+RC-REQ-001303,2025/06/12 13:22,Airport Road,6.6,hospital,available,11,13,Thursday,medium,cloudy,limited,12,manual,6.1
+RC-REQ-001304,06-12-2025 01:50 PM,Green Park,5.0,hospital,available,31,13,Thursday,medium,clear,available,12,,5.8
+RC-REQ-001305,2025-06-12 14:23:03,Industrial Zone,3.3,hospital,available,11,14,Thursday,high,cloudy,available,6,AUTOMATED,2.6
+RC-REQ-001306,2025-06-12 16:57:23,Harbor View,2.9,hospital,available,40,16,Thursday,High,rainy,,5,automated,3.0
+RC-REQ-001307,12/06/2025 18:41,Riverside,,hospital,available,11,18,Thursday,medium,N/A,limited,3,automated,3.5 min
+RC-REQ-001308,2025-06-13 07:07:12,Old Town,12.6,hospital,limited,32,7,Friday,medium,,limited,4,manual,25.3
+RC-REQ-001309,2025-06-13 09:07:19,Hillcrest,4.2,hospital,available,2,9,Friday,high,clear,available,6,automated,5.7
+RC-REQ-001310,06-13-2025 11:37 AM,Harbor View,11.7,hospital,limited,8,11,Friday,medium,CLOUDY,unavailable,-3,automated,13.6
+RC-REQ-001311,2025-06-13 14:59:43,,4.1,ambulance,available,50,14,Friday,medium,clear,not_applicable,3,automated,7.3
+RC-REQ-001191,29-May-2025 08:49,MAPLE HEIGHTS,5.7, ambulance ,available,41,8,Thursday,high,clear,not_applicable,5,null,7.4
+RC-REQ-001312,2025-06-13 18:28:24,Southfield,5.4,hospital,busy,34,18,Friday,medium,rainy,limited,3,AUTOMATED,13.4
+RC-REQ-001313,13/06/2025 21:29,Harbor View,6.9,hospital,busy,11,21,Friday,high,clear,LIMITED,3,automated,11.3
+RC-REQ-001314,2025-06-13 23:24:49,Maple Heights,6.3,hospital,available,11,23,Friday,high,rainy,available,2,automated,5.0
+RC-REQ-001315,06-14-2025 06:13 AM,Industrial Zone,18.1,hospital,ltd,5,6,Saturday,null,cloudy,unavailable,2,automated,18.9
+RC-REQ-001316,2025-06-14 08:47:18,Sunrise Colony,7.4,hospital,Limited,7mins,8,Saturday,HIGH,cloudy,available,3,automated,18.1
+RC-REQ-001317,14-Jun-2025 09:09,Southfield,11.1,hospital,available,15,9,Saturday,high,clr,unavailable,5,automated,unknown
+RC-REQ-001318,2025-06-14 09:11:26,Southfield,9.5,hospital,available,8,9,Saturday ,high,rainy,unavailable,5,automated,15.5
+RC-REQ-001319,2025-06-14 13:56:15,Harbor View,3.7,ambulance,available,15 min,13, Saturday,high,rainy,not_applicable,5,automated,1.3
+RC-REQ-001320,2025-06-14 16:40:31,Riverside,6.4,hospital,avail,1,16,Saturday,high,rainy,available,7,manual,8.8
+RC-REQ-001321,14/06/2025 17:13,University Area,5.6,hospital,available,5,17,Saturday,medium,,available,7,automated,3.3
+RC-REQ-001322,2025-06-14 19:30:09,University Area,9.4,hospital,available,3,19,Saturday,medium,cloudy,available,6,automated,7.7
+RC-REQ-001323,15/06/2025 00:53,Industrial Zone,10.1,ambulance,limited,40,0,Sunday,medium,clear,not_applicable,6,manual,10.1 min
+RC-REQ-001324,2025-06-15 08:03:06,Old Town,9.9,ambulance,limited,47,8,Sunday,medium,clear,not_applicable,6,manual,19.6
+RC-REQ-001325,2025-06-15 09:16:16,Northgate,2.9,ambulance,available,3,9,Sunday,high,cldy,not_applicable,4,automated,10.1
+RC-REQ-001326,2025-06-15 09:23:29,Lakeview,4.3,  Ambulance  ,AVAILABLE,0,9,Sunday,high,clear,not_applicable,2,manual,5.9
+RC-REQ-001327,2025-06-15T13:56:54,Sunrise Colony,2.5,ambulance,available,7,13,Sunday,low,clear,not_applicable,8,automated,0.8
+RC-REQ-001328,2025-06-15 14:31:11,Lakeview,3.3 km,hospital,available,38,14,Sunday,high,clear,limited,7,automated,13.2
+RC-REQ-001329,2025-06-15 23:35:24,University Area,6.1,ambulance,available,1,23,Sunday,medium,cloudy,NOT_APPLICABLE,4,manual,4.5
+RC-REQ-001330,2025-06-16 06:46:04,Central Market,10.4,hospital,  Available  ,24,06,Monday,medium,foggy,unavailable,8,automated,10.1
+RC-REQ-001331,2025-06-16 07:35:34,Maple Heights,3.3,ambulance,limited,7,7,Monday,high,foggy,not_applicable,2,automated,5.0
+RC-REQ-001332,16/06/2025 08:57,Central Market,3.9,ambulance,available,29,8,Monday,medium,cloudy,not_applicable,-2,automated,NA
+RC-REQ-001333,2025-06-16T10:11:17,lakeview,119.5,hospital,available,13,10,Monday,high,clear,available,4,?,6.5
+RC-REQ-001334,2025-06-16 10:18:14,Industrial Zone,5.6,hospital,available ,9,10,Monday,medium,rainy,available,7,automated,5.2
+RC-REQ-001335,16-Jun-2025 10:24,Old Town,"2,2",hospital,available,9,10, Monday,medium,clear,available,8,automated,
+RC-REQ-001255,2025-06-07 06:43:06,Sunrise Colony,10.3,hospital,available,7,6h,Saturday, high,cloudy,available,,automated,5.9
+RC-REQ-001336,2025-06-16 11:16:42,Old Town,6.1,ambulance,busy,9,11,Monday,high,clear,not_applicable,5,manual,6.1
+RC-REQ-001337,2025-06-16 15:02:58,Green Park,1.2,ambulance,available,null,15,Monday,medium,rainy,not_applicable,2,Automated,6.1
+RC-REQ-001338,2025-06-16T16:13:24,Southfield,2.1,hospital,limited,0,16,Monday,high,clear,  Limited  ,6,automated,5.2
+RC-REQ-001339,2025-06-16 16:37:09,Southfield,4.2,ambulance,ltd,30,16,Monday,high,clear,not_applicable,4,automated,6.2
+RC-REQ-001340,06-16-2025 07:21 PM,Old Town,3.8,hospital,available,24,19,Monday,high,cloudy,limited,NA,automated,9.5
+RC-REQ-001341,2025-06-16 20:43:35,Airport Road ,10.1,hospital,busy,6,20,Monday,medium,clear,unavailable,4,automated,8.3
+RC-REQ-001342,2025-06-16 23:56:21,Industrial Zone,3.2,ambulance,busy,8,23,Monday,low, clear,not_applicable ,4,automated,8.4
+RC-REQ-001343,2025-06-17 05:35:08,Northgate,8.3,ambulance,limited,1 min,5,TUE,low,foggy,Not_Applicable,3,manual,9.5
+RC-REQ-001344,2025-06-17 09:16:02,Green Park,5.2,ambulance,avail,3,9,Tuesday,high,  Clear  ,not_applicable,9,automated,5.4
+RC-REQ-001345,2025-06-17 09:58:36,Maple Heights,7.4,hospital,available,1,9,Tuesday,low,foggy,available,4,AUTOMATED,6.0
+RC-REQ-001346,2025-06-17 10:19:24,Central Market,-5.1,,available,13,10,Tuesday,high,cloudy,not_applicable,4,automated,4.8
+RC-REQ-001337,2025-06-16 15:02:58,Green Park,1.2,ambulance,available,null,15,Monday,medium,rainy,not_applicable,2,Automated,15.3
+RC-REQ-001347,17-Jun-2025 15:17,Airport Road,3.5,ambulance,bsy,,15,Tuesday,high,clear,n.a.,2,manual,8.8
+RC-REQ-001348,2025-06-17 15:57:01,Northgate,4.3,hospital,available,28,15,Tuesday,medium ,cloudy,limited,,automated,9.1
+rc-req-001349,2025-06-17 16:41:56,Airport Road,22.8,hospital,limited,5,16,Tuesday,high,rainy,limited,5,manual,43.4
+RC-REQ-001350,17-Jun-2025 17:29,Airport Road,4.0,ambulance,limited,9,17,Tuesday,medium,clear,not_applicable,2,automated ,13.5
+RC-REQ-001351,2025-06-17 18:40:04,Riverside,8.2,hospital,available,29,18,Tuesday,high,clear,unavailable,6,man.,16.2
+RC-REQ-001352,2025-06-17 18:43:17,,19.6,ambulance,limited,21,18,Tuesday,medium,foggy,not_applicable,4,automated,8.9
+RC-REQ-001353,06-17-2025 09:30 PM,Lakeview,5.0,hospital,available,13,21,Tuesday,low,clear,available,5,MANUAL,13.5
+RC-REQ-001354,2025-06-18 08:01:01,Harbor View,2.8,ambulance,available,2,8,Wednesday,high,foggy,not_applicable,8,  Automated  ,2.4
+RC-REQ-001355,2025-06-18 09:25:54,University Area,30.0,hospital,available,29,9,Wednesday,high,cloudy,avail,8,automated,9.5
+RC-REQ-001356,2025-06-18T10:13:54,Hillcrest,6.2,hospital,available,1,10,Wednesday,high,clear,limited,,automated,6.0
+RC-REQ-001357,2025-06-18 16:02:31, Southfield,4.1,ambulance,limited,9,16,Wednesday,medium,,not_applicable,4,manual,9.1
+RC-REQ-001358,2025-06-18 17:33:33,University Area,2.1,hospital,available,4,17,N/A,medium,cloudy,available,7,automated,1.0
+RC-REQ-001359,2025-06-18 18:12:46,Airport Road,8.3,hospital,available,0,18,Wednesday,high,rainy,available,4,automated,7.8
+RC-REQ-001360,2025-06-18T19:21:20,Riverside,11.2,hospital,?,1,19,Wednesday,medium,cloudy,available,6,automated,6.3
+RC-REQ-001361,2025-06-18 21:59:25,University Area,6.9,hospital,Limited,36,21,Wednesday,high,clear,limited,7,manual,11.4
+RC-REQ-001362,2025-06-19T07:37:47,Northgate,4.0,hosp,available,4,7,Thu,high,rainy,limited,10,automated,6.9
+RC-REQ-001363,2025-06-19 08:20:29,Maple Heights,10.5,hospital,available,6,8,Thursday,medium,clear,limited,2,automated,10.2
+RC-REQ-001364,2025-06-19 08:23:37,Southfield,10.0,ambulance,available,6,8,Thursday,medium,clear,not_applicable,4,Manual,7.8
+RC-REQ-001365,2025-06-19 08:45:09,Airport Road,1.8,ambulance,available,25,8,Thursday,high,clear,not_applicable,4,automated,3.2
+RC-REQ-001366,2025-06-19 11:26:14,Airport Road,,hospital,available,4,11,Thursday,high,clear,limited,7,automated,5.4
+RC-REQ-001367,2025-06-19 11:27:57,Harbor View,12.3,HOSPITAL,  Limited  ,2,11,Thursday,low,cloudy,limited,5,manual,16.7
+RC-REQ-001368,2025-06-19 12:16:59,Southfield,1.4,ambulance,available,13,12,Thursday,low,cloudy,not_applicable ,4,automated,3.3
+RC-REQ-001369,2025-06-19 13:02:10,Maple Heights,15.3,hospital,available,1,13,Thursday,high,clear,,10,manual,14.1
+RC-REQ-001370,2025-06-19 14:44:02,Airport Road,6.9,hospital,AVAILABLE,13,14,Thursday,high,clear,available,5,automated,10.5
+RC-REQ-001371,19-Jun-2025 14:47,Maple Heights,4.4,ambulance,limited,0,14,Thursday,medium,cloudy,not_applicable,3,manual,6.5
+RC-REQ-001372,2025-06-19 20:48:50,University Area,2.6,ambulance,limited,6,20,Thursday,medium,cloudy,not_applicable,6,manual,5.0
+RC-REQ-001373,19/06/2025 21:36,Industrial Zone,14.0,HOSPITAL,available,1,21,Thursday,medium,cloudy,unavailable,2,automated,9.9
+RC-REQ-001374,2025-06-20 10:04:10,Lakeview,null,ambulance,Busy.,8,10,Friday,high,clear ,not_applicable,4, automated,7.6
+RC-REQ-001375,2025-06-20 10:58:48,Airport Road,1.9,ambulance,busy,4,10,Friday,medium,CLOUDY,not_applicable,7,manual,8.1
+RC-REQ-001376,20/06/2025 12:07,Green Park,10.5,ambulance,limited,3,12, Friday,medium,Clear,not_applicable,6,manual,10.7
+RC-REQ-001377,2025-06-20 13:10:54,Old  Town,7.1,hospital,ltd,42,13,Friday,medium,cloudy,available,8,manual,12.6
+RC-REQ-001378,06-20-2025 01:32 PM,Industrial Zone,2.4,hospital,available,9,13,Friday,medium,clear,available,8,automated,3.8
+RC-REQ-001379,2025-06-20 15:07:55,Old Town,3.4,hospital,limited,0,15,  Friday  ,medium,clear,limited,8,manual,6.7
+RC-REQ-001380,2025-06-21 08:20:24,Harbor View,10.2,hospital,available,1,8,Saturday,medium,CLEAR,available,8,manual,5.7
+RC-REQ-001381,2025-06-21 08:55:23,Central Market,4.0,ambulance,limited,18,8,Saturday,high,clear,not_applicable,5,automated,7.2
+RC-REQ-001382,06-21-2025 09:11 AM,Airport Road,4.9,Hosp.,busy,4,9,Saturday,high,cloudy,unavailable,5,automated,25.7
+RC-REQ-001383,2025-06-21 09:11:56,Harbor View,13.5,hospital,limited,10,9,Saturday,high,clear,available,4,manual,26.2
+RC-REQ-001384,,Old Town,4.0,hospital,,7,9,Saturday,medium,clear,unavailable,5,manual,13.9
+RC-REQ-001385,2025-06-21 15:44:59,Riverside,-13.5,ambulance,available,,15,Saturday,high, clear,not_applicable,7,manual,17.4
+RC-REQ-001386,2025-06-21 16:38:53,Lakeview,3.5,ambulance,available,23,16,Saturday,high,clear,not_applicable,3,manual,11.9
+RC-REQ-001387,21/06/2025 18:02,Airport Road,4.4,ambulance,available,54,18,Saturday,low,clear,not_applicable,5,automated,6.5
+RC-REQ-001388,2025-06-21 18:04:25,Central Market,10.8,hospital,limited,31,18,Saturday,medium,rainy,unavailable,4,automated,-
+RC-REQ-001389,2025-06-21 20:46:25,Southfield,,hospital,busy,1,20,Saturday,high,cloudy,unavailable,4,automated,19.6
+RC-REQ-001390,06-22-2025 07:54 AM,Old Town,5.5,hospital,available,14,7,Sunday,low,clear,available,6,manual ,14.8
+RC-REQ-001391,22/06/2025 20:35,Central Market,13.8,,limited,1,20,Sunday,medium,foggy,not_applicable,2,automated,5.9
+RC-REQ-001392,2025-06-22 21:34:27, Maple Heights,1.3,hospital,busy,0,21,Sunday,high,clear,available,,manual,6.8
+RC-REQ-001393,2025-06-23 01:28:17,Sunrise Colony,7.6,hospital,available,18,1,Monday,Medium,rainy,available,5,automated,8.5
+RC-REQ-001394,2025-06-23 08:31:48,Maple Heights,2.9,AMBULANCE,busy,7 min,8,Monday,high,foggy,not_applicable,3,automated,8.9
+RC-REQ-001395,2025-06-23 09:38:12, Riverside,3.5,hospital,  Limited  ,1,9,Monday,high,foggy,limited,,automated,"9,5"
+RC-REQ-001396,2025-06-23 09:47:40,N/A,2.1,ambulance,available,0 min,9,Monday,high,rainy,not_applicable,5,manual,12.1
+RC-REQ-001397,2025-06-23 10:40:21,Central Market,10.4,hospital,available,null,10,MON,medium,cloudy,available,8,automatic,2.5
+RC-REQ-001398,2025-06-23 10:49:21,Riverside,4.8,,busy,8,10,Monday,high,clear,unavailable,2,manual,12.6
+RC-REQ-001399,2025-06-23 11:32:55,Green Park,4.9,ambulance,available,38,11,Monday,high,rainy,not_applicable,4,manual ,9.7
+RC-REQ-001400,,Industrial Zone,3.8 km,ambulance,limited,3,13,Monday,high,clear,not_applicable,1,manual,6.1
+RC-REQ-001401,2025-06-23 16:50:29,LAKEVIEW,14.5,hospital,-,12,16,Monday,medium,  Rainy  ,available,9, automated,18.8
+RC-REQ-001402,2025-06-23 17:38:03,Airport Road,4.4,ambulance,available,17,17,Monday,high,cloudy,,9,automated,6.2
+RC-REQ-001403,2025-06-23 19:05:08,Green Park,6.1,hospital,available,23,19,Monday,low,clear,unavailable,4,manual,10.1
+RC-REQ-001404,2025-06-23 19:08:54,Northgate,8.6,hospital,available,10,19,Monday,medium,cloudy,available,4,automated,6.2
+RC-REQ-001405,24/06/2025 06:03,Industrial Zone,4.1,ambulance,available,7,6,Tuesday,medium,clear,not_applicable,3,automated,"3,5"
+RC-REQ-001219,2025-06-02 17:22:56,NORTHGATE,2.0, ambulance ,busy,4,17,Monday,medium,Cloudy,not_applicable,8,manual,19.3
+RC-REQ-001406,2025-06-24 09:57:39,University Area,2.3,ambulance,limited,1,9,Tuesday,high,clear,not_applicable,5,automated,21.0
+RC-REQ-001407,2025-06-24T10:39:29,Northgate,4.2,hospital,available,2,10,Tuesday,medium,clear, available,4,automated,0.9
+RC-REQ-001408,2025-06-24 12:38:15,Southfield,2.5,ambulance,limited,10,12,Tuesday,med,cloudy,not applicable,5,automated,6.7
+RC-REQ-001409,2025-06-24 14:07:20,Old Town,2.7,hospital,available,1,14,Tuesday,medium,rainy,limited,4,manual,18.3
+RC-REQ-001410,2025-06-24 17:12:11,Central Market,9.6,hospital,busy,1,17,Tuesday,medium,cloudy,available,5,  Automated  ,10.8
+RC-REQ-001411,2025-06-24 17:28:03,Central Market,3.5,hospital,available,10,17,Tuesday,medium,cloudy,limited,6,manual,9.6
+RC-REQ-001412,06-24-2025 07:34 PM,Northgate,5.9,ambulance,  Busy  ,29,19,Tuesday,high,cloudy,not_applicable,4,manual,10.8
+RC-REQ-001413,2025-06-24T21:33:58,null,49.8,hospital,limited,2,21,Tuesday,,clear,available,6,automated,6.3
+RC-REQ-001414,06-25-2025 09:49 AM,Southfield,2.5,ambulance,available,4,9, Wednesday, medium,cloudy,null,9,manual,4.3
+RC-REQ-001415,2025-06-25 17:59:05,Airport Road,3.7,hospital,?,44,17,Wednesday,high,clear,available,8,manually,8.7
+RC-REQ-001416,2025-06-26 06:09:09,Green Park,17.1,hospital,available,0,6,Thursday,medium,foggy,limited,5,automated,8.7 min
+RC-REQ-001417,2025-06-26 13:07:23,University Area,19.0,hospital,available,15,13,Thursday,high,clear,available,4,automated,6.0
+RC-REQ-001418,2025-06-26 14:53:38,Green Park,23.3,hospital,available,0,14,Thursday,NA,rainy,unavailable,6,manual,17.3
+RC-REQ-001419,2025-06-26 16:50:23,Central Market,6.5,ambulance,busy,null,16,Thursday,high,cloudy,not_applicable,2,automated,16.3
+RC-REQ-001420,2025-06-26 17:03:53,Green Park,3.2,Ambulance,?,29,17,Thursday,medium,clear,not_applicable,4,manual,"9,0"
+RC-REQ-001421,26/06/2025 20:35,Industrial Zone,4.4,ambulance,limited,0,20,Thursday,medium,clear,not_applicable,6,manual,7.7
+RC-REQ-001422,2025-06-27 00:05:21,Airport Road,5.9,hospital,busy,17mins,0,Friday,low,clear,unavailable,2,Manual,9.9
+RC-REQ-001423,06-27-2025 05:33 AM,Northgate,2.4,hospital, busy,6,5,Friday,high,foggy,,2,automated,8.2
+RC-REQ-001424,2025-06-27 08:31:41,University Area,10.3,hospital,available,2,8,Friday,high,clear,  Available  ,7,manual,5.2
+RC-REQ-001425,2025-06-27 09:19:59,Old Town,5.7,hospital,limited,18,9,Friday,high,rainy ,limited,5,automated,5.9
+RC-REQ-001426,2025-06-27 13:19:05,Hillcrest,5.1,hospital,,7,13,Friday,medium,clear,available,,manual,6.9
+RC-REQ-001427,2025-06-27 15:24:40,Northgate,5.5,ambulance,available,8,15,Friday,medium,clear,not_applicable,NA,automated,2.6
+RC-REQ-001428,2025-06-27 17:01:50,Southfield,2.9,ambulance,limited,6,17,Fri,high,rainy,not_applicable,5,automated,13.4
+RC-REQ-001429,2025-06-27 19:21:20,southfield,5.1,ambulance,available,2,19,Friday,high,clr,not_applicable,2,manual,3.9
+RC-REQ-001430,06-27-2025 08:20 PM,Lakeview,3.6,hospital,limited,12,20,Friday,low,cloudy,available,6,manual,4.8
+RC-REQ-001431,2025-06-27 22:16:47,Airport Road,1.7,ambulance,limited,1,22,Friday,medium,clear,not_applicable,6,automated,5.1
+RC-REQ-001432,2025-06-28 01:35:19,Southfield,15.1,hospital,AVAILABLE,8,1,Saturday,low,cloudy,available,1,automated,8.6
+RC-REQ-001433,2025-06-28 03:02:05,Airport Road,4.0,hospital,busy,7,3,Saturday,high,clear,unavailable,two,automated,22.1
+RC-REQ-001434,2025-06-28 09:49:30,Old Town,13.6,hospital,limited,1,9,Saturday,medium,cloudy,unavailable,3,automated,19.9
+RC-REQ-001435,2025-06-28 10:20:42,Harbor View,4.2,ambulance,available,6,10,Saturday,high,rainy,not applicable,5, automated,4.5
+RC-REQ-001436,28/06/2025 11:12,Riverside,6.6,hospital,busy,11,11,Saturday,,cloudy,limited,3,automated,14.3
+RC-REQ-001437,2025-06-28 14:55:14,Hillcrest,8.2,hospital,available,6 min,14,Saturday,medium,clear,available,8,manual,3.3
+RC-REQ-001438,2025-06-28 15:03:38,Maple Heights,3.1,unknown,,null,15,,,NA,not_applicable,4,,1.7
+RC-REQ-001439,2025-06-28 15:04:22,Central Market,5.8,HOSPITAL,AVAILABLE,15,15,Saturday,low,clear,available,10,automated,0.4
+RC-REQ-001440,2025-06-28 20:59:30,Riverside,10.8,ambulance,available,10,20,Saturday,high,cloudy,not_applicable,8,automated,5.1
+RC-REQ-001441,28/06/2025 23:07,Riverside,4.6,ambulance,available,22,23,Saturday,low,null,not_applicable,4,automated,3.1
+RC-REQ-001442,06-29-2025 03:02 AM,Maple Heights,7.5,ambulance,available,6,3,Sunday,low,clear,not_applicable,2,automated,4.2
+RC-REQ-001443,2025-06-29 05:32:51,Northgate,N/A,,Busy.,8,5,Sunday,medium,,,1,,17.6
+RC-REQ-001265,2025-06-08 09:11:41,University Area,1.9,hospital,available,11,16,Sunday,medium,clear,available,4,manual,7.9
+RC-REQ-001444,,Maple Heights,4.6,,available,5,6,Sunday,medium,cloudy,limited,6,automated,3.5
+RC-REQ-001445,2025-06-29 14:59:38,Riverside,6.2,hospital,available,,14,Sunday,high,cloudy,available,6,automated,2.5
+RC-REQ-001446,2025-06-29 15:28:06,Riverside,11.0,hospital,busy,33,15,,medium,cloudy,unavailable,5,automated,10.8
+RC-REQ-001447,2025-06-29 16:04:42,Old Town,1.6,ambulance,available,3,16,Sunday,high,clear,not_applicable,4,manual,4.8
+RC-REQ-001448,2025-06-29 16:29:28,Green Park,3.5,,available,33,16,Sunday,high,clear,limited,N/A,automated,13.5
+RC-REQ-001449,29/06/2025 17:25,Industrial Zone,7.3 km,  Hospital  ,available,?,17,Sunday,medium,clear,available,9,automated,8.0
+RC-REQ-001450,06-29-2025 06:38 PM,Southfield,3.1,hospital,limited,2,18,Sunday,medium,rainy,available,7,automated,4.0
+RC-REQ-001451,2025-06-29 18:54:29,,4.3,ambulance,busy,2,18,Sunday,low,clear,not_applicable,3,auto,7.1
+RC-REQ-001452,2025-06-29 22:49:26,Maple Heights,1.5,AMBULANCE,busy,13,22,Sunday,high,clear,not_applicable,5,N/A,7.7
+RC-REQ-001453,2025-06-30 08:09:02,Lakeview,3.3km,hospital,available,1,8,Monday,high,foggy,available,5,manual,7.1
+RC-REQ-001454,2025-06-30 13:15:13,Green Park,5.8,ambulance,busy,15,13,Monday,medium,clear,not_applicable,5,unknown,9.0
+RC-REQ-001455,06-30-2025 06:37 PM,?,5.9,hospital,available,18,18,Monday,medium,cloudy,available,6,manual,9.7
+RC-REQ-001456,2025-06-30 21:11:00,Harbor  View,13.0,Hospital,LIMITED,42,21,Monday,medium,rainy,unavailable,5,automated,26.5
+RC-REQ-001457,2025-06-30 21:15:53,Harbor View,2.8km,ambulance,available,15,21,Monday,high,foggy,not_applicable,3,automated,5.9
+RC-REQ-001404,2025-06-23 19:08:54,Northgate,8.6,hospital,available,10,19,Monday,medium,cloudy,available,4,automated,6.2

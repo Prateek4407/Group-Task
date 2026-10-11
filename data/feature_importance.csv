@@ -1,0 +1,55 @@
+feature,importance
+num__distance_km,0.14755544252962322
+num__distance_per_ambulance,0.12936943205926227
+num__availability_age_min,0.11912935550208334
+cat__partner_status_available,0.1176046975444245
+num__hour_of_day,0.05668124213166589
+cat__hospital_capacity_status_unavailable,0.0473298958522264
+cat__dispatch_mode_automated,0.03495690393778867
+num__available_ambulance_count,0.03213705978210853
+cat__dispatch_mode_manual,0.03201309313999885
+cat__traffic_level_high,0.02979140148199746
+cat__partner_status_busy,0.015844132453674938
+cat__locality_Industrial Zone,0.013686467607209055
+cat__day_of_week_saturday,0.01304772128966519
+cat__weather_condition_foggy,0.012525231712455419
+num__is_peak_hour,0.012344733186768465
+cat__hospital_capacity_status_limited,0.01035398718983612
+cat__partner_status_limited,0.010072349850873361
+cat__weather_condition_cloudy,0.010061634787974776
+cat__weather_condition_clear,0.009627488169858875
+cat__weather_condition_rainy,0.00921103902794401
+cat__locality_Airport Road,0.008575989954117326
+cat__traffic_level_low,0.008268109379973842
+cat__hospital_capacity_status_not_applicable,0.00783594541309654
+cat__day_of_week_tuesday,0.007519080031017416
+cat__locality_Northgate,0.00739349939988537
+cat__locality_Central Market,0.007309541203047119
+cat__day_of_week_wednesday,0.007169120280649743
+cat__day_of_week_friday,0.0070795648912264815
+cat__day_of_week_thursday,0.00666623182438515
+cat__hospital_capacity_status_available,0.0064640753786317515
+cat__locality_Riverside,0.006381211867919867
+cat__partner_type_hospital,0.006066450064466456
+cat__traffic_level_medium,0.005861847774551701
+cat__day_of_week_sunday,0.0054700112819207735
+cat__day_of_week_monday,0.0050986107627193
+cat__locality_Harbor View,0.004713818114235693
+cat__partner_type_ambulance,0.0041340450307787635
+cat__locality_Sunrise Colony,0.0039829024170494895
+cat__locality_University Area,0.003982456676236296
+cat__locality_Southfield,0.003874032073383328
+cat__locality_Maple Heights,0.003575891365680086
+cat__locality_Old Town,0.0026686016868877577
+cat__locality_Lakeview,0.0023992338734974057
+cat__locality_Hillcrest,0.002153066164799656
+cat__locality_Green Park,0.001985596780215997
+cat__locality_Lake View,2.775707218734245e-05
+cat__locality_Old  Town,0.0
+cat__locality_Maple  Heights,0.0
+cat__locality_Green  Park,0.0
+cat__locality_Harbor  View,0.0
+cat__locality_Central  Market,0.0
+cat__locality_Airport  Road,0.0
+cat__locality_River Side,0.0
+cat__locality_University  Area,0.0
