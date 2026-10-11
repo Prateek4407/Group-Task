@@ -1,0 +1,4 @@
+Algorithm,MAE,RMSE,R2
+Random Forest,2.88,3.94,0.346
+Linear Regression,2.97,4.06,0.306
+Decision Tree,4.13,6.07,-0.552

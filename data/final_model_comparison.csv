@@ -1,0 +1,3 @@
+Model,MAE,RMSE,R2
+Original Random Forest,2.879,3.943,0.346
+Tuned Random Forest,2.888,3.997,0.328
