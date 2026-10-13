@@ -3,3 +3,7 @@
 .venv/
 venv/
 .env
+
+# Local datasets and trained model artifacts
+*.joblib
+data/emergency_severity/*.csv
