@@ -38,6 +38,8 @@ Registration and login set a `Secure`, `HttpOnly`, `SameSite=None` cookie. Prote
 
 Public self-registration is limited to patients. Doctor and driver accounts must be provisioned by an authorized database operator. State-changing browser requests are restricted to the exact origins in `CLIENT_URL`, and CORS is enabled with credentials.
 
+The current MediBridge Vercel Preview and production aliases are also listed explicitly in `src/config/env.js`. Preview access never uses a wildcard origin.
+
 ## Operational behavior
 
 - Ambulances are explicit MongoDB records; none are created at server startup.

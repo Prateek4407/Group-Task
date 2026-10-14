@@ -7,10 +7,15 @@ const requiredInProduction = (name, developmentValue) => {
   if (env === 'production' && !value) throw new Error(`${name} is required in production.`);
   return value || developmentValue;
 };
-const clientUrls = requiredInProduction('CLIENT_URL', 'http://localhost:5173')
+const configuredClientUrls = requiredInProduction('CLIENT_URL', 'http://localhost:5173')
   .split(',')
   .map((value) => value.trim())
   .filter(Boolean);
+const deployedClientUrls = [
+  'https://medibridge-frontend-preview.vercel.app',
+  'https://medibridge-frontend-repo.vercel.app'
+];
+const clientUrls = [...new Set([...configuredClientUrls, ...deployedClientUrls])];
 
 module.exports = {
   env,
