@@ -125,3 +125,18 @@ def predict_severity(data: dict[str, Any]):
             status_code=500,
             detail=f"Prediction failed: {str(exc)}"
         )
+
+@app.post("/predict/beds")
+def predict_beds():
+    try:
+        from hospital_bed_prediction.predict import predict_bed_availability
+        return predict_bed_availability()
+
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=503, detail=str(exc))
+
+    except Exception as exc:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Bed prediction failed: {str(exc)}"
+        )
