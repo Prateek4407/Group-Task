@@ -7,3 +7,7 @@ venv/
 # Local datasets and trained model artifacts
 *.joblib
 data/emergency_severity/*.csv
+
+hospital_bed_prediction/data/
+hospital_bed_prediction/models/
+hospital_bed_prediction/hospital_occupancy.csv
