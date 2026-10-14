@@ -1,12 +1,12 @@
 const Case = require('../models/Case');
 const Hospital = require('../models/Hospital');
-const { stageStepMs } = require('../config/env');
+const ambulances = require('./ambulanceService');
+const realtime = require('./realtime');
 
-/* Same six stages as the frontend tracking page */
 const STAGES = [
   ['Request received', 'Case created and triage priority assigned'],
   ['Hospital confirmed', 'Hospital acknowledged and prepared a bay'],
-  ['Ambulance assigned', 'Ambulance leaving the hospital for the patient'],
+  ['Ambulance assigned', 'Ambulance dispatched to the patient'],
   ['Pickup done', 'Patient loaded and stabilised on scene'],
   ['On the way to hospital', 'Priority transit to the hospital'],
   ['Arrived at hospital', 'Handoff to the receiving team']
@@ -19,51 +19,85 @@ async function uniqueCaseId() {
   }
 }
 
-/** Best hospital for a care type: not saturated, fastest ETA first. */
 async function bestMatch(care) {
-  const list = await Hospital.find({ care, load: { $ne: 'Saturated' } }).sort({ eta: 1 }).limit(1);
-  return list[0] || (await Hospital.findOne().sort({ _id: 1 }));
-}
-
-/** Moves the case forward by one stage every STEP ms (simulation, same as the frontend). */
-async function advanceIfDue(c) {
-  const now = Date.now();
-  let changed = false;
-  while (c.stage < 5 && now - c.stageStart.getTime() >= stageStepMs) {
-    c.stage += 1;
-    c.stageStart = new Date(c.stageStart.getTime() + stageStepMs);
-    c.stageLog.push({ stage: c.stage, at: c.stageStart });
-    changed = true;
-  }
-  if (changed) await c.save();
-  return c;
-}
-
-const progress = (c) => (c.stage >= 5 ? 1 : Math.min(1, (Date.now() - c.stageStart.getTime()) / stageStepMs));
-
-function etaMinutes(c, f) {
-  const s = c.stage;
-  const m = s < 2 ? 20 - s * 2 : s === 2 ? 8 * (1 - f) + 12 : s === 3 ? 12 : s === 4 ? 12 * (1 - f) : 0;
-  return Math.ceil(m);
-}
-
-const statusOf = (c) => (c.stage >= 5 ? { label: 'Handoff completed', badge: 'green' } : { label: 'In transit', badge: 'estimated' });
-
-function timeline(c) {
-  const s = c.stage;
-  return STAGES.map(([title, detail], i) => {
-    const log = c.stageLog.find(l => l.stage === i);
-    const at = i === 0 ? c.createdAt : log ? log.at : null;
-    return { step: i + 1, title, detail, state: i < s ? 'done' : i === s ? (s === 5 ? 'done' : 'now') : 'future', at: i <= s ? at : null };
-  });
+  const list = await Hospital.find({ care, load: { $ne: 'Saturated' } }).sort({ eta: 1 });
+  const counts = await ambulances.countsByHospital();
+  return list.find((hospital) => counts[hospital._id]?.available > 0)
+    || list[0]
+    || (await Hospital.findOne().sort({ _id: 1 }));
 }
 
 /**
- * Case "view": the JSON shape the frontend needs.
- * full=false is the public tracking view (no phone, symptoms or GPS).
+ * Applies one real workflow transition. No timer advances cases. When moving
+ * from hospital confirmation to dispatch, an available MongoDB ambulance is
+ * claimed atomically; if none exists, the case stays waiting at stage 1.
  */
+async function stepForward(c, at = new Date()) {
+  if (c.stage >= 5) return false;
+  if (c.stage === 1 && !c.ambulance) {
+    const ambulance = await ambulances.assignNearest(c);
+    if (!ambulance) return false;
+  }
+  c.stage += 1;
+  c.stageStart = at;
+  c.stageLog.push({ stage: c.stage, at });
+  if (c.stage === 5) await ambulances.release(c);
+  return true;
+}
+
+const statusOf = (c) => (c.stage >= 5
+  ? { label: 'Handoff completed', badge: 'green' }
+  : c.stage < 2
+    ? { label: 'Awaiting dispatch', badge: 'estimated' }
+    : { label: 'In transit', badge: 'estimated' });
+
+function timeline(c) {
+  return STAGES.map(([title, detail], index) => {
+    const log = c.stageLog.find((entry) => entry.stage === index);
+    const at = index === 0 ? c.createdAt : log?.at || null;
+    return {
+      step: index + 1,
+      title,
+      detail,
+      state: index < c.stage ? 'done' : index === c.stage ? (c.stage === 5 ? 'done' : 'now') : 'future',
+      at: index <= c.stage ? at : null
+    };
+  });
+}
+
+function ambulanceView(c, full) {
+  const ambulance = c.ambulance?.registration ? c.ambulance : null;
+  if (!ambulance) return null;
+  const storedPosition = ambulances.livePosition(ambulance);
+  const gpsPosition = storedPosition?.source === 'gps' ? storedPosition : null;
+  const out = {
+    id: String(ambulance._id),
+    registration: ambulance.registration,
+    type: ambulance.type,
+    equipment: ambulance.equipment || [],
+    position: gpsPosition,
+    waitingForDriverLocation: !gpsPosition
+  };
+  if (full) Object.assign(out, {
+    driverName: ambulance.driverName,
+    driverPhone: ambulance.driverPhone
+  });
+  return out;
+}
+
 function present(c, { full = false } = {}) {
-  const s = c.stage, f = progress(c), h = c.hospital && c.hospital.name ? c.hospital : null;
+  const hospital = c.hospital?.name ? c.hospital : null;
+  const waiting = c.stage === 1 && !c.ambulance;
+  const liveStatuses = [
+    'Waiting for hospital confirmation',
+    'Hospital confirmed - waiting for an available ambulance',
+    'Ambulance heading to the patient',
+    'Patient pickup complete',
+    'Ambulance heading to hospital',
+    'Patient arrived at hospital'
+  ];
+  const ambulance = ambulanceView(c, full);
+  const waitingForDriverLocation = c.stage >= 2 && c.stage < 5 && ambulance?.waitingForDriverLocation;
   const out = {
     id: String(c._id),
     caseId: c.caseId,
@@ -71,27 +105,33 @@ function present(c, { full = false } = {}) {
     care: c.care,
     sev: c.sev,
     pickupAddress: c.address,
-    hospital: h ? { id: h._id, name: h.name, area: h.area, km: h.km, eta: h.eta } : { id: c.hospital },
-    stage: s,
-    stageLabel: `Stage ${s + 1} of 6`,
-    stageProgress: Number(f.toFixed(3)),
+    hospital: hospital
+      ? { id: hospital._id, name: hospital.name, area: hospital.area, km: hospital.km, eta: hospital.eta }
+      : { id: c.hospital },
+    stage: c.stage,
+    stageLabel: `Stage ${c.stage + 1} of 6`,
+    stageProgress: c.stage >= 5 ? 1 : 0,
     status: statusOf(c),
-    etaMinutes: etaMinutes(c, f),
-    liveStatus: ['Hospital is confirming the request', 'Hospital is confirming the request', 'Ambulance heading to the patient', 'Patient being loaded', 'Ambulance heading to hospital', 'Patient arrived at hospital'][s],
-    corridor: s < 2 ? 'Preparing' : s === 5 ? 'Completed' : 'Green corridor active',
-    hospitalStatus: s < 1 ? 'Pending' : 'Accepted',
+    etaMinutes: c.stage >= 5 ? 0 : (hospital?.eta ?? null),
+    liveStatus: waitingForDriverLocation ? 'Waiting for driver live location' : liveStatuses[c.stage],
+    ambulance,
+    waitingForAmbulance: waiting,
+    corridor: c.stage < 2 ? 'Preparing' : c.stage === 5 ? 'Completed' : 'Active',
+    hospitalStatus: c.stage < 1 ? 'Pending' : 'Accepted',
     timeline: timeline(c),
-    isDemo: c.isDemo,
     createdAt: c.createdAt
   };
-  if (full) {
-    Object.assign(out, {
-      patient: { name: c.name, age: c.age, sex: c.sex, phone: c.phone },
-      relationship: c.rel, symptoms: c.symptoms, landmark: c.landmark, gps: c.gps && c.gps.lat != null ? c.gps : null,
-      acknowledgedAt: c.acknowledgedAt
-    });
-  }
+  if (full) Object.assign(out, {
+    patient: { name: c.name, age: c.age, sex: c.sex, phone: c.phone },
+    relationship: c.rel,
+    symptoms: c.symptoms,
+    landmark: c.landmark,
+    gps: c.gps?.lat != null ? c.gps : null,
+    acknowledgedAt: c.acknowledgedAt
+  });
   return out;
 }
 
-module.exports = { STAGES, uniqueCaseId, bestMatch, advanceIfDue, present };
+const notify = (c) => realtime.notifyCase(c.caseId);
+
+module.exports = { STAGES, uniqueCaseId, bestMatch, stepForward, present, notify };

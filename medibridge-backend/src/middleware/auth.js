@@ -1,13 +1,10 @@
 const jwt = require('jsonwebtoken');
-const { jwtSecret } = require('../config/env');
+const { jwtSecret, authCookieName } = require('../config/env');
 const User = require('../models/User');
 const ApiError = require('../utils/ApiError');
 const asyncHandler = require('../utils/asyncHandler');
 
-const tokenFrom = (req) => {
-  const h = req.headers.authorization || '';
-  return h.startsWith('Bearer ') ? h.slice(7) : null;
-};
+const tokenFrom = (req) => req.cookies?.[authCookieName] || null;
 const load = async (token) => {
   const payload = jwt.verify(token, jwtSecret);
   return User.findById(payload.id);

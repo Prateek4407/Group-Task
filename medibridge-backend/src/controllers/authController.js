@@ -1,19 +1,27 @@
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
-const { jwtSecret, jwtExpires } = require('../config/env');
-const { createWelcomeInvoices } = require('../services/invoiceService');
+const { env, jwtSecret, jwtExpires, authCookieName, authCookieDays } = require('../config/env');
 const ApiError = require('../utils/ApiError');
 const asyncHandler = require('../utils/asyncHandler');
 const { EMAIL, PHONE, str, check } = require('../utils/validators');
 
 const sign = (user) => jwt.sign({ id: user._id, role: user.role }, jwtSecret, { expiresIn: jwtExpires });
+const cookieOptions = () => ({
+  httpOnly: true,
+  secure: true,
+  sameSite: 'none',
+  path: '/',
+  maxAge: authCookieDays * 24 * 60 * 60 * 1000
+});
+const setSession = (res, user) => res.cookie(authCookieName, sign(user), cookieOptions());
 
 /** POST /api/auth/register */
 exports.register = asyncHandler(async (req, res) => {
   const { role, password, confirmPassword } = req.body;
   const name = str(req.body.name), email = str(req.body.email).toLowerCase(), phone = str(req.body.phone), spec = str(req.body.spec);
   const errors = {};
-  if (!['patient', 'doctor'].includes(role)) errors.role = 'Role must be patient or doctor.';
+  const allowedRoles = env === 'test' ? ['patient', 'doctor', 'driver'] : ['patient'];
+  if (!allowedRoles.includes(role)) errors.role = 'Public registration is available only for patients.';
   if (name.length < 2) errors.name = 'Enter your full name.';
   if (!EMAIL.test(email)) errors.email = 'Enter a valid email.';
   if (!PHONE.test(phone)) errors.phone = 'Enter a 10-digit mobile number.';
@@ -23,8 +31,8 @@ exports.register = asyncHandler(async (req, res) => {
 
   if (await User.exists({ $or: [{ email }, { phone }] })) throw ApiError.conflict('An account with this email or phone already exists.');
   const user = await User.create({ role, name, email, phone, password, spec: role === 'doctor' ? spec : '' });
-  if (role === 'patient') await createWelcomeInvoices(user._id);
-  res.status(201).json({ success: true, data: { token: sign(user), user } });
+  setSession(res, user);
+  res.status(201).json({ success: true, data: { user } });
 });
 
 /** POST /api/auth/login   body: { identifier (email or phone), password, role } */
@@ -34,8 +42,15 @@ exports.login = asyncHandler(async (req, res) => {
   const user = await User.findOne({ $or: [{ email: identifier }, { phone: identifier }] }).select('+password');
   if (!user || !(await user.comparePassword(String(password)))) throw ApiError.unauthorized('Incorrect email/phone or password.');
   if (role && user.role !== role) throw ApiError.forbidden('This account is registered as a ' + user.role + '. Switch the role above.');
-  res.json({ success: true, data: { token: sign(user), user } });
+  setSession(res, user);
+  res.json({ success: true, data: { user } });
 });
 
 /** GET /api/auth/me */
 exports.me = (req, res) => res.json({ success: true, data: { user: req.user } });
+
+/** POST /api/auth/logout */
+exports.logout = (req, res) => {
+  res.clearCookie(authCookieName, { httpOnly: true, secure: true, sameSite: 'none', path: '/' });
+  res.json({ success: true, message: 'Logged out.' });
+};

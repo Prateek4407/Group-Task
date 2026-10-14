@@ -1,48 +1,50 @@
-# MediBridge Backend (Express + MongoDB, MVC)
+# MediBridge backend
 
-REST API for the MediBridge frontend: auth (patient/doctor), hospital finder, emergency cases with live tracking,
-doctor appointment slots, demo payments, and patient documents / medical history that doctors can read.
+Production Express/MongoDB API for MediBridge. It stores users, hospital directory records, emergency cases, ambulance assignments and GPS positions, appointment slots, invoices, medical documents, consent, and audit history in MongoDB.
 
-Full endpoint list with request/response examples: **[docs/API.md](docs/API.md)** (31 endpoints).
+## Production deployment
 
-## Structure (MVC)
-```
-server.js                 starts the server (connect DB, seed hospitals, listen)
-src/
-  app.js                  Express app: security, CORS, JSON, routes, error handling
-  config/                 env.js (settings), db.js (MongoDB connection)
-  models/      (M)        User, Hospital, Case, Slot, Invoice, Document  (Mongoose schemas)
-  controllers/ (C)        auth, hospital, case, slot, invoice, document  (request handling + JSON "view")
-  routes/                 one router per resource, mounted under /api
-  middleware/             auth (JWT + roles), upload (multer), errorHandler
-  services/               caseService (stages/ETA/timeline), invoiceService
-  utils/                  ApiError, asyncHandler, validators, seed
-seeds/                    hospital data + `npm run seed`
-tests/api.test.js         58 integration tests
-docs/API.md               API documentation
-uploads/                  uploaded documents (private, git-ignored)
-```
-In an API, the "View" of MVC is the JSON each controller returns (`present()` functions in the case/slot controllers
-and the `toJSON` rules in `models/plugin.js`).
+- Repository: `Prateek4407/MediBridge`
+- Branch: `backend-integration` while this release is being verified; production remains `backend`
+- Render root directory: `medibridge-backend`
+- Build command: `npm ci`
+- Start command: `npm start`
+- Health check: `/api/health`
 
-## Run
-```
-npm install
-cp .env.example .env        # set MONGO_URI (local MongoDB or Atlas) and JWT_SECRET
-npm run seed                # optional: demo accounts patient@demo.test / doctor@demo.test (password demo1234)
-npm run dev                 # http://localhost:5000/api/health
-```
-Hospitals are seeded automatically on first start. Set `CLIENT_URL` to your frontend URL (default `http://localhost:5173`).
+Required environment variables:
 
-## Test
+```text
+MONGO_URI
+JWT_SECRET
+NODE_ENV=production
+CLIENT_URL=https://YOUR-FRONTEND.vercel.app
 ```
-npm test
-```
-Uses `MONGO_URI_TEST` (default `mongodb://127.0.0.1:27017/medibridge_test`). **That database is dropped on every run**, so never point it at real data.
-Covers auth, validation, role rules, tracking stage progression, slot overlap / double booking, payments, and
-document upload / permissions / file download.
 
-## Deploy (e.g. Render + MongoDB Atlas)
-Set `MONGO_URI`, `JWT_SECRET`, `CLIENT_URL`, `NODE_ENV=production`. Uploaded files are stored on the server disk
-(`UPLOAD_DIR`), and most free hosts wipe disk on redeploy, so for production move files to cloud storage (S3, Cloudinary, GridFS)
-by changing `middleware/upload.js` and `controllers/documentController.js` only.
+Optional settings are `PORT`, `JWT_EXPIRES_IN`, `AUTH_COOKIE_NAME`, and `AUTH_COOKIE_DAYS`. Production startup fails when any required secret or origin is missing. Do not commit `.env`.
+
+Run locally with an explicitly configured `.env`:
+
+```powershell
+npm ci
+npm run seed
+npm run dev
+```
+
+`npm run seed` initializes the hospital directory only. The server never creates users, ambulances, cases, invoices, or other sample operational records.
+
+## Authentication and security
+
+Registration and login set a `Secure`, `HttpOnly`, `SameSite=None` cookie. Protected endpoints read only that cookie; bearer tokens are not accepted. Browser clients must send `credentials: 'include'`. Logout clears the cookie.
+
+Public self-registration is limited to patients. Doctor and driver accounts must be provisioned by an authorized database operator. State-changing browser requests are restricted to the exact origins in `CLIENT_URL`, and CORS is enabled with credentials.
+
+## Operational behavior
+
+- Ambulances are explicit MongoDB records; none are created at server startup.
+- A doctor acknowledges an emergency case and dispatches an available ambulance atomically.
+- Only the assigned driver or a doctor can move an assigned case through its real workflow.
+- Driver GPS updates are stored and returned as-is. The API does not synthesize movement or timed case progress.
+- Medical documents are stored in MongoDB GridFS with consent and audit controls.
+- Emergency requests create pending invoice records. No payment endpoint is exposed until a real payment provider is connected.
+
+See [docs/API.md](docs/API.md) for the endpoint contract.

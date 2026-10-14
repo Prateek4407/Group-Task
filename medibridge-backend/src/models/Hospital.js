@@ -12,9 +12,11 @@ const hospitalSchema = new mongoose.Schema({
   vent: Number,
   load: { type: String, enum: ['Low', 'Moderate', 'High', 'Saturated'] },
   care: [{ type: String, enum: ['Emergency', 'Cardiac', 'Trauma', 'Maternity'] }],
-  src: { type: String, enum: ['Verified', 'Declared', 'Estimated', 'Simulated'] },
+  src: { type: String, enum: ['Verified', 'Declared', 'Estimated'] },
   x: Number,
-  y: Number
+  y: Number,
+  lat: Number,            // real-world position, used to find the nearest ambulance
+  lng: Number
 });
 hospitalSchema.plugin(plugin);
 

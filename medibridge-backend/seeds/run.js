@@ -1,12 +1,11 @@
-/* npm run seed  ->  hospitals + demo patient/doctor */
+/* npm run seed -> bootstrap the hospital directory in MongoDB */
 const env = require('../src/config/env');
 const connectDB = require('../src/config/db');
-const { seedHospitals, seedDemoUsers } = require('../src/utils/seed');
+const { seedHospitals } = require('../src/utils/seed');
 
 (async () => {
   await connectDB(env.mongoUri);
   await seedHospitals();
-  await seedDemoUsers();
-  console.log('Seeded hospitals and demo users (patient@demo.test / doctor@demo.test, password demo1234).');
+  console.log('Hospital directory is ready.');
   process.exit(0);
 })().catch(e => { console.error(e); process.exit(1); });

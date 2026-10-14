@@ -3,7 +3,7 @@ const bcrypt = require('bcryptjs');
 const plugin = require('./plugin');
 
 const userSchema = new mongoose.Schema({
-  role: { type: String, enum: ['patient', 'doctor'], required: true },
+  role: { type: String, enum: ['patient', 'doctor', 'driver'], required: true },
   name: { type: String, required: true, trim: true },
   email: { type: String, required: true, unique: true, lowercase: true, trim: true },
   phone: { type: String, required: true, unique: true, trim: true },

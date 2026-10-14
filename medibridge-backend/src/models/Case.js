@@ -19,7 +19,9 @@ const caseSchema = new mongoose.Schema({
   stage: { type: Number, default: 0, min: 0, max: 5 },              // 0..5 -> "Stage 1 of 6" .. "Stage 6 of 6"
   stageStart: { type: Date, default: Date.now },
   stageLog: [{ _id: false, stage: Number, at: Date }],
-  isDemo: { type: Boolean, default: false },
+  ambulance: { type: mongoose.Schema.Types.ObjectId, ref: 'Ambulance', default: null },
+  ambulanceOrigin: { lat: Number, lng: Number },       // where the ambulance was when it was assigned
+  ambulanceAssignedAt: { type: Date, default: null },
   acknowledgedBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User', default: null },
   acknowledgedAt: { type: Date, default: null }
 }, { timestamps: true });

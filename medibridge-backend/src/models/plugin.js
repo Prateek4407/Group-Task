@@ -8,6 +8,7 @@ module.exports = (schema) => {
       delete ret._id;
       delete ret.password;
       delete ret.storedName;
+      delete ret.fileId;
       return ret;
     }
   });

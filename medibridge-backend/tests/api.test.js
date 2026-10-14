@@ -6,29 +6,37 @@ process.env.UPLOAD_DIR = fs.mkdtempSync(path.join(os.tmpdir(), 'mb-uploads-'));
 
 const mongoose = require('mongoose');
 const request = require('supertest');
+const { createTestDatabase } = require('./testDatabase');
 const app = require('../src/app');
 const connectDB = require('../src/config/db');
 const { seedHospitals } = require('../src/utils/seed');
-const Case = require('../src/models/Case');
+/* documents now live in MongoDB (GridFS), not on disk */
+const stored = () => mongoose.connection.db.collection('medicalDocuments.files').countDocuments();
 
 const api = () => request(app);
 let n = 0;
 const phone = () => '9' + String(100000000 + ++n);
-const auth = (t) => ({ Authorization: 'Bearer ' + t });
+const auth = (cookie) => ({ Cookie: cookie });
+const sessionCookie = (res) => {
+  const raw = res.headers['set-cookie'];
+  expect(raw).toBeTruthy();
+  return raw[0].split(';')[0];
+};
 const future = (days = 1) => { const d = new Date(); d.setDate(d.getDate() + days); return d.toISOString().slice(0, 10); };
 
 async function register(role, extra = {}) {
   const body = { role, name: role === 'doctor' ? 'Dr. Test Doc' : 'Test Patient', email: `u${++n}@t.test`, phone: phone(), password: 'secret1', ...extra };
   const res = await api().post('/api/auth/register').send(body);
   expect(res.status).toBe(201);
-  return { token: res.body.data.token, user: res.body.data.user, body };
+  return { token: sessionCookie(res), user: res.body.data.user, body };
 }
 const caseBody = (o = {}) => ({ name: 'Rajesh Verma', age: 58, sex: 'Male', phone: '9876543210', rel: 'Self', care: 'Cardiac', sev: 'P1', symptoms: 'chest pain', address: '12 Test Street, Delhi', hospital: 'auto', consent: true, ...o });
 
-let patient, patient2, doctor;
+let patient, patient2, doctor, mongo;
 
 beforeAll(async () => {
-  await connectDB(process.env.MONGO_URI_TEST || 'mongodb://127.0.0.1:27017/medibridge_test');
+  mongo = await createTestDatabase();
+  await connectDB(mongo.uri);
   await mongoose.connection.dropDatabase();
   await Promise.all(Object.values(mongoose.models).map(m => m.init()));
   await seedHospitals();
@@ -39,6 +47,7 @@ beforeAll(async () => {
 afterAll(async () => {
   await mongoose.connection.dropDatabase();
   await mongoose.disconnect();
+  await mongo.stop();
   fs.rmSync(process.env.UPLOAD_DIR, { recursive: true, force: true });
 });
 
@@ -52,8 +61,13 @@ describe('Health & 404', () => {
 });
 
 describe('Auth', () => {
-  test('register returns token + user without password', () => {
-    expect(patient.token).toBeTruthy(); expect(patient.user.password).toBeUndefined(); expect(patient.user.id).toBeTruthy();
+  test('register sets a secure HttpOnly cookie and returns no token', async () => {
+    expect(patient.token).toMatch(/^medibridge_auth=/); expect(patient.user.password).toBeUndefined(); expect(patient.user.id).toBeTruthy();
+    const r = await api().post('/api/auth/register').send({ role: 'patient', name: 'Cookie Check', email: `cookie${++n}@t.test`, phone: phone(), password: 'secret1' });
+    expect(r.body.data.token).toBeUndefined();
+    expect(r.headers['set-cookie'][0]).toMatch(/HttpOnly/i);
+    expect(r.headers['set-cookie'][0]).toMatch(/Secure/i);
+    expect(r.headers['set-cookie'][0]).toMatch(/SameSite=None/i);
   });
   test('doctor keeps speciality, patient does not', () => { expect(doctor.user.spec).toBe('Cardiology'); expect(patient.user.spec).toBe(''); });
   test('register validates fields like the frontend', async () => {
@@ -75,7 +89,7 @@ describe('Auth', () => {
   });
   test('login with email and with phone', async () => {
     const a = await api().post('/api/auth/login').send({ identifier: patient.body.email, password: 'secret1', role: 'patient' });
-    expect(a.status).toBe(200); expect(a.body.data.token).toBeTruthy();
+    expect(a.status).toBe(200); expect(a.body.data.token).toBeUndefined(); expect(sessionCookie(a)).toMatch(/^medibridge_auth=/);
     const b = await api().post('/api/auth/login').send({ identifier: patient.body.phone, password: 'secret1' });
     expect(b.status).toBe(200);
   });
@@ -87,13 +101,17 @@ describe('Auth', () => {
     expect(r.status).toBe(403); expect(r.body.message).toMatch(/registered as a patient/);
   });
   test('missing credentials -> 400', async () => { expect((await api().post('/api/auth/login').send({})).status).toBe(400); });
-  test('GET /me needs a valid token', async () => {
+  test('GET /me needs a valid session cookie', async () => {
     expect((await api().get('/api/auth/me')).status).toBe(401);
-    expect((await api().get('/api/auth/me').set(auth('garbage'))).status).toBe(401);
+    expect((await api().get('/api/auth/me').set(auth('medibridge_auth=garbage'))).status).toBe(401);
     const r = await api().get('/api/auth/me').set(auth(patient.token)); expect(r.status).toBe(200); expect(r.body.data.user.email).toBe(patient.body.email);
   });
-  test('new patient gets the 2 sample invoices', async () => {
-    const r = await api().get('/api/invoices').set(auth(patient.token)); expect(r.body.count).toBe(2);
+  test('logout clears the session cookie', async () => {
+    const r = await api().post('/api/auth/logout').set(auth(patient.token));
+    expect(r.status).toBe(200); expect(r.headers['set-cookie'][0]).toMatch(/medibridge_auth=;/);
+  });
+  test('new patient has no seeded invoices', async () => {
+    const r = await api().get('/api/invoices').set(auth(patient.token)); expect(r.body.count).toBe(0);
   });
 });
 
@@ -145,28 +163,18 @@ describe('Emergency cases', () => {
   test('public tracking view hides phone / symptoms', async () => {
     const r = await api().get(`/api/cases/${c.caseId}/track`); expect(r.status).toBe(200);
     expect(r.body.data.case.patient.phone).toBeUndefined(); expect(r.body.data.case.symptoms).toBeUndefined();
-    expect(r.body.data.case.etaMinutes).toBeGreaterThan(0); expect(r.body.data.case.liveStatus).toMatch(/confirming/);
+    expect(r.body.data.case.etaMinutes).toBeGreaterThan(0); expect(r.body.data.case.liveStatus).toMatch(/hospital confirmation/i);
   });
   test('track unknown case -> 404', async () => { expect((await api().get('/api/cases/CB-0000/track')).status).toBe(404); });
-  test('stage moves forward with time (simulation)', async () => {
-    await Case.updateOne({ caseId: c.caseId }, { stageStart: new Date(Date.now() - 13000) });
-    const r = await api().get(`/api/cases/${c.caseId}/track`);
-    expect(r.body.data.case.stage).toBe(2); expect(r.body.data.case.stageLabel).toBe('Stage 3 of 6');
-    expect(r.body.data.case.timeline.filter(t => t.state === 'done')).toHaveLength(2);
-    expect(r.body.data.case.liveStatus).toBe('Ambulance heading to the patient');
-  });
-  test('stage stops at 6 / Arrived', async () => {
-    await Case.updateOne({ caseId: c.caseId }, { stageStart: new Date(Date.now() - 100000) });
-    const r = await api().get(`/api/cases/${c.caseId}/track`);
-    expect(r.body.data.case.stage).toBe(5); expect(r.body.data.case.etaMinutes).toBe(0); expect(r.body.data.case.status.label).toBe('Handoff completed');
-  });
-  test('restart and advance (demo buttons)', async () => {
-    const rs = await api().post(`/api/cases/${c.caseId}/restart`); expect(rs.body.data.case.stage).toBe(0);
-    const ad = await api().post(`/api/cases/${c.caseId}/advance`); expect(ad.body.data.case.stage).toBe(1);
+  test('tracking reads do not simulate stage progress', async () => {
+    const first = await api().get(`/api/cases/${c.caseId}/track`);
+    const second = await api().get(`/api/cases/${c.caseId}/track`);
+    expect(first.body.data.case.stage).toBe(0); expect(second.body.data.case.stage).toBe(0);
   });
   test('owned case cannot be advanced anonymously', async () => {
     const mk = await api().post('/api/cases').set(auth(patient.token)).send(caseBody());
-    expect((await api().post(`/api/cases/${mk.body.data.case.caseId}/advance`)).status).toBe(403);
+    expect((await api().post(`/api/cases/${mk.body.data.case.caseId}/advance`)).status).toBe(401);
+    expect((await api().post(`/api/cases/${mk.body.data.case.caseId}/advance`).set(auth(patient.token))).status).toBe(403);
   });
   test('full details need login', async () => { expect((await api().get(`/api/cases/${c.caseId}`)).status).toBe(401); });
 
@@ -191,8 +199,8 @@ describe('Emergency cases', () => {
     const a = await api().get('/api/cases/active').set(auth(patient.token)); expect(a.body.data.case.stage).toBeLessThan(5);
     expect((await api().get('/api/cases/active').set(auth(patient2.token))).body.data.case).toBeNull();
   });
-  test('demo case', async () => {
-    const r = await api().post('/api/cases/demo'); expect(r.status).toBe(201); expect(r.body.data.case.isDemo).toBe(true); expect(r.body.data.case.sev).toBe('P1');
+  test('demo case endpoint is not available', async () => {
+    const r = await api().post('/api/cases/demo'); expect(r.status).toBe(404);
   });
   test('only a doctor can acknowledge readiness', async () => {
     expect((await api().post(`/api/cases/${c.caseId}/acknowledge`).set(auth(patient.token))).status).toBe(403);
@@ -245,21 +253,19 @@ describe('Appointment slots', () => {
   });
 });
 
-describe('Invoices / payments', () => {
+describe('Invoices', () => {
   test('doctor cannot use payment APIs', async () => { expect((await api().get('/api/invoices').set(auth(doctor.token))).status).toBe(403); });
-  test('pay a pending invoice, then receipt', async () => {
+  test('a real ambulance request creates a pending invoice; fake payment is unavailable', async () => {
+    await api().post('/api/cases').set(auth(patient2.token)).send(caseBody({ care: 'Emergency', sev: 'P2' }));
     const list = (await api().get('/api/invoices').set(auth(patient2.token))).body.data.invoices;
     const pending = list.find(i => i.status === 'Pending');
-    expect((await api().post(`/api/invoices/${pending.invoiceId}/pay`).set(auth(patient2.token)).send({ method: 'Bitcoin' })).status).toBe(400);
+    expect(pending).toBeTruthy();
+    expect((await api().post(`/api/invoices/${pending.invoiceId}/pay`).set(auth(patient2.token)).send({ method: 'Card' })).status).toBe(404);
     expect((await api().get(`/api/invoices/${pending.invoiceId}/receipt`).set(auth(patient2.token))).status).toBe(400);
-    const p = await api().post(`/api/invoices/${pending.invoiceId}/pay`).set(auth(patient2.token)).send({ method: 'Card' });
-    expect(p.status).toBe(200); expect(p.body.data.invoice.status).toBe('Paid'); expect(p.body.data.invoice.method).toBe('Card');
-    expect((await api().post(`/api/invoices/${pending.invoiceId}/pay`).set(auth(patient2.token)).send({})).status).toBe(409);
-    const r = await api().get(`/api/invoices/${pending.invoiceId}/receipt`).set(auth(patient2.token)); expect(r.body.data.receipt.method).toBe('Card');
   });
   test("a patient cannot touch someone else's invoice", async () => {
     const other = (await api().get('/api/invoices').set(auth(patient.token))).body.data.invoices[0];
-    expect((await api().post(`/api/invoices/${other.invoiceId}/pay`).set(auth(patient2.token)).send({})).status).toBe(403);
+    expect((await api().get(`/api/invoices/${other.invoiceId}/receipt`).set(auth(patient2.token))).status).toBe(403);
     expect((await api().get('/api/invoices/INV-0').set(auth(patient2.token))).status).toBe(404);
   });
 });
@@ -279,8 +285,9 @@ describe('Documents (patient upload -> doctor access)', () => {
     const r = await up(patient.token, { category: 'Medical History', title: 'My history', note: 'Allergic to penicillin' });
     expect(r.status).toBe(201); history = r.body.data.document;
     expect(history.category).toBe('Medical History'); expect(history.fileName).toBe('history.txt'); expect(history.size).toBeGreaterThan(10);
-    expect(history.storedName).toBeUndefined();                          // disk name is never exposed
-    expect(fs.readdirSync(process.env.UPLOAD_DIR)).toHaveLength(1);
+    expect(history.storedName).toBeUndefined(); expect(history.fileId).toBeUndefined();   // storage details are never exposed
+    expect(await stored()).toBe(1);                                      // saved in MongoDB, nothing written to disk
+    expect(fs.readdirSync(process.env.UPLOAD_DIR)).toHaveLength(0);
   });
   test('title defaults to file name, category defaults to Other', async () => {
     const r = await up(patient.token, {}, { buf: Buffer.from('%PDF-1.4 fake'), name: 'blood-test.pdf' });
@@ -292,9 +299,12 @@ describe('Documents (patient upload -> doctor access)', () => {
   test('rejects: no file, bad type, bad category, doctor upload, anonymous', async () => {
     expect((await up(patient.token, { category: 'Other' }, null)).status).toBe(400);
     expect((await up(patient.token, {}, { buf: Buffer.from('MZ'), name: 'virus.exe' })).status).toBe(400);
-    const before = fs.readdirSync(process.env.UPLOAD_DIR).length;
+    const before = await stored();
     expect((await up(patient.token, { category: 'Selfies' })).status).toBe(400);
-    expect(fs.readdirSync(process.env.UPLOAD_DIR).length).toBe(before);   // rejected file is cleaned up
+    expect(await stored()).toBe(before);                                  // rejected file is not kept
+    const ins = await up(patient.token, { category: 'Insurance' });         // category used by the frontend
+    expect(ins.status).toBe(201);
+    await api().delete(`/api/documents/${ins.body.data.document.id}`).set(auth(patient.token));
     expect((await up(doctor.token, { category: 'Other' })).status).toBe(403);
     expect((await api().post('/api/documents')).status).toBe(401);
   });
@@ -316,6 +326,8 @@ describe('Documents (patient upload -> doctor access)', () => {
   test('doctor patients dropdown', async () => {
     const r = await api().get('/api/documents/patients').set(auth(doctor.token));
     expect(r.body.data.patients).toHaveLength(2); expect(r.body.data.patients.find(p => p.id === patient.user.id).documents).toBe(2);
+    expect(r.body.data.patients.find(p => p.id === patient.user.id).hasMedicalHistory).toBe(true);
+    expect(r.body.data.patients.find(p => p.id === patient2.user.id).hasMedicalHistory).toBe(false);
     expect((await api().get('/api/documents/patients').set(auth(patient.token))).status).toBe(403);
   });
   test('doctor can download the file; content is intact', async () => {
@@ -330,12 +342,12 @@ describe('Documents (patient upload -> doctor access)', () => {
     expect((await api().get(`/api/documents/${history.id}`).set(auth(patient2.token))).status).toBe(403);
     expect((await api().get('/api/documents/507f1f77bcf86cd799439011').set(auth(doctor.token))).status).toBe(404);
   });
-  test('only the owner can delete (doctor read-only); file removed from disk', async () => {
+  test('only the owner can delete (doctor read-only); stored file removed', async () => {
     expect((await api().delete(`/api/documents/${history.id}`).set(auth(doctor.token))).status).toBe(403);
     expect((await api().delete(`/api/documents/${history.id}`).set(auth(patient2.token))).status).toBe(403);
-    const before = fs.readdirSync(process.env.UPLOAD_DIR).length;
+    const before = await stored();
     expect((await api().delete(`/api/documents/${history.id}`).set(auth(patient.token))).status).toBe(200);
-    expect(fs.readdirSync(process.env.UPLOAD_DIR).length).toBe(before - 1);
+    expect(await stored()).toBe(before - 1);
     expect((await api().get(`/api/documents/${history.id}`).set(auth(doctor.token))).status).toBe(404);
     expect((await api().get('/api/documents/summary').set(auth(patient.token))).body.data.hasMedicalHistory).toBe(false);
   });

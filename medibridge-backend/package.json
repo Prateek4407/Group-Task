@@ -10,9 +10,13 @@
     "seed": "node seeds/run.js",
     "test": "jest --runInBand --forceExit"
   },
-  "jest": { "testEnvironment": "node", "testTimeout": 30000 },
+  "jest": {
+    "testEnvironment": "node",
+    "testTimeout": 30000
+  },
   "dependencies": {
     "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
