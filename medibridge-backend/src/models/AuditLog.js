@@ -1,7 +1,11 @@
 const mongoose = require('mongoose');
 const plugin = require('./plugin');
 
-const ACTIONS = ['document.upload', 'document.view', 'document.download', 'document.delete', 'document.denied', 'consent.grant', 'consent.withdraw'];
+const ACTIONS = [
+  'document.upload', 'document.view', 'document.download', 'document.delete', 'document.denied',
+  'consent.grant', 'consent.withdraw',
+  'staff.approve', 'staff.reject', 'staff.revoke'
+];
 
 /* Append-only: the API has no route that edits or deletes an audit entry. */
 const auditSchema = new mongoose.Schema({

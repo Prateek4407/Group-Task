@@ -1,6 +1,6 @@
 # MediBridge API contract
 
-Production base URL: `https://medibridge-2-v53u.onrender.com/api`
+Production base URL: `https://medibridge-3-icg4.onrender.com/api`
 
 JSON responses use `{ success, data, message? }`. Errors use `{ success: false, message, errors? }`.
 
@@ -10,12 +10,21 @@ The server sets the `medibridge_auth` cookie on registration and login. It is `H
 
 | Method | Path | Access | Purpose |
 | --- | --- | --- | --- |
-| POST | `/auth/register` | Public patient | Create patient account and session |
+| POST | `/auth/register` | Public | Create an active patient session or a pending doctor/driver request |
 | POST | `/auth/login` | Public | Start session |
 | POST | `/auth/logout` | Public | Clear session cookie |
 | GET | `/auth/me` | Authenticated | Restore current user |
 
-Public registration rejects doctor and driver roles outside the test environment. Staff accounts are provisioned operationally.
+Public registration always rejects the `admin` role. A doctor or driver registration returns `pending: true` and no cookie. Pending, rejected, and revoked staff cannot authenticate; legacy staff records without a status remain active.
+
+## Staff administration
+
+| Method | Path | Access | Purpose |
+| --- | --- | --- | --- |
+| GET | `/admin/users` | Administrator | List doctor/driver accounts and pending/active/rejected counts |
+| PATCH | `/admin/users/:id/status` | Administrator | Approve, reject, or revoke a doctor/driver account |
+
+The first administrator is created privately with `npm run provision:admin`. Administrator actions cannot target patients or other administrators and are recorded in the audit collection.
 
 ## Hospitals and ambulances
 
@@ -26,7 +35,7 @@ Public registration rejects doctor and driver roles outside the test environment
 | GET | `/hospitals/:id` | Public | Read hospital |
 | GET | `/ambulances/availability` | Public | Aggregate live fleet availability |
 | GET | `/ambulances` | Doctor | List fleet records |
-| POST | `/ambulances` | Doctor | Create ambulance |
+| POST | `/ambulances` | Doctor | Create ambulance; linked driver must be approved |
 | PATCH | `/ambulances/:id` | Doctor | Update ambulance |
 | DELETE | `/ambulances/:id` | Doctor | Remove an unassigned ambulance |
 | GET | `/ambulances/mine` | Driver | Read linked ambulance |

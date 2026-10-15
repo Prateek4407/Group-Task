@@ -14,6 +14,7 @@ const num = (v) => (v === '' || v === null || v === undefined ? NaN : Number(v))
 async function loadDriver(email) {
   const user = await User.findOne({ email: str(email).toLowerCase() });
   if (!user || user.role !== 'driver') throw ApiError.badRequest('No driver account found with this email. The driver must register first.', { driverEmail: 'Unknown driver account.' });
+  if (user.status && user.status !== 'active') throw ApiError.badRequest('This driver account is not approved.', { driverEmail: 'Choose an approved driver account.' });
   return user;
 }
 

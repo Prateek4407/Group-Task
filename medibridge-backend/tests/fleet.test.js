@@ -11,6 +11,7 @@ const app = require('../src/app');
 const connectDB = require('../src/config/db');
 const { seedHospitals } = require('../src/utils/seed');
 const Ambulance = require('../src/models/Ambulance');
+const User = require('../src/models/User');
 
 const api = () => request(app);
 let n = 0;
@@ -23,6 +24,12 @@ const sessionCookie = (res) => {
 };
 async function register(role, extra = {}) {
   const body = { role, name: role === 'doctor' ? 'Dr. Fleet' : role === 'driver' ? 'Driver Dev' : 'Fleet Patient', email: `f${++n}@t.test`, phone: phone(), password: 'secret1', ...extra };
+  if (role !== 'patient') {
+    const user = await User.create({ ...body, status: 'active' });
+    const res = await api().post('/api/auth/login').send({ identifier: body.email, password: body.password, role });
+    expect(res.status).toBe(200);
+    return { token: sessionCookie(res), user: user.toJSON(), body };
+  }
   const res = await api().post('/api/auth/register').send(body);
   expect(res.status).toBe(201);
   return { token: sessionCookie(res), user: res.body.data.user, body };
