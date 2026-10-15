@@ -13,7 +13,8 @@ const configuredClientUrls = requiredInProduction('CLIENT_URL', 'http://localhos
   .filter(Boolean);
 const deployedClientUrls = [
   'https://medibridge-frontend-preview.vercel.app',
-  'https://medibridge-frontend-repo.vercel.app'
+  'https://medibridge-frontend-repo.vercel.app',
+  'https://medibridge-project.vercel.app'
 ];
 const clientUrls = [...new Set([...configuredClientUrls, ...deployedClientUrls])];
 
