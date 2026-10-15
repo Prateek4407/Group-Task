@@ -5,7 +5,7 @@ Production Express/MongoDB API for MediBridge. It stores users, hospital directo
 ## Production deployment
 
 - Repository: `Prateek4407/MediBridge`
-- Branch: `backend-integration` while this release is being verified; production remains `backend`
+- Production branch: `backend`
 - Render root directory: `medibridge-backend`
 - Build command: `npm ci`
 - Start command: `npm start`
@@ -36,13 +36,26 @@ npm run dev
 
 Registration and login set a `Secure`, `HttpOnly`, `SameSite=None` cookie. Protected endpoints read only that cookie; bearer tokens are not accepted. Browser clients must send `credentials: 'include'`. Logout clears the cookie.
 
-Public self-registration is limited to patients. Doctor and driver accounts must be provisioned by an authorized database operator. State-changing browser requests are restricted to the exact origins in `CLIENT_URL`, and CORS is enabled with credentials.
+Patients receive a session immediately after registration. Doctors and drivers may submit a registration, but remain pending and receive no session until an administrator approves them. Rejected or revoked staff cannot log in, and protected requests re-check the current database status so an existing cookie stops working immediately after revocation. Administrator accounts are never publicly registrable.
+
+Create the first administrator once with environment variables and the private provisioning command:
+
+```powershell
+$env:ADMIN_NAME='Platform Administrator'
+$env:ADMIN_EMAIL='admin@example.com'
+$env:ADMIN_PHONE='9000000000'
+$env:ADMIN_PASSWORD='<strong one-time password>'
+npm run provision:admin
+```
+
+The command uses the normal `User` password hashing hook, never prints the password, refuses to overwrite an account, and refuses to create a second administrator. Remove the one-time environment values after provisioning. State-changing browser requests are restricted to the exact origins in `CLIENT_URL`, and CORS is enabled with credentials.
 
 The current MediBridge Vercel Preview and production aliases are also listed explicitly in `src/config/env.js`. Preview access never uses a wildcard origin.
 
 ## Operational behavior
 
 - Ambulances are explicit MongoDB records; none are created at server startup.
+- Only approved drivers can be linked to an ambulance.
 - A doctor acknowledges an emergency case and dispatches an available ambulance atomically.
 - Only the assigned driver or a doctor can move an assigned case through its real workflow.
 - Driver GPS updates are stored and returned as-is. The API does not synthesize movement or timed case progress.

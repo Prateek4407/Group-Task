@@ -8,6 +8,7 @@
     "start": "node server.js",
     "dev": "node --watch server.js",
     "seed": "node seeds/run.js",
+    "provision:admin": "node scripts/provisionAdmin.js",
     "test": "jest --runInBand --forceExit"
   },
   "jest": {

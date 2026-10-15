@@ -10,6 +10,7 @@ const { createTestDatabase } = require('./testDatabase');
 const app = require('../src/app');
 const connectDB = require('../src/config/db');
 const { seedHospitals } = require('../src/utils/seed');
+const User = require('../src/models/User');
 /* documents now live in MongoDB (GridFS), not on disk */
 const stored = () => mongoose.connection.db.collection('medicalDocuments.files').countDocuments();
 
@@ -26,6 +27,12 @@ const future = (days = 1) => { const d = new Date(); d.setDate(d.getDate() + day
 
 async function register(role, extra = {}) {
   const body = { role, name: role === 'doctor' ? 'Dr. Test Doc' : 'Test Patient', email: `u${++n}@t.test`, phone: phone(), password: 'secret1', ...extra };
+  if (role !== 'patient') {
+    const user = await User.create({ ...body, status: 'active' });
+    const res = await api().post('/api/auth/login').send({ identifier: body.email, password: body.password, role });
+    expect(res.status).toBe(200);
+    return { token: sessionCookie(res), user: user.toJSON(), body };
+  }
   const res = await api().post('/api/auth/register').send(body);
   expect(res.status).toBe(201);
   return { token: sessionCookie(res), user: res.body.data.user, body };
@@ -84,7 +91,6 @@ describe('Auth', () => {
     const r2 = await api().post('/api/auth/register').send({ ...patient.body, email: 'other@t.test' }); expect(r2.status).toBe(409);
   });
   test('password is stored hashed', async () => {
-    const User = require('../src/models/User');
     const u = await User.findById(patient.user.id).select('+password'); expect(u.password).not.toBe('secret1'); expect(u.password.startsWith('$2')).toBe(true);
   });
   test('login with email and with phone', async () => {
