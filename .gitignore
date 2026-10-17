@@ -11,3 +11,18 @@ data/emergency_severity/*.csv
 hospital_bed_prediction/data/
 hospital_bed_prediction/models/
 hospital_bed_prediction/hospital_occupancy.csv
+
+# Do not publish local datasets and trained models
+data/*.csv
+data/*.joblib
+models/*.joblib
+
+# Emergency severity datasets and trained model
+data/emergency_severity/*.csv
+data/emergency_severity/*.joblib
+
+# Hospital bed prediction data and models
+hospital_bed_prediction/data/
+hospital_bed_prediction/models/
+hospital_bed_prediction/hospital_occupancy.csv
+
